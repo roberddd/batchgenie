@@ -1,4 +1,5 @@
 site_name: BatchGenie Documentation
+site_url: https://roberddd.github.io/BatchGenie/
 theme:
   name: material
   custom_dir: overrides #Remember to save mkdocs.yml to refresh the overrides
