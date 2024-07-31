@@ -8,7 +8,6 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 - **Batch Render Asset Previews**: Generate high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
 - **Batch Utilities**: Utilize a variety of batch processing utilities designed to handle common tasks efficiently such as changing material or node attributes.
 
-
 ### Feature Details
 
 - Easy one-click interface for instant use, while offering advanced customization options.

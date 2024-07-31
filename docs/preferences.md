@@ -36,7 +36,6 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
     ??? abstract "Texture Tags"
         ![Texture Tags](images/preferences_tags.png){ .img-box }
 
-
 ####  Misc Settings {#general-misc-settings}
 
 - **Add-on Location**: Choose whether the add-on appears in its own "BatchGenie" tab in the N-Panel or within the existing Tool Panel. This option can help save tab space if the N-Panel is too crowded and also applies to the BatchGenie tab in the Shader Editor.
@@ -68,7 +67,6 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
     !!! info2 "Which Denoiser should I choose?"
         While **OptiX** excels in performance on Nvidia GPUs, **OpenImageDenoise** stands out for its adaptability across various hardware setups and is often favored for delivering better results. For further details see [this section](https://docs.blender.org/manual/en/latest/render/cycles/render_settings/sampling.html#denoising){ target="_blank" } in the Blender manual.
-
 
 ####  Misc Settings {#advanced-misc-settings}
 

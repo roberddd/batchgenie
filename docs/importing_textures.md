@@ -1,30 +1,21 @@
 ![Example Import](images/import_example.gif){ .img-box align=right }
 
-1. Open the main BatchGenie panel in Blender.
+1. Open the main BatchGenie panel.
 2. Go to the `Batch Import PBR Texture` section.
 3. Select the folder containing your textures.
 4. If you need to make any adjustments, click on the `Import Settings` tab. Otherwise, proceed to the next step.
 5. Click on `Import`, and BatchGenie will automatically import and set up the textures for you.
-
-
-
-<!--
-!!! info2 "Folder Structure Details"
-    Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders. While the root folder can contain any number of textures mixed together, subfolders should be used to organize distinct sets of textures. -->
-
-<div style="clear:both"></div>
 
 <figure markdown="span">
   ![Example Import With Extra Everything](images/import_example.png){ .on-glb width=60% .img-box data-title="Example of an import with various additional accessory nodes." data-description="These nodes are automatically added by BatchGenie when needed, such as converting normals and performing other necessary adjustments."}
   <figcaption>Example of an import with various additional accessory nodes.</figcaption>
 </figure>
 
+
 ---
 
 
 ### Import Settings
-
-
 
 ![Import Settings](images/import_settings.png){ .img-box align=left }
 
@@ -59,6 +50,7 @@
 
 - **DirectX Normals**: If your materials use DirectX normals but this isn't indicated in their filenames(and the add-on's DirectX detection isn't recognizing them), enable this option to add a 'DirectX to OpenGL' node for normal conversion. See [Preferences](preferences.md#advanced) to adjust this function.
 - **Filter**: Filter out unwanted textures. Example usage would be to filter out DirectX normal maps by using the filter 'DirectX' or 'DX'.
+
 
 ---
 
@@ -104,12 +96,13 @@
 
 Use a custom Node-Group instead of a Principled BSDF for the imported materials. Easily pick from a dropdown that shows all Node-Groups in the current blend file.
 
-![Custom Node-Group](images/import_custom_node_group.png){ .img-box align=left }
+![Custom Node-Group](images/Import_custom_node_group.png){ .img-box align=left }
 
 BatchGenie searches for keywords to match and connect the sockets in the new Node-Group, treating them as if they were part of a regular shader.
 
 !!! info2 "Tip"
     It also detects if the Node-Group has a socket named 'Normal Color' and connects the Normal Map texture directly, bypassing the Normal Map Node.
+
 
 ---
 
@@ -131,7 +124,9 @@ For example, you could set the IOR value for each imported material to a specifi
 
 *For both Random Integer and Random Float, you can specify the range for the randomly generated values.*
 
+
 ---
+
 
 #### Texture Type Settings
 
@@ -166,6 +161,7 @@ The last texture option is **Custom** which makes it possible to import any cust
 
     So in this example BatchGenie will look for any images that contain the words 'Translucency' or 'Scattering' and connect them to a socket named 'Translucent Map' from a custom Node-Group.
 
+
 ## FAQ
 
 - **How should the texture folder structure look?**
@@ -187,6 +183,7 @@ The last texture option is **Custom** which makes it possible to import any cust
 
 - **What image formats are supported?**
     - Currently supported formats include `bmp, png, jpg, jpeg, tga, exr, tif, tiff, webp`. Blender supports additional exotic formats, which you can find [here](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }. These should work as well, but they are currently filtered out because I have been unable to test them since they are very uncommon formats. If you need support for these formats, please let me know.
+
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}
 See the add-on [Preferences](preferences.md) for more settings related to importing.

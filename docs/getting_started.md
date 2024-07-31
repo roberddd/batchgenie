@@ -10,6 +10,7 @@ To get started, you have two options: Watch the introductory video guide below f
 - 10:00 Rendering Previews
 - 15:00 Utilities
 
+
 ### Installation
 
 BatchGenie has been verified to work with Blender 4.2 LTS on Windows.
@@ -25,6 +26,7 @@ To start using BatchGenie, you need to install the add-on in Blender. Follow the
 
 !!! info2 "Updates"
     BatchGenie respects your privacy. It operates offline and does not collect any data. Therefore, there is no auto-update functionality within the add-on. For updates, simply download the updated add-on manually from the store where you purchased it, uninstall the old version and reinstall the new using the same steps outlined in the instructions above.
+
 
 ### Finding BatchGenie and Using the Documentation
 

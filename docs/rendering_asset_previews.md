@@ -16,29 +16,20 @@ When it comes to rendering Asset Preview images, you have two distinct options. 
 5. Click `Batch Render`, and BatchGenie will render all Assets that fit your selection filter.
 
 
-<div style="clear:both"></div>
-
-
 ## Rendering via Asset Browser
 
-1. Open the Asset Browser in Blender.
+1. Open the Asset Browser.
 2. Select the Assets you want to render.
 3. Locate the BatchGenie menu.
 4. Configure the scene and render settings as needed.
 5. Click on `Render selected Assets` and BatchGenie will render all selected Assets.
 
-
-
 ![Asset Browser Render](images/generate_asset_previews-render_from_asset_browser.gif){ .img-box }
-
-
-<div style="clear:both"></div>
 
 
 ## Settings
 
 You can access the settings through both the BatchGenie panel and the BatchGenie menu in the Asset Browser.
-
 
 #### Asset Selection
 
@@ -49,7 +40,6 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
         - **Selected Objects**: Choose the currently selected object(s) in your scene. When using this option, you have the option to mark the objects as Assets:
         - **Objects marked as Assets**: Objects in the your file that are marked as Assets.
 
-
     <div style="clear:both"></div>
 
     - **Refine**: Helps you to refine the selection made with the 'Selection' function by applying additional criteria.
@@ -59,7 +49,6 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
         - **No Filter (all objects)**: Selects all objects that match the previous selection without any further filtering.
 
     - **Mark as Asset**: Marks the objects as Assets. This option is shown depending on the 'Selection' option. This option can only be disabled if you are saving previews externally (see [Render Settings](#render-settings)).
-
 
 === "Collections"
     ![Asset Preview Panel](images/generate_asset_previews_collections.png){ .img-box align=left }
@@ -96,6 +85,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
     - **Only materials imported by BatchGenie**:  When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
     - **Mark as Asset**: Marks the materials as Assets. This option is shown depending on the 'Selection' option. This option can only be disabled if you are saving previews externally (see [Render Settings](#render-settings)).
+
 
 ---
 
@@ -160,7 +150,6 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
         When using override you also have the **Autoframe** option available that automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.
 
-
 - **Material Preview Object**:
 
     These settings are used when rendering material Assets.
@@ -169,6 +158,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Clear current materials**: When rendering previews using the 'Custom Object' option, enable this setting to show only the previewed material on the object. Disable to retain existing materials on the object, assigning the preview material to slot 1. Useful for objects with multiple materials.
     - **Subdiv**: The number of subdivisions to apply to the model.
     - **Adaptive Subdiv**: *(Cycles Only)* Dynamically adjusts the level of detail for subdivided surfaces based on the camera distance, optimizing render times while maintaining high-quality details where needed. Useful for materials with displacement.
+
 
 ---
 
