@@ -37,7 +37,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     ![Asset Preview Panel](images/generate_asset_previews_objects.png){ .img-box align=left }
 
     - **Selection**: Allows you to specify which objects to include in the rendering process based on predefined criteria. Options listed below:
-        - **Selected Objects**: Choose the currently selected object(s) in your scene. When using this option, you have the option to mark the objects as Assets:
+        - **Selected Objects**: Choose the currently selected object(s) in your scene. When using this option, you have the option to mark the objects as Assets.
         - **Objects marked as Assets**: Objects in the your file that are marked as Assets.
 
     <div style="clear:both"></div>
@@ -54,7 +54,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     ![Asset Preview Panel](images/generate_asset_previews_collections.png){ .img-box align=left }
 
     - **Selection**: Allows you to specify which collections to include in the rendering process based on predefined criteria. Options listed below:
-        - **Selected Collection**: Choose the currently selected collection in your scene. When using this option, you have the option to mark the collection as an Asset:
+        - **Selected Collection**: Choose the currently selected collection in your scene. When using this option, you have the option to mark the collection as an Asset.
         - **Collections marked as Assets**: Objects in the your file that are marked as Assets.
 
     <div style="clear:both"></div>

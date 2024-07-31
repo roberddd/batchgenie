@@ -181,9 +181,15 @@ The last texture option is **Custom** which makes it possible to import any cust
 - **How are DirectX & OpenGL normal maps handled?**
     - BatchGenie attempts to identify the type of normal map by examining the texture names, which you can configure in the [Preferences](preferences.md#advanced-import-settings). If your normal maps do not indicate their format, I highly recommend [this guide](https://www.texturecan.com/post/3/DirectX-vs-OpenGL-Normal-Map/){ target="_blank" } over at **texturecan.com** for help in identifying your maps.
 
+- **How fast is the importer?**
+    - With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3.5 seconds. The '**Alpha from Base Color**' setting is the only one that significantly reduces speed. You can read more about this in the [General Settings](#general-settings) section. Benchmark performed on an Intel i7-14700K CPU.
+
+
+
 - **What image formats are supported?**
     - Currently supported formats include `bmp, png, jpg, jpeg, tga, exr, tif, tiff, webp`. Blender supports additional exotic formats, which you can find [here](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }. These should work as well, but they are currently filtered out because I have been unable to test them since they are very uncommon formats. If you need support for these formats, please let me know.
 
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}
+
 See the add-on [Preferences](preferences.md) for more settings related to importing.

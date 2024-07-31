@@ -1,5 +1,17 @@
-.youtube {
-  color: #EE0F0F;
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .img-box {
+    float: none;
+    margin: 0 auto 15px auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  /* Target images aligned right */
+  .img-box[align="right"] {
+     float: right; /* Solves issue on mobile for images that are floating right... so float it right again.. two rights make wrong */
+    /* margin-left: 0px;
+    margin-right: auto;  */
+  }
 }
 
 .md-typeset .md-button--stretch {
@@ -11,17 +23,30 @@
   border-radius: 4px;
 }
 
-
-/* Replaces the Social in the footer */
+/* ### Replace the Social in the footer */
+/* desktop */
 .batchgenie_footer_container {
+  display: flex;
+  /* justify-content: center; */
   color: var(--md-footer-fg-color--lighter);
   margin: auto .6rem;
   padding: .4rem 0;
 }
 .batchgenie_footer_link {
-  margin: auto .6rem;
+  margin: 0 .6rem;
 }
+/* mobile */
+@media (max-width: 768px) {
+  .batchgenie_footer_container {
+    justify-content: flex-end; /* Align content on smaller screens */
+    text-align: center;
+    margin: auto;
+  }
 
+  .batchgenie_footer_link {
+    margin: 0 .3rem; /* Adjust margin for mobile */
+  }
+}
 
 /* Custom 'info2' admonition */
 :root {
