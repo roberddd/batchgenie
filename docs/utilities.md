@@ -98,6 +98,10 @@ This utility enables you to batch modify attributes across multiple materials. I
     Targets all sockets containing the word 'seed' inside the material and populates them with random numbers. You can specify the range for the randomly generated values by adjusting the A & B.
 
 
+!!! info2 "Tips"
+    If you need further details about the batch run check out the report via `Window > Toggle System Console`
+
+
 ---
 
 
@@ -134,7 +138,7 @@ This utility enables you to batch modify material settings across materials.
 This utility lets you replace existing 'Shader Editor' nodes with custom Node-Groups. It targets the main shader connected to the 'Material Output' within the material
 
 
-*This utility is also available in the "Shader Editor" for processing individual nodes rather than in batch. See [this section](#replace-node) for instructions.*
+*This utility is also available in the "Shader Editor" for processing individual nodes rather than in batch. See [this section](#replace-node) for details.*
 
 
 ![Replace Shader Nodes](images/utility_replace_shader_nodes.png){ .img-box align=left }
@@ -160,7 +164,7 @@ This utility lets you replace existing 'Shader Editor' nodes with custom Node-Gr
 
 > Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
 
-This utility helps you locate materials with unconnected nodes in your file, such as Image Texture nodes. It generates reports on its findings, which can be viewed via  `Window > Toggle System Console`.
+This utility helps you locate materials with unconnected nodes in your file, such as Image Texture nodes.
 
 ![Unconnected Nodes](images/utility_find_unconnected_nodes.png){ .img-box align=left }
 
@@ -209,7 +213,13 @@ After clicking `Search`, the interface will display a list of all found material
     - If you need further details about the findings check out the report via `Window > Toggle System Console`
 
         ??? abstract end "Example Console Report"
+            Search:
+
             ![Console Example](images/utility_find_unconnected_nodes_console_example.png){ .img-box }
+
+            Delete:
+
+            ![Console Example](images/utility_find_unconnected_nodes_console_delete_example.png){ .img-box }
 
 
 ---
@@ -221,7 +231,7 @@ After clicking `Search`, the interface will display a list of all found material
 
 This feature searches for nodes with critical values set to zero, which may negatively affect the appearance of your materials. You can select specific node types to check: For **Normal Map** and **Bump** nodes, it checks if 'Strength' is zero; for **Displacement** nodes, it verifies if 'Scale' is zero. This helps ensure that your materials function as intended.
 
-*This utility is also available in the "Shader Editor" for processing individual materials rather than in batch. See [this section](#find-zero-strength-nodes-shader-editor) for instructions.*
+*This utility is also available in the "Shader Editor" for processing individual materials rather than in batch. See [this section](#find-zero-strength-nodes-shader-editor) for details.*
 
 ![Unconnected Nodes](images/utility_find_zero_strength_nodes.png){ .img-box align=left }
 
@@ -257,6 +267,11 @@ After clicking `Search`, the interface will display a list of all found material
 !!! info2 "Tips"
     - The `Clear List` button (:fontawesome-regular-trash-can: icon) clears all materials from the list, allowing you to start fresh.
     - Use the `Highlight Nodes` checkbox to easily spot the found nodes.
+    - If you need further details about the findings check out the report via `Window > Toggle System Console`
+
+        ??? abstract end "Example Console Report"
+            ![Console Example](images/utility_find_zero_strength_nodes_console_example.png){ .img-box }
+
 
 
 ---

@@ -24,8 +24,9 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
     - **Add resolution Suffix**: Automatically appends the texture resolution to the material name, e.g., 'Oak Bark 4K', derived from the Base Color image. Skips adding the suffix if the material name already includes terms like 2K or 4K.
     - **Add resolution Suffix as Asset tag**: Similar to the above, but instead of modifying the material name, it applies the resolution as a tag to the Asset. This works only if 'Mark as Asset' is enabled.
     - **Subfolder name as the material name**: When enabled, the name of the subfolder will be used as the material name for textures found inside that folder. If this option is disabled, the material name will be derived from the texture filenames.
-    - **Remove Underscore & Dashes**: Replaces '_' and '-' in the material names with space".
     - **Split CamelCase names**: Splits names such as 'MetalBronzeWorn' into 'Metal Bronze Worn'.
+    - **Remove Underscore & Dashes**: Replaces '_' and '-' in the material names with space".
+    - **Remove keywords**: These keywords will be removed from the names of the imported materials. Enter one or more keywords separated by a space. Case insensitive
 
 <div style="clear:both"></div>
 
@@ -58,7 +59,7 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
     - **Enabled - Low Quality**: Uses Blender's default Asset generation function for fast, but lower-quality previews.
     - **Enabled - High Quality**: Uses the add-on to create high-quality previews during import. See the `Generate Asset Previews` tab in the add-on panel for settings.
 
-    !!! warning "Note on automatic Asset generation"
+    !!! warning "Note on automatic generation"
         Enabling this feature may significantly increase processing time and affect stability, especially with a large number of textures. It is recommended to keep this setting disabled.
 
 #### Generate Asset Preview Settings {#advanced-generate-Asset-preview-settings}

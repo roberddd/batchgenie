@@ -11,7 +11,7 @@ tags:
 Hello, I'm Roberd, a seasoned photographer based in Sweden with a passion for digital art. With over 20 years of experience in photography, my journey into the world of digital art began as I started experimenting with various graphic software tools along the way. In 2015, I discovered Blender and was captivated by its versatility and power. It quickly became my go-to tool for satisfying my creative needs, offering endless possibilities for creating complex 3D art and animations.
 { data-search-exclude }
 
-After years of working with Blender and performing the same repetitive tasks with materials, I grew tired of the inefficiency. Unable to find existing addons that met my specific requirements, I decided to take matters into my own hands and create my own. BatchGenie was born out of this necessity, designed to address the challenges I faced in managing materials efficiently within Blender. Now, I'm excited to share BatchGenie with fellow Blender enthusiasts.
+After years of working with Blender and performing the same repetitive tasks with materials and other assets, I grew tired of the inefficiency. Unable to find existing addons that met my specific requirements, I decided to take matters into my own hands and create my own. BatchGenie was born out of this necessity, designed to address the challenges I faced in managing assets efficiently within Blender. Now, I'm excited to share BatchGenie with fellow Blender enthusiasts.
 { data-search-exclude }
 
 Below, you'll find links to my social media profiles, where I share digital art projects and photography endeavors. Feel free to connect with me to explore more about my work and interests.

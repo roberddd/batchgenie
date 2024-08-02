@@ -7,7 +7,7 @@
 5. Click on `Import`, and BatchGenie will automatically import and set up the textures for you.
 
 <figure markdown="span">
-  ![Example Import With Extra Everything](images/import_example.png){ .on-glb width=60% .img-box data-title="Example of an import with various additional accessory nodes." data-description="These nodes are automatically added by BatchGenie when needed, such as converting normals and performing other necessary adjustments."}
+  ![Example Import With Extra Everything](images/imported_material_example.png){ .on-glb width=60% .img-box data-title="Example of an import with various additional accessory nodes." data-description="These nodes are automatically added by BatchGenie when needed, such as converting normals and performing other necessary adjustments."}
   <figcaption>Example of an import with various additional accessory nodes.</figcaption>
 </figure>
 
@@ -164,30 +164,34 @@ The last texture option is **Custom** which makes it possible to import any cust
 
 ## FAQ
 
-- **How should the texture folder structure look?**
-    - Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders. While the root folder can contain any number of textures mixed together, subfolders should be used to organize distinct sets of textures.
+`How should the texture folder structure look?`
 
-- **What if there is an issue finding the appropriate connection for a texture?**
-    - If this occurs, BatchGenie will create a frame with reroute node points for all unconnected textures within the material. From here, you can easily reconnect or delete the textures as needed. This scenario may occur, for example, when utilizing custom Node-Groups instead of the Principled BSDF, and the custom Node-Group lacks certain socket inputs for the textures discovered.
+:   Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders. While the root folder can contain any number of textures mixed together, subfolders should be used to organize distinct sets of textures.
 
-        The [Find Unconnected Nodes](utilities.md#find-unconnected-nodes) utility can assist you to find these issues.
+`What if there is an issue finding the appropriate connection for a texture?`
 
-        ??? abstract "Unconnected Textures Example"
-            In the the example below you can see a scenario where BatchGenie has not been able to connect the 'Base Color' & 'Metallic' textures and has created some extra info nodes.
-            You can use the [Clean File](utilities.md#clean-file) utility to batch remove these from all your materials if needed.
+:   If this occurs, BatchGenie will create a frame with reroute node points for all unconnected textures within the material. From here, you can easily reconnect or delete the textures as needed. This scenario may occur, for example, when utilizing custom Node-Groups instead of the Principled BSDF, and the custom Node-Group lacks certain socket inputs for the textures discovered.
 
-            ![Batch Render](images/unconnected_batchgenie_nodes_example.png){ .img-box }
+    The [Find Unconnected Nodes](utilities.md#find-unconnected-nodes) utility can assist you to find these issues.
 
-- **How are DirectX & OpenGL normal maps handled?**
-    - BatchGenie attempts to identify the type of normal map by examining the texture names, which you can configure in the [Preferences](preferences.md#advanced-import-settings). If your normal maps do not indicate their format, I highly recommend [this guide](https://www.texturecan.com/post/3/DirectX-vs-OpenGL-Normal-Map/){ target="_blank" } over at **texturecan.com** for help in identifying your maps.
+    ??? abstract "Unconnected Textures Example"
+        In the the example below you can see a scenario where BatchGenie has not been able to connect the 'Base Color' & 'Metallic' textures and has created some extra info nodes.
+        You can use the [Clean File](utilities.md#clean-file) utility to batch remove these from all your materials if needed.
 
-- **How fast is the importer?**
-    - With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3.5 seconds. The '**Alpha from Base Color**' setting is the only one that significantly reduces speed. You can read more about this in the [General Settings](#general-settings) section. Benchmark performed on an Intel i7-14700K CPU.
+        ![Batch Render](images/unconnected_batchgenie_nodes_example.png){ .img-box }
 
+`How are DirectX & OpenGL normal maps handled?`
 
+:   BatchGenie attempts to identify the type of normal map by examining the texture names, which you can configure in the [Preferences](preferences.md#advanced-import-settings). If your normal maps do not indicate their format, I highly recommend [this guide](https://www.texturecan.com/post/3/DirectX-vs-OpenGL-Normal-Map/){ target="_blank" } over at **texturecan.com** for help in identifying your maps.
 
-- **What image formats are supported?**
-    - Currently supported formats include `bmp, png, jpg, jpeg, tga, exr, tif, tiff, webp`. Blender supports additional exotic formats, which you can find [here](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }. These should work as well, but they are currently filtered out because I have been unable to test them since they are very uncommon formats. If you need support for these formats, please let me know.
+`How fast is the importer?`
+
+:   With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3.5 seconds. The '**Alpha from Base Color**' setting is the only one that significantly reduces speed. You can read more about this in the [General Settings](#general-settings) section. Benchmark performed on an Intel i7-14700K CPU.
+
+`What image formats are supported?`
+
+:   Currently supported formats include `bmp, png, jpg, jpeg, tga, exr, tif, tiff, webp`. Blender supports additional exotic formats, which you can find [here](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }. These should work as well, but they are currently filtered out because I have been unable to test them since they are very uncommon formats. If you need support for these formats, please let me know.
+
 
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}

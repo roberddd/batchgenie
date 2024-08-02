@@ -2,7 +2,7 @@
 tags:
   - HDRi
 ---
-When it comes to rendering Asset Preview images, you have two distinct options. You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets from the Asset Browser for which you wish to render previews for. BatchGenie supports rendering previews for materials, objects & collections.
+When it comes to rendering Asset Preview images, you have two distinct options. You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets from the Asset Browser for which you wish to render previews for. BatchGenie supports rendering previews for materials, collections, and objects, including VDB volumes.
 
 
 ## Batch Rendering
@@ -170,7 +170,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 Here, you'll find settings for aspect ratio, resolution, and other Blender default render settings you're likely already familiar with.
 
 !!! info2 "Asset Preview Resolution"
-    When rendering images to use as previews for the Assets themselves, note that previews saved inside the Asset are limited to 256x256 pixels. With that said, the recommended render resolution is 512x512, which improves overall sharpness even if saved at a lower resolution afterward. This offers an improvement over Blender's default Asset Preview resolution of 128x128 pixels.
+    When rendering images to use as previews for the Assets themselves, the previews saved inside the Asset are limited to 256x256 pixels. With that said, the recommended render resolution is 512x512, which improves overall sharpness even if saved at a lower resolution afterward. This offers an improvement over Blender's default Asset Preview resolution of 128x128 pixels.
 
 <div style="clear:both"></div>
 
@@ -182,12 +182,18 @@ Here, you'll find settings for aspect ratio, resolution, and other Blender defau
 
 ## FAQ
 
-- **Can I add custom Light Presets?**
-    - Yes! The list can be expanded by directly adding your own HDRIs to blender via `Preferences > Lights > HDRI's` which makes them available in this list.
-- **How do I adjust the Light Paths settings for renders?**
-    - These settings from your current scene will be used. To adjust them, go to `Render > Light Paths` in the Properties panel and make your desired changes there.
-- **I'm having issues with the adaptive subdivision being slow in Cycles. What can I do?**
-    - Adjust your `Subdivision Dicing Rate` in your current scene, as the render will use those settings. First, ensure that the "Experimental" Feature Set is enabled under `Render > Feature Set` in the Properties panel. Then, go to `Render > Subdivision` and increase the `Dicing Rate Render` value.
+`Can I add custom Light Presets?`
+
+:   Yes! The list can be expanded by directly adding your own HDRIs to blender via `Preferences > Lights > HDRI's` which makes them available in this list.
+
+`How do I adjust the Light Paths settings for renders?`
+
+:   These settings from your current scene will be used. To adjust them, go to `Render > Light Paths` in the Properties panel and make your desired changes there.
+
+`I'm having issues with adaptive subdivision being slow in Cycles. What can I do?`
+
+:   Adjust your `Subdivision Dicing Rate` in your current scene, as the render will use those settings. First, ensure that the "Experimental" Feature Set is enabled under `Render > Feature Set` in the Properties panel. Then, go to `Render > Subdivision` and increase the `Dicing Rate Render` value.
+
 
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}
