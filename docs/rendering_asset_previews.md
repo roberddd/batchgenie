@@ -4,6 +4,8 @@ tags:
 ---
 When it comes to rendering Asset Preview images, you have two distinct options. You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets from the Asset Browser for which you wish to render previews for. BatchGenie supports rendering previews for materials, collections, and objects, including VDB volumes.
 
+When rendering via the Asset Browser, you can work with both internal and external assets, so you don't have to open each individual Asset Blend file separately.
+
 
 ## Batch Rendering
 

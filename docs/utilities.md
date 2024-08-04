@@ -414,6 +414,8 @@ Helps delete any temporary files that might be left behind by BatchGenie. There 
 
 Add or remove tags from your Assets. Select any number of Assets of any type, choose the desired tags to add, and BatchGenie will assign them to the appropriate Assets. These can be either regular tags or Smart Tags that apply the property of your choice to the Asset.
 
+This feature works with both internal and external assets, so you don't have to open each individual Asset Blend file separately.
+
 <div style="clear:both"></div>
 
 #### • Add Tags {#Asset-tags-add}
@@ -466,11 +468,33 @@ This feature allows you to efficiently remove tags from selected Assets. You can
 
 > Location: Asset Browser ▸ BatchGenie Menu
 
-Batch add metadata for your Assets: Description, License, Copyright, and Author. You can select and edit one or multiple attributes simultaneously.
+Batch add metadata for your Assets: Description, License, Copyright, and Author. You can select and edit one or multiple attributes simultaneously. This feature works with both internal and external assets, so you don't have to open each individual Asset Blend file separately.
 
 ![Metadata](images/utility_asset_browser_metadata.png){ .img-box align=left }
 
 <div style="clear:both"></div>
+
+
+---
+
+
+### Move Assets
+
+> Location: Asset Browser ▸ BatchGenie Menu
+
+Move Assets to different Asset Catalogs to help you organize your Asset Library. This feature works with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.
+
+The 'Catalog Details' section displays the UUID and the Asset Library Path of the chosen Catalog.
+
+![Metadata](images/utility_move_assets.png){ .img-box align=left }
+
+![Metadata](images/utility_move_assets_catalog_example.png){ .img-box align=left }
+
+<div style="clear:both"></div>
+
+!!! info2 "How is this done?"
+
+    The utility does not touch the Assets "physical location"; it simply changes the Catalog ID they are associated with, making them appear in a specific catalog (exactly as if you had moved them manually).
 
 
 ---

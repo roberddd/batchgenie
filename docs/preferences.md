@@ -25,12 +25,25 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
     - **Add resolution Suffix as Asset tag**: Similar to the above, but instead of modifying the material name, it applies the resolution as a tag to the Asset. This works only if 'Mark as Asset' is enabled.
     - **Subfolder name as the material name**: When enabled, the name of the subfolder will be used as the material name for textures found inside that folder. If this option is disabled, the material name will be derived from the texture filenames.
     - **Split CamelCase names**: Splits names such as 'MetalBronzeWorn' into 'Metal Bronze Worn'.
-    - **Remove Underscore & Dashes**: Replaces '_' and '-' in the material names with space".
-    - **Remove keywords**: These keywords will be removed from the names of the imported materials. Enter one or more keywords separated by a space. Case insensitive
+    - **Remove Underscore & Dashes**: Replaces '_' and '-' in the material names with a space.
+    - **Remove keywords**: These keywords will be removed from the names of the imported materials. Enter one or more keywords separated by a space. Case insensitive.
+
 
 <div style="clear:both"></div>
 
-  - **Subfolder Traversing Depth**: Specify how many levels deep to search for subfolders when importing textures. The default depth is set to 1, meaning only one level deep will be searched within the selected folder. Adjust this setting to control the folder depth for more complex directory structures.
+  - **Subfolder Traversing Depth**: Specify how many levels deeap to search for subfolders when importing textures. The default depth is set to 1, meaning only one level deep will be searched within the selected folder. Adjust this setting to control the folder depth for more complex directory structures.
+
+    ??? abstract "Traversing diagram example"
+        ```mermaid
+        graph TD
+            A[Main Folder]
+            A --> B[Subfolder Level 1]
+            B --> C[Subfolder Level 2]
+            C --> D[Subfolder Level 3]
+            B --> E[Another Subfolder Level 2]
+            E --> F[Subfolder Level 3]
+            A --> G[Another Subfolder Level 1]
+        ```
 
   - **Texture Detection**: Edit the tags used for detecting different texture types during import. These tags, which are case-insensitive and separated by spaces, help BatchGenie automatically recognize and categorize textures.
 

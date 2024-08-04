@@ -44,6 +44,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Reload Images: Update externally edited images in Blender, ensuring they refresh correctly.
     - Tagging Utilities: Easily add and remove tags for Assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed asset information.
     - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
+    - Move Asset: Organize your assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
     - Plus a few other small utilities!
 
 

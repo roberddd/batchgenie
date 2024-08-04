@@ -13,6 +13,13 @@
     margin-right: auto;  */
   }
 }
+/* Header */
+@media (max-width: 768px) {
+  .md-header__topic {
+    font-size: calc(1rem - 0.27rem); /* Subtracting from the base size */
+  }
+}
+
 
 .md-typeset .md-button--stretch {
   width: 99%;
@@ -65,4 +72,20 @@
   background-color: rgb(43, 155, 70);
   -webkit-mask-image: var(--md-admonition-icon--info2);
           mask-image: var(--md-admonition-icon--info2);
+}
+
+/* ### Mermaid Diagram */
+.mermaid .node rect {
+  fill: rgb(104, 169, 216) !important;
+  stroke: #000000 !important;
+}
+.mermaid svg path {
+  stroke: #0790cf !important;
+}
+.mermaid svg marker path {
+  fill: #0790cf !important;
+}
+.mermaid .nodeLabel {
+  color: #15144e !important;
+
 }

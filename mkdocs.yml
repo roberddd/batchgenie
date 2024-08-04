@@ -19,14 +19,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-7
         name: Switch to dark mode
       primary: indigo
       accent: orange
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to light mode
       primary: indigo
       accent: orange
@@ -35,7 +35,7 @@ theme:
   #   logo: material/oil-lamp
 
 extra_css:
-  - stylesheets/extra.css
+  - extra/extra.css
 
 nav:
   - Home: index.md
@@ -52,6 +52,9 @@ plugins:
       manual: true #So that not every image is added to the lightbox, add images manually with 'on-glb' class.
   - tags:
       tags: false #Hides tags being displayed on top of the pages but they still work for searches.
+  - mermaid2
+  # - info:
+  #     enabled_on_serve: true
 
 extra:
   social:
@@ -74,7 +77,11 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons/ #Icons can be a bit slow to update when adding new
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true
