@@ -1,6 +1,6 @@
 To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon in the BatchGenie panel. Alternatively, you can go to  `Edit > Preferences `, find BatchGenie listed under the Add-ons tab, and click to access its settings for customization.
 
-![Batch Render](images/preferences.png){ .img-box align=left }
+![Preferences](images/preferences.png){ .img-box align=left }
 
 ## General
 
@@ -20,20 +20,39 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
         ![Minimize Nodes Example](images/preferences_minimize_example.png)
 
-  - **Material Name Settings**:
-    - **Add resolution Suffix**: Automatically appends the texture resolution to the material name, e.g., 'Oak Bark 4K', derived from the Base Color image. Skips adding the suffix if the material name already includes terms like 2K or 4K.
-    - **Add resolution Suffix as Asset tag**: Similar to the above, but instead of modifying the material name, it applies the resolution as a tag to the Asset. This works only if 'Mark as Asset' is enabled.
-    - **Subfolder name as the material name**: When enabled, the name of the subfolder will be used as the material name for textures found inside that folder. If this option is disabled, the material name will be derived from the texture filenames.
-    - **Split CamelCase names**: Splits names such as 'MetalBronzeWorn' into 'Metal Bronze Worn'.
-    - **Remove Underscore & Dashes**: Replaces '_' and '-' in the material names with a space.
-    - **Remove keywords**: These keywords will be removed from the names of the imported materials. Enter one or more keywords separated by a space. Case insensitive.
+  <h5>Material Name Settings</h5>
+
+  - **Folder name as the material name**: If `enabled`, the name of the folder/subfolder will be used as the material name for textures found inside that folder. For the root folder: if only one texture set is found, the folder name will be used; if multiple texture sets are found, the folder name will not be used and the names will be derived from the texture filenames.
+  <br>If this option is `disabled`, the material name will be derived from the texture filenames
+  - **Split CamelCase names**: Splits names such as 'MetalBronzeWorn' into 'Metal Bronze Worn'.
+  - **Add resolution Suffix**: Automatically appends the texture resolution to the material name, e.g., 'Oak Bark 4K', derived from the Base Color image. Skips adding the suffix if the material name already includes terms like 2K or 4K.
+  - **Add resolution Suffix as Asset tag**: Similar to the above, but instead of modifying the material name, it applies the resolution as a tag to the Asset. This works only if 'Mark as Asset' is enabled.
+  - **Remove Underscore & Dashes**: Replaces `_` and `-` in the material names with a space.
+
+  <div style="clear:both"></div>
+
+  - **Remove Keywords**: These keywords will be removed from the names of the imported materials. Enter one or more keywords separated by spaces. The process is case insensitive. There are two replacement modes with different behaviors:
+
+      - **Loose Mode**: Uses regular expressions to match and remove keywords as standalone words. This mode removes keywords that appear as isolated words, considering word boundaries.
+
+      - **Strict Mode**: Performs direct name replacement for each keyword. This mode removes the exact keyword from the name but does not alter any surrounding characters or delimiters.
+
+        ??? abstract "Examples"
+            Keyword `png`:
+
+            - **Loose**:
+                - For the name `Bark 4 png`, the function will remove 'png', resulting in `Bark 4`.
+                - For the name `Bark_4_png`, no change will occur, as 'png' is part of a compound name with underscores, resulting in `Bark_4_png`.
+
+            - **Strict**:
+                - For the name `Bark 4 png`, the function will remove 'png', resulting in `Bark 4`.
+                - For the name `Bark_4_png`, the function will remove "png", resulting in `Bark_4_`. The underscores before 'png' will remain.
 
 
-<div style="clear:both"></div>
 
-  - **Subfolder Traversing Depth**: Specify how many levels deeap to search for subfolders when importing textures. The default depth is set to 1, meaning only one level deep will be searched within the selected folder. Adjust this setting to control the folder depth for more complex directory structures.
+  - **Subfolder Traversing Depth**: Specify how many levels deep to search for subfolders when importing textures. The default depth is set to 1, meaning only one level deep will be searched within the selected folder. Adjust this setting to control the folder depth for more complex directory structures.
 
-    ??? abstract "Traversing diagram example"
+    ??? abstract "Example diagram of traversing"
         ```mermaid
         graph TD
             A[Main Folder]
@@ -65,7 +84,7 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
   - **DirectX Detection**: Specify keywords to automatically detect DirectX normal maps. If a DirectX normal map is found, a converter node is added to transform it to OpenGL format, which Blender uses. Enter one or more case-insensitive keywords separated by spaces.
 
     ??? abstract "Normal Map Conversion Example"
-        ![Texture Tags](images/normal_conversion_example.png)
+        ![DirectX Conversion Example](images/normal_conversion_example.png)
 
   - **Asset Preview Generation during Import**: Controls whether Asset Previews are automatically generated during the import process. Options include:
     - **Disabled (Recommended)**: Asset previews are not generated automatically. Use the `Generate Asset Previews` function after import to create previews.
@@ -84,6 +103,6 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
 ####  Misc Settings {#advanced-misc-settings}
 
-- **External Asset Processing Max Threads**: Controls the number of parallel processes used when handling external Assets via the Asset Browser utilities. Specifically, it determines how many Blender processes run in the background when adding tags or metadata to Assets located outside the current blend file. Adjust this setting based on your system's capabilities to achieve optimal performance when processing external Assets. <br>Note that "Max Threads" does not apply to rendering Assets. The rendering process itself is the primary bottleneck, rather than the integration of rendered images with Assets.
+- **External Asset Processing Max Threads**: Controls the number of parallel processes used when handling external Assets via the Asset Browser utilities. Specifically, it determines how many Blender processes run in the background when adding tags or metadata to Assets located outside the current blend file. Adjust this setting based on your system's capabilities to achieve optimal performance when processing external Assets. <br>Note that '**Max Threads**' does not apply to rendering Assets. The rendering process itself is the primary bottleneck, rather than the integration of rendered images with Assets.
 
 - **Debug To Console**: Outputs debug information to the console, useful for troubleshooting. To view the console, go to `Window > Toggle System Console`.

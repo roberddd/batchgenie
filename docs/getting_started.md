@@ -2,7 +2,7 @@ To get started, you have two options: Watch the introductory video guide below f
 
 ### Video Introduction
 
-![Placeholder](images/other/video_placeholder.png)
+![Video Placeholder](images/other/video_placeholder.png)
 
 >
 - 00:00 Introduction
@@ -12,8 +12,6 @@ To get started, you have two options: Watch the introductory video guide below f
 
 
 ### Installation
-
-BatchGenie has been verified to work with Blender 4.2 LTS on Windows.
 
 To start using BatchGenie, you need to install the add-on in Blender. Follow these steps:
 
@@ -32,6 +30,6 @@ To start using BatchGenie, you need to install the add-on in Blender. Follow the
 
 BatchGenie is located in the N-Panel inside the `3D Viewport` under a tab named `BatchGenie`, as shown in the image below. Alternatively, you can place it under the `Tool` tab by changing this setting in the Preferences.
 
-![Image title](images/addon_location.png){ .img-box align=left }
+![Addon Location](images/addon_location.png){ .img-box align=left }
 
 All features include hover-over tooltips for quick details within the add-on. Some areas also have an extra :material-information-box: information icon, which opens a popup with additional information and a link to the relevant section of the documentation for further instructions. For more comprehensive guidance, you can access the full documentation by clicking the :blender_icon_help:icon in the BatchGenie main panel.

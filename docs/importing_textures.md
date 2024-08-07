@@ -74,7 +74,7 @@
 
 #### Image Texture Node Settings
 
-![Import Material Settings](images/import_image_texture_node_settings.png){ .img-box align=left }
+![Import Texture Node Settings](images/import_image_texture_node_settings.png){ .img-box align=left }
 
 - **Mapping**: The dropdown menu allows you to select the texture mapping method for the textures. Options include UV, Object, and None. Upon selection, the add-on automatically adds the corresponding Texture Coordinate and Mapping nodes to the material.
 
@@ -96,12 +96,12 @@
 
 Use a custom Node-Group instead of a Principled BSDF for the imported materials. Easily pick from a dropdown that shows all Node-Groups in the current blend file.
 
-![Custom Node-Group](images/Import_custom_node_group.png){ .img-box align=left }
+![Replace Principled BSDF Custom Node-Group](images/Import_custom_node_group.png){ .img-box align=left }
 
 BatchGenie searches for keywords to match and connect the sockets in the new Node-Group, treating them as if they were part of a regular shader.
 
-!!! info2 "Tip"
-    It also detects if the Node-Group has a socket named 'Normal Color' and connects the Normal Map texture directly, bypassing the Normal Map Node.
+!!! tip "Tip"
+    If the Node-Group contains a socket named 'Normal Color', BatchGenie will connect the Normal Map texture directly to this socket, bypassing the Normal Map Node.
 
 
 ---
@@ -110,6 +110,7 @@ BatchGenie searches for keywords to match and connect the sockets in the new Nod
 #### Custom Attributes
 
 ![Custom Attributes](images/custom_attributes.png){ .img-box align=right }
+
 Set one or multiple socket attributes such as color or values during import.
 
 BatchGenie automatically finds the sockets of the Principled BSDF (or from your chosen custom Node-Group) and shows what type of values you can set.

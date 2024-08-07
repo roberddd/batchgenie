@@ -34,7 +34,7 @@ This utility enables you to batch modify attributes across multiple materials. I
 - **Target**: Specify which node inside the material to target. Refer to the options listed below for details.
 
 === "Shader Node"
-    ![Shader Node](images/utility_change_attribute_shader.png){ .img-box align=left}
+    ![Change Node Attributes Shader Node](images/utility_change_attribute_shader.png){ .img-box align=left}
     Targets the main shader connected to the 'Material Output' inside the material. This can be any type of shader or a custom Node-Group.
 
     <div style="clear:both"></div>
@@ -56,7 +56,7 @@ This utility enables you to batch modify attributes across multiple materials. I
     - **Additive**: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.
 
 === "Texture Nodes"
-    ![Texture Nodes](images/utility_change_attribute_texture.png){ align=left .img-box }
+    ![Change Node Attributes Texture Nodes](images/utility_change_attribute_texture.png){ align=left .img-box }
     Targets all texture nodes inside the material and you can adjust the following attributes:
 
       - **Interpolation**
@@ -66,7 +66,7 @@ This utility enables you to batch modify attributes across multiple materials. I
     For further technical details about texture Interpolation, Projection & Extension see the [this section](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html){ target="_blank" } in the Blender manual.
 
 === "Displacement Node"
-    ![Displacement Node](images/utility_change_attribute_displacement.png){ align=left .img-box }
+    ![Change Node Attributes Displacement Node](images/utility_change_attribute_displacement.png){ align=left .img-box }
     Targets the Displacement Node inside the material and you can adjust the following attributes:
 
     - **Scale**: Specify the new scale to be applied.
@@ -78,7 +78,7 @@ This utility enables you to batch modify attributes across multiple materials. I
 
 
 === "Normal Map Nodes"
-    ![Normal Map Nodes](images/utility_change_attribute_normal.png){ align=left .img-box }
+    ![Change Node Attributes Normal Map Nodes](images/utility_change_attribute_normal.png){ align=left .img-box }
     Targets all Normal Map Nodes inside the material and allows you to set a new Strength value to be applied.
 
     <div style="clear:both"></div>
@@ -86,7 +86,7 @@ This utility enables you to batch modify attributes across multiple materials. I
     - **Additive**: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.
 
 === "Bump Nodes"
-    ![Bump Nodes](images/utility_change_attribute_bump.png){ align=left .img-box }
+    ![Change Node Attributes Bump Nodes](images/utility_change_attribute_bump.png){ align=left .img-box }
     Targets all Bump Nodes inside the material and allows you to set a new Strength value to be applied.
 
     <div style="clear:both"></div>
@@ -94,11 +94,11 @@ This utility enables you to batch modify attributes across multiple materials. I
     - **Additive**: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.
 
 === "Seed Sockets"
-    ![Seed Sockets](images/utility_change_attribute_seed.png){ align=left .img-box }
+    ![Change Node Attributes Seed Sockets](images/utility_change_attribute_seed.png){ align=left .img-box }
     Targets all sockets containing the word 'seed' inside the material and populates them with random numbers. You can specify the range for the randomly generated values by adjusting the A & B.
 
 
-!!! info2 "Tips"
+!!! tip "Tip"
     If you need further details about the batch run check out the report via `Window > Toggle System Console`
 
 
@@ -111,7 +111,7 @@ This utility enables you to batch modify attributes across multiple materials. I
 
 This utility enables you to batch modify material settings across materials.
 
-![Material Settings](images/utility_change_material_settings.png){ align=left .img-box }
+![Change Material Settings](images/utility_change_material_settings.png){ align=left .img-box }
 
 <h5>Settings</h5>
 
@@ -166,7 +166,7 @@ This utility lets you replace existing 'Shader Editor' nodes with custom Node-Gr
 
 This utility helps you locate materials with unconnected nodes in your file, such as Image Texture nodes.
 
-![Unconnected Nodes](images/utility_find_unconnected_nodes.png){ .img-box align=left }
+![Find Unconnected Nodes](images/utility_find_unconnected_nodes.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -206,7 +206,7 @@ After clicking `Search`, the interface will display a list of all found material
 
     The Hybrid approach allows you to ensure that the automatic deletion does not remove important nodes.
 
-!!! info2 "Tips"
+!!! tip "Tips"
     - The `Clear List` button (:fontawesome-regular-trash-can: icon) clears all materials from the list, allowing you to start fresh.
     - Use the `Highlight Nodes` checkbox to easily spot the found nodes.
     - Regularly refresh the search to ensure all issues have been captured and addressed.
@@ -215,11 +215,11 @@ After clicking `Search`, the interface will display a list of all found material
         ??? abstract end "Example Console Report"
             Search:
 
-            ![Console Example](images/utility_find_unconnected_nodes_console_example.png){ .img-box }
+            ![Find Unconnected Nodes Console Example](images/utility_find_unconnected_nodes_console_example.png){ .img-box }
 
             Delete:
 
-            ![Console Example](images/utility_find_unconnected_nodes_console_delete_example.png){ .img-box }
+            ![Find Unconnected Nodes Console Example](images/utility_find_unconnected_nodes_console_delete_example.png){ .img-box }
 
 
 ---
@@ -233,7 +233,7 @@ This feature searches for nodes with critical values set to zero, which may nega
 
 *This utility is also available in the "Shader Editor" for processing individual materials rather than in batch. See [this section](#find-zero-strength-nodes-shader-editor) for details.*
 
-![Unconnected Nodes](images/utility_find_zero_strength_nodes.png){ .img-box align=left }
+![Find Zero Strength Nodes](images/utility_find_zero_strength_nodes.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -246,7 +246,7 @@ This feature searches for nodes with critical values set to zero, which may nega
 <h5>Instructions</h5>
 
 !!! abstract inline end "Example"
-    ![Incorrect Color Space Example](images/utility_find_zero_strength_nodes_example.png){ .img-box .on-glb }
+    ![Find Zero Strength Nodes Example](images/utility_find_zero_strength_nodes_example.png){ .img-box .on-glb }
 
 After clicking `Search`, the interface will display a list of all found materials with *Zero Strength* nodes. There are two main approaches to handle the issues: **Automatic** and **Manual**.
 
@@ -264,13 +264,13 @@ After clicking `Search`, the interface will display a list of all found material
     - Once all materials are addressed and removed, perform a new search to confirm all issues are fixed.
 
 
-!!! info2 "Tips"
+!!! tip "Tips"
     - The `Clear List` button (:fontawesome-regular-trash-can: icon) clears all materials from the list, allowing you to start fresh.
     - Use the `Highlight Nodes` checkbox to easily spot the found nodes.
     - If you need further details about the findings check out the report via `Window > Toggle System Console`
 
         ??? abstract end "Example Console Report"
-            ![Console Example](images/utility_find_zero_strength_nodes_console_example.png){ .img-box }
+            ![Find Zero Strength Nodes Console Example](images/utility_find_zero_strength_nodes_console_example.png){ .img-box }
 
 
 
@@ -307,7 +307,7 @@ This utility verifies that the image textures within materials in your file are 
 <h5>Instructions</h5>
 
 !!! abstract inline end "Examples"
-    ![Incorrect Color Space Example](images/utility_color_space_validator_example.png){ .img-box .on-glb }
+    ![Color Space Validator Example](images/utility_color_space_validator_example.png){ .img-box .on-glb }
 
 After clicking `Search`, the interface will display a list of all materials with textures that have incorrect color spaces. There are two main approaches to handle the issues: **Automatic** and **Manual**.
 
@@ -317,7 +317,7 @@ After clicking `Search`, the interface will display a list of all materials with
 
 !!! abstract inline end ""
     This frame is created inside the materials to help you find the relevant textures:
-    ![Incorrect Color Space Example](images/utility_color_space_validator_frame_example.png){ .img-box .on-glb }
+    ![Color Space Validator Example](images/utility_color_space_validator_frame_example.png){ .img-box .on-glb }
 
     *These frames are automatically removed when running `Auto Fix` and can also be removed with the [Clean File](#clean-file) utility.*
 
@@ -330,7 +330,7 @@ After clicking `Search`, the interface will display a list of all materials with
     - Use the `Remove from List` button (:material-minus: icon) to remove materials after resolving issues.
     - Once all materials are addressed and removed, perform a new search to confirm all issues are fixed.
 
-!!! info2 "Tips"
+!!! tip "Tip"
     - The `Clear List` button (:fontawesome-regular-trash-can: icon) clears all materials from the list, allowing you to start fresh.
 
 
@@ -343,7 +343,7 @@ After clicking `Search`, the interface will display a list of all materials with
 
 While not an all-encompassing renaming tool, this function provides targeted assistance for a few specific use cases. It includes options for aligning mesh names with object names and syncing image names with their file names, making it particularly useful when dealing imported Assets that have inconsistent naming conventions.
 
-![Check Texture Color Space](images/utility_batch_rename.png){ .img-box align=left }
+![Batch Rename](images/utility_batch_rename.png){ .img-box align=left }
 
 <h5>Options</h5>
 - **Set Mesh names same as Object names**
@@ -354,13 +354,13 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 ??? abstract "Examples"
     **Set Mesh names same as Object names**:
 
-    ![Check Texture Color Space](images/utility_batch_rename_mesh_example.gif){ .img-box  }
+    ![Batch Rename Mesh Example](images/utility_batch_rename_mesh_example.gif){ .img-box  }
 
     **Set Image names same as the Image File names**:
 
     **Use Case:** You imported external models, and all texture names are generic like 'color map', 'roughness map', and 'normal map', making it difficult to track them. This feature solves the issue by renaming image names in Blender to match the actual file names. For example, instead of 'color map', it could be 'Bark_2K_BaseColor'.
 
-    ![Check Texture Color Space](images/utility_batch_rename_texture_example.gif){ .img-box  }
+    ![Batch Rename Texture Example](images/utility_batch_rename_texture_example.gif){ .img-box  }
 
 
 ---
@@ -410,7 +410,7 @@ Helps delete any temporary files that might be left behind by BatchGenie. There 
 
 > Location: Asset Browser ▸ BatchGenie Menu
 
-![Tags](images/utilities_asset_browser.png){ .img-box align=right }
+![Asset Tags](images/utilities_asset_browser.png){ .img-box align=right }
 
 Add or remove tags from your Assets. Select any number of Assets of any type, choose the desired tags to add, and BatchGenie will assign them to the appropriate Assets. These can be either regular tags or Smart Tags that apply the property of your choice to the Asset.
 
@@ -418,9 +418,13 @@ This feature works with both internal and external assets, so you don't have to 
 
 <div style="clear:both"></div>
 
-#### • Add Tags {#Asset-tags-add}
+#### - Add Tags {#Asset-tags-add}
 
-In addition to default tags, you can apply the following Smart Tags:
+=== "Default Tag"
+    ![Tag - Default or Copy Tag](images/utility_asset_browser_tag_default.gif){ .img-box align=left }
+
+    - **New Tag**: Creates a regular tag.
+    - **Copy from existing tags**: Lets you pick from a dropdown menu containing all tags from the currently selected Assets. Tags that are present in all of the selected assets are filtered out (since it wouldn't make sense to apply a tag that is already there).
 
 === "Object Triangles"
     ![Tag - Object Triangles](images/utility_asset_browser_tag_object_triangles.gif){ .img-box align=left }
@@ -442,7 +446,11 @@ In addition to default tags, you can apply the following Smart Tags:
 
     Tags material Assets with the texture resolution, like 2K, 4K, or 8K, by identifying the albedo texture within the material and checking its resolution.
 
-#### • Combine / Split Tags {#Asset-tags-combine-split}
+!!! tip "Tip"
+    Smart Tags will overwrite previously existing Smart Tags of the same type. For example, if you have added the Object Dimensions tag and then edited the object, you can reapply the tag to update it.
+
+
+#### - Combine / Split Tags {#Asset-tags-combine-split}
 
 ![Tag - Combine and Split](images/utility_asset_browser_tag_combine_split.gif){ .img-box align=left }
 
@@ -452,11 +460,27 @@ The split function reverses this, separating combined tags that follow the exact
 
 <div style="clear:both"></div>
 
-#### • Remove Tags {#Asset-tags-remove}
+#### - Remove Tags {#Asset-tags-remove}
 
-![Tag - remove](images/utility_asset_browser_remove_tags.png){ .img-box align=left }
+=== "Existing"
+    ![Tag - Object Triangles](images/utility_asset_browser_remove_tags_existing.png){ .img-box align=left }
 
-This feature allows you to efficiently remove tags from selected Assets. You can search using a keyword with options for "exact," "contains," "starts with," or "ends with," along with a "case sensitive" option to precisely target specific tags. Additionally, you can target specific Smart Tags applied by BatchGenie. Simply select the tag type and click "OK" to proceed with the removal.
+    Displays all tags from the currently selected assets in the Asset Browser in a dropdown menu, allowing you to choose which tags to remove.
+
+    You also have filtering options to only show common tags from the selected assets, as well as an "Exclude common" option to exclude these tags.
+
+=== "Keyword"
+    ![Tag - Object Triangles](images/utility_asset_browser_remove_tags_keyword.png){ .img-box align=left }
+
+    Allows you to search for tags using a keyword with options for "exact," "contains," "starts with," or "ends with," along with a "case sensitive" option to precisely target specific tags.
+
+=== "Smart Tags"
+    ![Tag - Object Triangles](images/utility_asset_browser_remove_tags_smart_tags.png){ .img-box align=left }
+
+    Allows you to target specific Smart Tags applied by BatchGenie for safe removal without affecting other types of tags.
+
+
+<!-- This feature allows you to efficiently remove tags from selected Assets. You can search using a keyword with options for "exact," "contains," "starts with," or "ends with," along with a "case sensitive" option to precisely target specific tags. Additionally, you can target specific Smart Tags applied by BatchGenie. Simply select the tag type and click "OK" to proceed with the removal. -->
 
 <div style="clear:both"></div>
 
@@ -486,9 +510,9 @@ Move Assets to different Asset Catalogs to help you organize your Asset Library.
 
 The 'Catalog Details' section displays the UUID and the Asset Library Path of the chosen Catalog.
 
-![Metadata](images/utility_move_assets.png){ .img-box align=left }
+![Move Assets](images/utility_move_assets.png){ .img-box align=left }
 
-![Metadata](images/utility_move_assets_catalog_example.png){ .img-box align=left }
+![Move Assets Catalog Example](images/utility_move_assets_catalog_example.png){ .img-box align=left }
 
 <div style="clear:both"></div>
 

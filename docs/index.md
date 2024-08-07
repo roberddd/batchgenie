@@ -15,6 +15,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 
 - **Texture Import**:
     - Blazingly fast imports.
+    - Supports both Metallic/Roughness and Specular/Glossiness workflow.
     - Supports for 15+ types of maps: Albedo, Metallic, Roughness, Gloss, Alpha, Subsurface Scattering, Specular, Transmission, Emission, Emission Color, Normal, Bump, Ambient Occlusion, Cavity, Displacement, and PACKED & CUSTOM types.
         - Packed: ARM/ORM/RMA textures that combine AO, Roughness, and Metallic maps.
         - Custom: Import any map and connect it to your chosen input via a dropdown menu.
@@ -59,6 +60,11 @@ You can buy the add-on in the following stores:
 [:material-blender-software: BlenderMarket](#){ .md-button .md-button--stretch }
 
 </div>
+
+
+## Future Updates
+
+My priority is ensuring compatibility with Blender's Long-Term Support (LTS) releases, but I will also strive to maintain functionality with other Blender updates whenever possible. For details on the current version, check the [Changelog](changelog.md).
 
 
 ## Support and Feedback
