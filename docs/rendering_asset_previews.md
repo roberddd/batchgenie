@@ -125,7 +125,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Camera Rotation**: Adjusts the rotation of the camera. Useful when you want to keep the lights & shadows in their current position but want to change the framing.
 
     !!! tip "Tip"
-        You can also use the icon buttons to the left & right of the slider to adjust them -/+ 45 degree increments.
+        You can also use the icon buttons to the left and right of the slider to adjust them in -/+ 45 degree increments.
 
 ??? info2 "Camera Settings"
     ![Camera Settings](images/generate_asset_previews_camera_settings.png){ .img-box align=left }

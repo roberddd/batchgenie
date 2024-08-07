@@ -16,7 +16,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 - **Texture Import**:
     - Blazingly fast imports.
     - Supports both Metallic/Roughness and Specular/Glossiness workflow.
-    - Supports for 15+ types of maps: Albedo, Metallic, Roughness, Gloss, Alpha, Subsurface Scattering, Specular, Transmission, Emission, Emission Color, Normal, Bump, Ambient Occlusion, Cavity, Displacement, and PACKED & CUSTOM types.
+    - Supports for 16+ types of maps: Albedo, Metallic, Roughness, Gloss, Alpha, Subsurface Scattering, Specular, Transmission, Emission, Emission Color, Sheen Color, Normal, Bump, Ambient Occlusion, Cavity, Displacement, and PACKED & CUSTOM types.
         - Packed: ARM/ORM/RMA textures that combine AO, Roughness, and Metallic maps.
         - Custom: Import any map and connect it to your chosen input via a dropdown menu.
     - Automatically sets up all necessary nodes, including color space adjustments and other configurations for a smooth workflow without manual intervention. This includes detecting normal map format and adding conversion nodes if needed, as well as auto-detecting the alpha channel from the Albedo texture to use its alpha channel if available.
