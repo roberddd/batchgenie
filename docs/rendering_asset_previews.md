@@ -9,10 +9,10 @@ When rendering via the Asset Browser, you can work with both internal and extern
 
 ## Batch Rendering
 
-![Batch Render](images/generate_asset_previews_objects.png){ .img-box align=right }
+![Batch Render](images/render_asset_previews_objects.png){ .img-box align=right }
 
 1. Open the BatchGenie panel.
-2. Go to the `Generate Asset Previews` section in the panel.
+2. Go to the `Render Asset Previews` section in the panel.
 3. Choose the Asset type you want to render previews for and select the appropriate filters to target the Assets that need previews.
 4. Configure the scene and render settings as needed.
 5. Click `Batch Render`, and BatchGenie will render all Assets that fit your selection filter.
@@ -26,7 +26,7 @@ When rendering via the Asset Browser, you can work with both internal and extern
 4. Configure the scene and render settings as needed.
 5. Click on `Render selected Assets` and BatchGenie will render all selected Assets.
 
-![Asset Browser Render](images/generate_asset_previews-render_from_asset_browser.gif){ .img-box }
+![Asset Browser Render](images/render_asset_previews-render_from_asset_browser.gif){ .img-box }
 
 
 ## Settings
@@ -36,7 +36,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 #### Asset Selection
 
 === "Objects"
-    ![Asset Preview Panel](images/generate_asset_previews_objects.png){ .img-box align=left }
+    ![Asset Preview Panel](images/render_asset_previews_objects.png){ .img-box align=left }
 
     - **Selection**: Allows you to specify which objects to include in the rendering process based on predefined criteria. Options listed below:
         - **Selected Objects**: Choose the currently selected object(s) in your scene. When using this option, you have the option to mark the objects as Assets.
@@ -53,7 +53,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Mark as Asset**: Marks the objects as Assets. This option is shown depending on the 'Selection' option. This option can only be disabled if you are saving previews externally (see [Render Settings](#render-settings)).
 
 === "Collections"
-    ![Asset Preview Panel](images/generate_asset_previews_collections.png){ .img-box align=left }
+    ![Asset Preview Panel](images/render_asset_previews_collections.png){ .img-box align=left }
 
     - **Selection**: Allows you to specify which collections to include in the rendering process based on predefined criteria. Options listed below:
         - **Selected Collection**: Choose the currently selected collection in your scene. When using this option, you have the option to mark the collection as an Asset.
@@ -70,7 +70,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Mark as Asset**: Marks the collections as Assets. This option is shown depending on the 'Selection' option. This option can only be disabled if you are saving previews externally (see [Render Settings](#render-settings)).
 
 === "Materials"
-    ![Asset Preview Panel](images/generate_asset_previews_materials.png){ .img-box align=left }
+    ![Asset Preview Panel](images/render_asset_previews_materials.png){ .img-box align=left }
 
     - **Selection**:  Allows you to specify which materials to include in the rendering process based on predefined criteria. Options listed below:
         - **Materials on Selected Objects**: All materials assigned to the the currently selected object(s) in your scene. When using this option, you have the option to mark the materials as Assets.
@@ -94,18 +94,18 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
 #### Scene Settings
 
-![Scene Settings](images/generate_asset_previews_scene_settings.png){ .img-box align=left }
+![Scene Settings](images/render_asset_previews_scene_settings.png){ .img-box align=left }
 
 - **Light Preset**: Choose from a selection of different lighting presets to enhance your renders. Options include various sky setups as well as Blender's built-in HDRIs. There is also a 'Custom World' option that utilizes your scene's current 'World' for lighting, allowing you to use your own HDR images.
 
     ??? abstract "Light Presets Example"
-        ![Light Presets](images/generate_asset_previews-lighting_presets.png){ .img-box .on-glb }
+        ![Light Presets](images/render_asset_previews-lighting_presets.png){ .img-box .on-glb }
 
 - **Studio Preset**: Allows you to add a studio backdrop as a background if desired.
 
     ??? info2 "Studio Settings"
 
-        ![Studio Settings](images/generate_asset_previews_studio_settings.png){ .img-box }
+        ![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box }
 
         Settings to customize the backdrop:
 
@@ -128,12 +128,12 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
         You can also use the icon buttons to the left and right of the slider to adjust them in -/+ 45 degree increments.
 
 ??? info2 "Camera Settings"
-    ![Camera Settings](images/generate_asset_previews_camera_settings.png){ .img-box align=left }
+    ![Camera Settings](images/render_asset_previews_camera_settings.png){ .img-box align=left }
 
     - **Vertical Angle**: Adjusts the vertical angle of the camera, moving it up or down to change the perspective from which the scene is viewed, either looking up or down.
 
         ??? abstract "Vertical Angle Example"
-            ![Camera Angle Example](images/generate_asset_previews-camera_angle_example.png){ .img-box }
+            ![Camera Angle Example](images/render_asset_previews-camera_angle_example.png){ .img-box }
 
     - **Zoom**: Adjust the camera distance from the object. Zoom in for a close-up view or zoom out to add space around your object.
     - **Focal Length**: Adjusts the focal length of the camera, affecting the field of view and perspective. A shorter focal length increases the field of view, creating a wide-angle effect, while a longer focal length decreases the field of view, producing a zoomed-in effect.
@@ -143,7 +143,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Exposure**:  Adjusts the overall brightness of your scene by controlling the amount of light that reaches the camera, effectively brightening or darkening the rendered image.
 
         ??? abstract "Exposure Example"
-            ![Exposure Example](images/generate_asset_previews-exposure_example.png){ .img-box }
+            ![Exposure Example](images/render_asset_previews-exposure_example.png){ .img-box }
 
     - **Override camera orientation with**: Lets you use a custom camera angle. Choose between:
 
@@ -167,7 +167,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
 #### Render Settings
 
-![Render Save Location](images/generate_asset_previews_render_settings.png){ .img-box align=left }
+![Render Save Location](images/render_asset_previews_render_settings.png){ .img-box align=left }
 
 Here, you'll find settings for aspect ratio, resolution, and other Blender default render settings you're likely already familiar with.
 

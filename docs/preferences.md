@@ -87,14 +87,14 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
         ![DirectX Conversion Example](images/normal_conversion_example.png)
 
   - **Asset Preview Generation during Import**: Controls whether Asset Previews are automatically generated during the import process. Options include:
-    - **Disabled (Recommended)**: Asset previews are not generated automatically. Use the `Generate Asset Previews` function after import to create previews.
+    - **Disabled (Recommended)**: Asset previews are not generated automatically. Use the `Render Asset Previews` function after import to create previews.
     - **Enabled - Low Quality**: Uses Blender's default Asset generation function for fast, but lower-quality previews.
-    - **Enabled - High Quality**: Uses the add-on to create high-quality previews during import. See the `Generate Asset Previews` tab in the add-on panel for settings.
+    - **Enabled - High Quality**: Uses the add-on to create high-quality previews during import. See the `Render Asset Previews` tab in the add-on panel for settings.
 
     !!! warning "Note on automatic generation"
         Enabling this feature may significantly increase processing time and affect stability, especially with a large number of textures. It is recommended to keep this setting disabled.
 
-#### Generate Asset Preview Settings {#advanced-generate-Asset-preview-settings}
+#### Render Asset Preview Settings {#advanced-render-asset-preview-settings}
 
 - **Denoise**: These settings reflect Blender's default options for denoising, including the choice of denoiser method and adjustments for Passes, Prefilter, and Quality. The selected denoiser method determines how images are denoised during Asset Preview rendering with BatchGenie. Enable this feature via the main BatchGenie panel under `Render Settings` to apply the chosen denoising method.
 

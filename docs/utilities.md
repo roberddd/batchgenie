@@ -298,11 +298,11 @@ This utility verifies that the image textures within materials in your file are 
 
     Standard:
 
-    ![Console Example](images/utility_color_space_validator_console_example.png){ .img-box .on-glb data-description="Example of standard console report for incorrect color spaces"}
+    ![Color Space Validator Console Example](images/utility_color_space_validator_console_example.png){ .img-box .on-glb data-description="Example of standard console report for incorrect color spaces"}
 
     Detailed:
 
-    ![Detailed Console Example](images/utility_color_space_validator_console_detailed_example.png){ .img-box .on-glb data-description="Example of detailed console report for incorrect color spaces"}
+    ![Color Space Validator Detailed Console Example](images/utility_color_space_validator_console_detailed_example.png){ .img-box .on-glb data-description="Example of detailed console report for incorrect color spaces"}
 
 <h5>Instructions</h5>
 
@@ -479,10 +479,8 @@ The split function reverses this, separating combined tags that follow the exact
 
     Allows you to target specific Smart Tags applied by BatchGenie for safe removal without affecting other types of tags.
 
-
-<!-- This feature allows you to efficiently remove tags from selected Assets. You can search using a keyword with options for "exact," "contains," "starts with," or "ends with," along with a "case sensitive" option to precisely target specific tags. Additionally, you can target specific Smart Tags applied by BatchGenie. Simply select the tag type and click "OK" to proceed with the removal. -->
-
-<div style="clear:both"></div>
+!!! tip "Tip"
+    You can also access the Tags menu through the right-click menu in the Asset Browser.
 
 
 ---
@@ -494,7 +492,12 @@ The split function reverses this, separating combined tags that follow the exact
 
 Batch add metadata for your Assets: Description, License, Copyright, and Author. You can select and edit one or multiple attributes simultaneously. This feature works with both internal and external assets, so you don't have to open each individual Asset Blend file separately.
 
+If a single asset is selected, you can use the "Retrieve from Selected Asset" button to load its existing metadata for editing.
+
 ![Metadata](images/utility_asset_browser_metadata.png){ .img-box align=left }
+
+!!! tip "Tip"
+    You can also access the Metadata menu through the right-click menu in the Asset Browser.
 
 <div style="clear:both"></div>
 

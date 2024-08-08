@@ -173,13 +173,14 @@ The last texture option is **Custom** which makes it possible to import any cust
 
 :   If this occurs, BatchGenie will create a frame with reroute node points for all unconnected textures within the material. From here, you can easily reconnect or delete the textures as needed. This scenario may occur, for example, when utilizing custom Node-Groups instead of the Principled BSDF, and the custom Node-Group lacks certain socket inputs for the textures discovered.
 
-    The [Find Unconnected Nodes](utilities.md#find-unconnected-nodes) utility can assist you to find these issues.
+    !!! tip "Tip"
+        The [Find Unconnected Nodes](utilities.md#find-unconnected-nodes) utility can assist you to find these issues.
 
     ??? abstract "Unconnected Textures Example"
         In the the example below you can see a scenario where BatchGenie has not been able to connect the 'Base Color' & 'Metallic' textures and has created some extra info nodes.
-        You can use the [Clean File](utilities.md#clean-file) utility to batch remove these from all your materials if needed.
+        You can also use the [Clean File](utilities.md#clean-file) utility to batch remove these from all your materials if needed.
 
-        ![Batch Render](images/unconnected_batchgenie_nodes_example.png){ .img-box }
+        ![Unconnected Textures Example](images/unconnected_batchgenie_nodes_example.png){ .img-box }
 
 `How are DirectX & OpenGL normal maps handled?`
 
@@ -187,7 +188,7 @@ The last texture option is **Custom** which makes it possible to import any cust
 
 `How fast is the importer?`
 
-:   With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3.5 seconds. The '**Alpha from Base Color**' setting is the only one that significantly reduces speed. You can read more about this in the [General Settings](#general-settings) section. Benchmark performed on an Intel i7-14700K CPU.
+:   With default settings, importing a folder containing 183 different 4K and 8K texture sets (a total of 725 images and 50GB) takes under 3.5 seconds. The '**Alpha from Base Color**' setting is one of the factors that can significantly reduce speed. You can read more about this in the [General Settings](#general-settings) section. Benchmark performed on an Intel i7-14700K CPU.
 
 `What image formats are supported?`
 
