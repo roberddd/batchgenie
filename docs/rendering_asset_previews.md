@@ -169,9 +169,9 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
 ![Render Save Location](images/render_asset_previews_render_settings.png){ .img-box align=left }
 
-Here, you'll find settings for aspect ratio, resolution, and other Blender default render settings you're likely already familiar with.
+Here, you'll find settings for the render engine, aspect ratio, resolution, and other Blender default render settings you're likely already familiar with.
 
-!!! info2 "Asset Preview Resolution"
+!!! tip "Tip for Asset Preview Resolution"
     When rendering images to use as previews for the Assets themselves, the previews saved inside the Asset are limited to 256x256 pixels. With that said, the recommended render resolution is 512x512, which improves overall sharpness even if saved at a lower resolution afterward. This offers an improvement over Blender's default Asset Preview resolution of 128x128 pixels.
 
 <div style="clear:both"></div>
@@ -181,6 +181,25 @@ Here, you'll find settings for aspect ratio, resolution, and other Blender defau
     - **Save in Asset & Save Externally**: to save both within the file and as separate external files.
     - **Save Only External**: to save images only as external files.
 
+!!! info2 "More render settings"
+    These render settings are copied from your current scene, and you can edit them by going to the `Render` tab in the Properties panel to make your desired changes.
+
+    **Cycles:**
+
+    - **Light Paths**: All settings.
+    - **Volumes**: `Step Rate Render` & `Max Steps`.
+    - **Subdivsion**: `Dicing Rate Render`.
+
+    **EEVEE:**
+
+    - **Raytracing**: All settings are copied except for enabling or disabling, which is controlled within the BatchGenie Render Settings.
+    - **Volumes**: All settings.
+    - **Performance**: `High Quality Normals`.
+
+    **Shared Settings**:
+
+    - **Color Management**: `View Transform` & `Look`.
+
 
 ## FAQ
 
@@ -188,14 +207,13 @@ Here, you'll find settings for aspect ratio, resolution, and other Blender defau
 
 :   Yes! The list can be expanded by directly adding your own HDRIs to blender via `Preferences > Lights > HDRI's` which makes them available in this list.
 
-`How do I adjust the Light Paths settings for renders?`
+`I'm having slow rendering speeds in Cycles. What can I do?`
 
-:   These settings from your current scene will be used. To adjust them, go to `Render > Light Paths` in the Properties panel and make your desired changes there.
+:   Besides adjusting the sample settings under the render settings in the BatchGenie panel, consider tweaking the following settings in Blender’s default `Render` tab in the Properties panel. These settings are copied from your scene when rendering:
 
-`I'm having issues with adaptive subdivision being slow in Cycles. What can I do?`
-
-:   Adjust your `Subdivision Dicing Rate` in your current scene, as the render will use those settings. First, ensure that the "Experimental" Feature Set is enabled under `Render > Feature Set` in the Properties panel. Then, go to `Render > Subdivision` and increase the `Dicing Rate Render` value.
-
+    - Decrease the light paths under `Render > Light Paths`.
+    - For volumes/VDB rendering, check `Render > Volumes` and adjust the `Step Rate Render` and `Max Steps`. Increasing the `Step Rate Render` can significantly speed up renders. For Asset Previews, setting `Step Rate Render` to 5 or higher can halve render times compared to the default 1, without losing visible detail at that scale. If you're rendering for external use, you may need to balance the minor loss in detail against the improved speed.
+    - If using **Adaptive Subdivision** for models, adjust the `Dicing Rate Render` in your scene. Ensure the "Experimental" Feature Set is enabled under `Render > Feature Set`. Then, increase the `Dicing Rate Render` value under `Render > Subdivision`.
 
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}
