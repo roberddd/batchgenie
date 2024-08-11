@@ -26,7 +26,7 @@ When rendering via the Asset Browser, you can work with both internal and extern
 4. Configure the scene and render settings as needed.
 5. Click on `Render selected Assets` and BatchGenie will render all selected Assets.
 
-![Asset Browser Render](images/render_asset_previews-render_from_asset_browser.gif){ .img-box }
+![Asset Browser Render](images/render_asset_previews_render_from_asset_browser.gif){ .img-box }
 
 
 ## Settings
@@ -99,11 +99,19 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 - **Light Preset**: Choose from a selection of different lighting presets to enhance your renders. Options include various sky setups as well as Blender's built-in HDRIs. There is also a 'Custom World' option that utilizes your scene's current 'World' for lighting, allowing you to use your own HDR images.
 
     ??? abstract "Light Presets Example"
-        ![Light Presets](images/render_asset_previews-lighting_presets.png){ .img-box .on-glb }
+        This popup is shown when clicking on the Light Preset icon.
+
+        ![Light Presets](images/render_asset_previews_lighting_presets.png){ .img-box .on-glb }
 
 - **Studio Preset**: Allows you to add a studio backdrop as a background if desired.
 
+    ??? abstract "Studio Presets Example"
+        This popup is shown when clicking on the Studio Preset icon.
+
+        ![Studio Presets](images/render_asset_previews_studio_presets.png){ .img-box .on-glb }
+
     ??? info2 "Studio Settings"
+        When you select a Studio Preset, the following settings are available:
 
         ![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box }
 
@@ -117,7 +125,8 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
 <div style="clear:both"></div>
 
-- **Light Strength**: Adjusts the strength of the world background.
+- **Strength**: Adjusts the light strength of the world background.
+- **Saturation**: Adjusts the saturation of the world background. This setting is useful when you want to use an HDR image for lighting your scene but don't want the colors of the HDR to influence the colors in your final render. By adjusting the saturation, you can desaturate the HDR image, allowing you to retain the lighting effects without the HDR's color affecting your scene's appearance.
 
 - **Rotation**:
     - **Sun Rotation**: Adjusts the horizontal angle of the sunlight in your scene or rotates the HDRI background for lighting. This changes the direction from which light illuminates objects.
@@ -133,7 +142,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Vertical Angle**: Adjusts the vertical angle of the camera, moving it up or down to change the perspective from which the scene is viewed, either looking up or down.
 
         ??? abstract "Vertical Angle Example"
-            ![Camera Angle Example](images/render_asset_previews-camera_angle_example.png){ .img-box }
+            ![Camera Angle Example](images/render_asset_previews_camera_angle_example.png){ .img-box }
 
     - **Zoom**: Adjust the camera distance from the object. Zoom in for a close-up view or zoom out to add space around your object.
     - **Focal Length**: Adjusts the focal length of the camera, affecting the field of view and perspective. A shorter focal length increases the field of view, creating a wide-angle effect, while a longer focal length decreases the field of view, producing a zoomed-in effect.
@@ -143,7 +152,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Exposure**:  Adjusts the overall brightness of your scene by controlling the amount of light that reaches the camera, effectively brightening or darkening the rendered image.
 
         ??? abstract "Exposure Example"
-            ![Exposure Example](images/render_asset_previews-exposure_example.png){ .img-box }
+            ![Exposure Example](images/render_asset_previews_exposure_example.png){ .img-box }
 
     - **Override camera orientation with**: Lets you use a custom camera angle. Choose between:
 
