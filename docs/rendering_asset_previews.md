@@ -167,7 +167,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
 #### Render Settings
 
-![Render Save Location](images/render_asset_previews_render_settings.png){ .img-box align=left }
+![Render Save Location](images/render_asset_previews_render_settings.gif){ .img-box align=left }
 
 Here, you'll find settings for the render engine, aspect ratio, resolution, and other Blender default render settings you're likely already familiar with.
 
@@ -192,6 +192,7 @@ Here, you'll find settings for the render engine, aspect ratio, resolution, and 
 
     **EEVEE:**
 
+    - **Shadows**: All settings are copied except for enabling or disabling, which is controlled within the BatchGenie Render Settings. Also the `World > Settings > Sun` settings are copied except for enabling or disabling the shadow, which is also controlled within the BatchGenie Render Settings.
     - **Raytracing**: All settings are copied except for enabling or disabling, which is controlled within the BatchGenie Render Settings.
     - **Volumes**: All settings.
     - **Performance**: `High Quality Normals`.

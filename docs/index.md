@@ -1,6 +1,6 @@
-## Introduction { data-search-exclude }
-
 Welcome to BatchGenie, an add-on designed to simplify and automate common Asset related tasks in [Blender](https://www.blender.org/){ target="_blank" }.
+{ data-search-exclude }
+
 
 ## Key Features
 

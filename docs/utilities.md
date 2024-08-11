@@ -9,7 +9,7 @@ BatchGenie offers a range of utilities to efficiently manage materials and other
 <h5>Where to find?</h5>
 
 - Most utilities are located in the main BatchGenie panel in the `3D Viewport > BatchGenie N-Panel > Utilities`, focusing on batch operations, as shown in the image to the right.
-- The `Asset Browser > BatchGenie Menu` contains Asset Tagging & Metadata utilities.
+- The `Asset Browser > BatchGenie Menu` contains Asset Tagging & Metadata utilities, which are also accessible via the right-click menu in the Asset Browser.
 - The `Shader Editor > BatchGenie N-Panel` includes additional utilities for single operations on materials.
 
 <div style="clear:both"></div>
