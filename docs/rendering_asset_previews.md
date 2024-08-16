@@ -4,7 +4,7 @@ tags:
 ---
 When it comes to rendering Asset Preview images, you have two distinct options. You can either utilize Batch Rendering through the BatchGenie panel, or selectively choose Assets from the Asset Browser for which you wish to render previews for. BatchGenie supports rendering previews for materials, collections, and objects, including VDB volumes.
 
-When rendering via the Asset Browser, you can work with both internal and external assets, so you don't have to open each individual Asset Blend file separately.
+When rendering via the Asset Browser, you can work with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.
 
 
 ## Batch Rendering
@@ -103,7 +103,9 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
         ![Light Presets](images/render_asset_previews_lighting_presets.png){ .img-box .on-glb }
 
-- **Studio Preset**: Allows you to add a studio backdrop as a background if desired.
+- **Studio Preset**: Allows you to add a studio backdrop as a background if desired. The backdrop automatically scales to fit the object you are rendering, ensuring that the background matches your asset's size and position.
+
+    *Note: Studio Presets are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio backdrop can be finicky and may not always work as planned.*
 
     ??? abstract "Studio Presets Example"
         This popup is shown when clicking on the Studio Preset icon.
@@ -113,18 +115,19 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     ??? info2 "Studio Settings"
         When you select a Studio Preset, the following settings are available:
 
-        ![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box }
+        ![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box align=left }
 
-        Settings to customize the backdrop:
+        <div style="clear:both"></div>
 
-        - **Material**: Use either the default material, with adjustable color and roughness, or choose your own material.
+        - **Material**: Choose from the built-in materials, which include some basic options with adjustable settings, or use your own material.
         - **Transparent Backdrop**: *(Cycles Only)* Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.
-        - **Backdrop passes light**: *(Cycles Only)* Enables the backdrop to allow light to pass through it, preventing it from blocking light from world lights.
+        - **Backdrop passes light**: Enables the backdrop to allow light to pass through it, preventing it from blocking light from world lights.
 
-- **Transparent Background**: Enables a transparent background in rendered images
+        - **Object Z Offset**: Allows you to adjust the object's height after its lowest point has been aligned with the ground. Use a positive value to lift the object above the ground or a negative value to lower it further.
 
 <div style="clear:both"></div>
 
+- **Transparent Background**: Enables a transparent background in rendered images by toggling the 'Render > Film > Transparent' option for the render scene.
 - **Strength**: Adjusts the light strength of the world background.
 - **Saturation**: Adjusts the saturation of the world background. This setting is useful when you want to use an HDR image for lighting your scene but don't want the colors of the HDR to influence the colors in your final render. By adjusting the saturation, you can desaturate the HDR image, allowing you to retain the lighting effects without the HDR's color affecting your scene's appearance.
 
@@ -159,7 +162,9 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
         - **View**: Set the render camera to match the current 3D view's perspective, ensuring the render viewpoint aligns with the 3D viewport
         - **Active Camera**: Set the render camera to the position and orientation of the active camera, ensuring the render viewpoint matches the current active camera's view.
 
-        When using override you also have the **Autoframe** option available that automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.
+        **Autoframe**: When using the override, the **Autoframe** option automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.
+
+        *Note: Autoframe cannot be disabled when rendering materials. However, you can still render selected Assets, and Autoframe will be disabled for all other elements except materials.*
 
 - **Material Preview Object**:
 
@@ -215,7 +220,7 @@ Here, you'll find settings for the render engine, aspect ratio, resolution, and 
 
 `Can I add custom Light Presets?`
 
-:   Yes! The list can be expanded by directly adding your own HDRIs to blender via `Preferences > Lights > HDRI's` which makes them available in this list.
+:   Yes! The list can be expanded by directly adding your own HDRIs to Blender via `Preferences > Lights > HDRI's` which makes them available in this list.
 
 `I'm having slow rendering speeds in Cycles. What can I do?`
 
@@ -224,6 +229,10 @@ Here, you'll find settings for the render engine, aspect ratio, resolution, and 
     - Decrease the light paths under `Render > Light Paths`.
     - For volumes/VDB rendering, check `Render > Volumes` and adjust the `Step Rate Render` and `Max Steps`. Increasing the `Step Rate Render` can significantly speed up renders. For Asset Previews, setting `Step Rate Render` to 5 or higher can halve render times compared to the default 1, without losing visible detail at that scale. If you're rendering for external use, you may need to balance the minor loss in detail against the improved speed.
     - If using **Adaptive Subdivision** for models, adjust the `Dicing Rate Render` in your scene. Ensure the "Experimental" Feature Set is enabled under `Render > Feature Set`. Then, increase the `Dicing Rate Render` value under `Render > Subdivision`.
+
+`I'm experiencing unusual behavior with object location when using the Studio Setups. What should I do?`
+
+:   Try applying the Scale and Rotation transformations to your object(s). This should resolve the issue.
 
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}

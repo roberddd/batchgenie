@@ -23,7 +23,7 @@ BatchGenie offers a range of utilities to efficiently manage materials and other
 
 This utility enables you to batch modify attributes across multiple materials. It’s useful for making consistent adjustments to properties like roughness, metallic, or any other material attribute.
 
-![Change Attributes](images/utility_change_attribute.png){ .img-box align=left }
+![Change Node Attributes Utility](images/utility_change_attribute.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -34,7 +34,7 @@ This utility enables you to batch modify attributes across multiple materials. I
 - **Target**: Specify which node inside the material to target. Refer to the options listed below for details.
 
 === "Shader Node"
-    ![Change Node Attributes Shader Node](images/utility_change_attribute_shader.png){ .img-box align=left}
+    ![Change Node Attributes Shader Node](images/utility_change_attribute_shader.png){ .img-box align=left }
     Targets the main shader connected to the 'Material Output' inside the material. This can be any type of shader or a custom Node-Group.
 
     <div style="clear:both"></div>
@@ -63,7 +63,7 @@ This utility enables you to batch modify attributes across multiple materials. I
       - **Projection**
       - **Extension**
 
-    For further technical details about texture Interpolation, Projection & Extension see the [this section](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html){ target="_blank" } in the Blender manual.
+    *For further technical details about texture Interpolation, Projection & Extension see the [this section](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html){ target="_blank" } in the Blender manual.*
 
 === "Displacement Node"
     ![Change Node Attributes Displacement Node](images/utility_change_attribute_displacement.png){ align=left .img-box }
@@ -111,7 +111,7 @@ This utility enables you to batch modify attributes across multiple materials. I
 
 This utility enables you to batch modify material settings across materials.
 
-![Change Material Settings](images/utility_change_material_settings.png){ align=left .img-box }
+![Change Material Settings Utility](images/utility_change_material_settings.png){ align=left .img-box }
 
 <h5>Settings</h5>
 
@@ -121,10 +121,11 @@ This utility enables you to batch modify material settings across materials.
     - **Materials on Selected Objects**
 - **Setting**:
     - **Displacement Type**
-    - **Eevee Blend Mode**
-    - **Eevee Shadow Mode**
-    - **Eevee Raytrace Refraction**
-    - **Eevee Subsurface Translucency**
+    - **Eevee Backface Culling**
+    - **Eevee Transparent Shadows**
+    - **Eevee Render Method**
+    - **Eevee Raytrace Transmission**
+    - **Eevee Thickness**
     - **Viewport Display Color**: Set the 'Viewport Display Color' of the material to match the 'Base Color' attribute of the main shader.
 
 
@@ -141,7 +142,7 @@ This utility lets you replace existing 'Shader Editor' nodes with custom Node-Gr
 *This utility is also available in the "Shader Editor" for processing individual nodes rather than in batch. See [this section](#replace-node) for details.*
 
 
-![Replace Shader Nodes](images/utility_replace_shader_nodes.png){ .img-box align=left }
+![Replace Shader Nodes Utility](images/utility_replace_shader_nodes.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -166,7 +167,7 @@ This utility lets you replace existing 'Shader Editor' nodes with custom Node-Gr
 
 This utility helps you locate materials with unconnected nodes in your file, such as Image Texture nodes.
 
-![Find Unconnected Nodes](images/utility_find_unconnected_nodes.png){ .img-box align=left }
+![Find Unconnected Nodes Utility](images/utility_find_unconnected_nodes.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -233,7 +234,7 @@ This feature searches for nodes with critical values set to zero, which may nega
 
 *This utility is also available in the "Shader Editor" for processing individual materials rather than in batch. See [this section](#find-zero-strength-nodes-shader-editor) for details.*
 
-![Find Zero Strength Nodes](images/utility_find_zero_strength_nodes.png){ .img-box align=left }
+![Find Zero Strength Nodes Utility](images/utility_find_zero_strength_nodes.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -283,7 +284,7 @@ After clicking `Search`, the interface will display a list of all found material
 
 This utility verifies that the image textures within materials in your file are using the correct color space settings, generates reports on its findings, and provides an option to automatically fix any issues.
 
-![Color Space Validator](images/utility_color_space_validator.png){ .img-box align=left }
+![Color Space Validator Utility](images/utility_color_space_validator.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -343,7 +344,7 @@ After clicking `Search`, the interface will display a list of all materials with
 
 While not an all-encompassing renaming tool, this function provides targeted assistance for a few specific use cases. It includes options for aligning mesh names with object names and syncing image names with their file names, making it particularly useful when dealing imported Assets that have inconsistent naming conventions.
 
-![Batch Rename](images/utility_batch_rename.png){ .img-box align=left }
+![Batch Rename Utility](images/utility_batch_rename.png){ .img-box align=left }
 
 <h5>Options</h5>
 - **Set Mesh names same as Object names**
@@ -354,13 +355,13 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 ??? abstract "Examples"
     **Set Mesh names same as Object names**:
 
-    ![Batch Rename Mesh Example](images/utility_batch_rename_mesh_example.gif){ .img-box  }
+    ![Batch Rename Mesh Example](images/utility_batch_rename_mesh_example.gif){ .img-box }
 
     **Set Image names same as the Image File names**:
 
     **Use Case:** You imported external models, and all texture names are generic like 'color map', 'roughness map', and 'normal map', making it difficult to track them. This feature solves the issue by renaming image names in Blender to match the actual file names. For example, instead of 'color map', it could be 'Bark_2K_BaseColor'.
 
-    ![Batch Rename Texture Example](images/utility_batch_rename_texture_example.gif){ .img-box  }
+    ![Batch Rename Texture Example](images/utility_batch_rename_texture_example.gif){ .img-box }
 
 
 ---
@@ -372,7 +373,7 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 
 If you have edited any of your textures externally and the changes are not visible in Blender, use this utility to reload all images in your your file.
 
-![Reload Images](images/utility_reload_images.png){ .img-box  }
+![Reload Images Utility](images/utility_reload_images.png){ .img-box }
 
 
 ---
@@ -389,7 +390,7 @@ Helps delete any temporary files that might be left behind by BatchGenie. There 
 2. **Removing Extra Info Nodes**: If you want to remove any extra info nodes created inside your materials by BatchGenie. See the 'Info' box below for details.
 
 
-![Clean File](images/utility_clean_file.png){ .img-box align=left }
+![Clean File Utility](images/utility_clean_file.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -410,11 +411,11 @@ Helps delete any temporary files that might be left behind by BatchGenie. There 
 
 > Location: Asset Browser ▸ BatchGenie Menu
 
-![Asset Tags](images/utilities_asset_browser.png){ .img-box align=right }
+![Asset Tags Utility](images/utilities_asset_browser.png){ .img-box align=right }
 
 Add or remove tags from your Assets. Select any number of Assets of any type, choose the desired tags to add, and BatchGenie will assign them to the appropriate Assets. These can be either regular tags or Smart Tags that apply the property of your choice to the Asset.
 
-This feature works with both internal and external assets, so you don't have to open each individual Asset Blend file separately.
+This feature works with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.
 
 <div style="clear:both"></div>
 
@@ -424,7 +425,7 @@ This feature works with both internal and external assets, so you don't have to 
     ![Tag - Default or Copy Tag](images/utility_asset_browser_tag_default.gif){ .img-box align=left }
 
     - **New Tag**: Creates a regular tag.
-    - **Copy from existing tags**: Lets you pick from a dropdown menu containing all tags from the currently selected Assets. Tags that are present in all of the selected assets are filtered out (since it wouldn't make sense to apply a tag that is already there).
+    - **Copy from existing tags**: Lets you pick from a dropdown menu containing all tags from the currently selected Assets. Tags that are present in all of the selected Assets are filtered out (since it wouldn't make sense to apply a tag that is already there).
 
 === "Object Triangles"
     ![Tag - Object Triangles](images/utility_asset_browser_tag_object_triangles.gif){ .img-box align=left }
@@ -465,9 +466,9 @@ The split function reverses this, separating combined tags that follow the exact
 === "Existing"
     ![Tag - Object Triangles](images/utility_asset_browser_remove_tags_existing.png){ .img-box align=left }
 
-    Displays all tags from the currently selected assets in the Asset Browser in a dropdown menu, allowing you to choose which tags to remove.
+    Displays all tags from the currently selected Assets in the Asset Browser in a dropdown menu, allowing you to choose which tags to remove.
 
-    You also have filtering options to only show common tags from the selected assets, as well as an "Exclude common" option to exclude these tags.
+    You also have filtering options to only show common tags from the selected Assets, as well as an "Exclude common" option to exclude these tags.
 
 === "Keyword"
     ![Tag - Object Triangles](images/utility_asset_browser_remove_tags_keyword.png){ .img-box align=left }
@@ -492,9 +493,9 @@ The split function reverses this, separating combined tags that follow the exact
 
 Batch add metadata for your Assets: Description, License, Copyright, and Author. You can select and edit one or multiple attributes simultaneously. This feature works with both internal and external assets, so you don't have to open each individual Asset Blend file separately.
 
-If a single asset is selected, you can use the "Retrieve from Selected Asset" button to load its existing metadata for editing.
+If a single Asset is selected, you can use the "Retrieve from Selected Asset" button to load its existing metadata for editing.
 
-![Metadata](images/utility_asset_browser_metadata.png){ .img-box align=left }
+![Metadata Utility](images/utility_asset_browser_metadata.png){ .img-box align=left }
 
 !!! tip "Tip"
     You can also access the Metadata menu through the right-click menu in the Asset Browser.
@@ -513,7 +514,7 @@ Move Assets to different Asset Catalogs to help you organize your Asset Library.
 
 The 'Catalog Details' section displays the UUID and the Asset Library Path of the chosen Catalog.
 
-![Move Assets](images/utility_move_assets.png){ .img-box align=left }
+![Move Assets Utility](images/utility_move_assets.png){ .img-box align=left }
 
 ![Move Assets Catalog Example](images/utility_move_assets_catalog_example.png){ .img-box align=left }
 
@@ -535,7 +536,7 @@ The 'Catalog Details' section displays the UUID and the Asset Library Path of th
 
 This utility offers similar functionality to the [Replace Shader Nodes](#replace-shader-nodes) utility but is designed for processing individual nodes rather than batch adjustments. It also allows you to replace any type of node, not just the main shader node as in the main utility.
 
-![Replace Node](images/utility_shader_editor_replace_node.gif){ .img-box align=left }
+![Replace Node Utility](images/utility_shader_editor_replace_node.gif){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -556,7 +557,7 @@ This utility offers similar functionality to the [Replace Shader Nodes](#replace
 
 This utility offers the same functionality as the [Find Zero Strength Nodes](#find-zero-strength-nodes) utility but is designed for processing individual materials rather than batch adjustments.
 
-![Replace Node](images/utility_shader_editor_find_zero_strength_nodes.png){ .img-box align=left }
+![Find Zero Strength Nodes Utility](images/utility_shader_editor_find_zero_strength_nodes.png){ .img-box align=left }
 
 <h5>Settings</h5>
 

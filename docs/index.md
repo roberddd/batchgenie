@@ -11,7 +11,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 ### Feature Details
 
 - Easy one-click interface for instant use, while offering advanced customization options.
-- Both rendering and all utilities work with local and external assets, so you don't have to open each asset file individually when working with them.
+- Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
 
 - **Texture Import**:
     - Blazingly fast imports.
@@ -43,9 +43,9 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Find Zero Strength Nodes: Search for Normal Map, Bump, and Displacement nodes with zero values, potentially affecting material appearance.
     - Color Space Validator: Verifies image textures for correct color space settings, with an option to automatically fix any issues
     - Reload Images: Update externally edited images in Blender, ensuring they refresh correctly.
-    - Tagging Utilities: Easily add and remove tags for Assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed asset information.
+    - Tagging Utilities: Easily add and remove tags for Assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed Asset information.
     - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
-    - Move Asset: Organize your assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
+    - Move Asset: Organize your Assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
     - Plus a few other small utilities!
 
 
@@ -64,7 +64,7 @@ You can buy the add-on in the following stores:
 
 ## Future Updates
 
-My priority is ensuring compatibility with Blender's Long-Term Support (LTS) releases, but I will also strive to maintain functionality with other Blender updates whenever possible. For details on the current version, check the [Changelog](changelog.md).
+My priority is ensuring compatibility with Blender's Long-Term Support (LTS) releases, but I will also strive to maintain functionality with other Blender updates whenever possible. Additionally, I have planned features and utilities that will be added in future updates to enhance the capabilities. For details on the current version, check the [Changelog](changelog.md).
 
 
 ## Support and Feedback

@@ -7,7 +7,7 @@
 5. Click on `Import`, and BatchGenie will automatically import and set up the textures for you.
 
 <figure markdown="span">
-  ![Example Import With Extra Everything](images/imported_material_example.png){ .on-glb width=60% .img-box data-title="Example of an import with various additional accessory nodes." data-description="These nodes are automatically added by BatchGenie when needed, such as converting normals and performing other necessary adjustments."}
+  ![Example Import With Extra Everything](images/imported_material_example.png){ .img-box .on-glb width=60% data-title="Example of an import with various additional accessory nodes." data-description="These nodes are automatically added by BatchGenie when needed, such as converting normals and performing other necessary adjustments."}
   <figcaption>Example of an import with various additional accessory nodes.</figcaption>
 </figure>
 
@@ -59,17 +59,17 @@
 
 ![Import Material Settings](images/import_material_settings.png){ .img-box align=left }
 
-- **Displacement**: Sets the displacement setting of the imported materials. Choose 'Bump Only' for surface texture simulation, 'Displacement' for actual geometric displacement, or 'Displacement & Bump' for a combination of both effects.
+- **Displacement**: Sets the displacement setting of the imported materials. Choose `Bump Only` for surface texture simulation, `Displacement` for actual geometric displacement, or `Displacement & Bump` for a combination of both effects.
 
- - Eevee Specific Settings: These settings reflect Blender's defaults Eevee specific settings, such as: Transparent Shadows, Render Method, Raytraced Transmission.
+ - Eevee Specific Settings:
+    - Render Method
+    - Transparent Shadows
+    - Raytrace Transmission
 
-    For further technical details see [this section](https://docs.blender.org/manual/en/4.2/render/eevee/material_settings.html){ target="_blank" } in the blender manual.
+    *For further technical details see [this section](https://docs.blender.org/manual/en/4.2/render/eevee/material_settings.html){ target="_blank" } in the Blender manual.*
 
 
-<!-- - **Blend Mode**: Controls how the material interacts with lighting and transparency, offering options for different blending effects.
-- **Shadow Mode**: Determines how shadows are cast and rendered for the object, providing control over shadow interaction.
-- **Raytrace Refraction**: Controls how refraction is handled for the material.
-- **Subsurface Translucency**: Controls the appearance of light passing through the surface, simulating translucent materials such as skin or wax. -->
+---
 
 
 #### Image Texture Node Settings
