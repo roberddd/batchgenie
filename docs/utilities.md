@@ -457,7 +457,7 @@ This feature works with both internal and external Assets, so you don't have to 
 
 Combine or split existing tags on Assets. It merges single-word tags into a single line, separated by commas (e.g., "tag1, tag2, tag3"), only if they don't contain spaces.
 
-The split function reverses this, separating combined tags that follow the exact "tag1, tag2, tag3" format. Tags with spaces, like "Long tag with spaces," are unaffected by either function.
+The split function reverses this, separating combined tags that follow the exact "tag1, tag2, tag3" format. Tags with spaces, like "Long tag with spaces" are unaffected by either function.
 
 <div style="clear:both"></div>
 
