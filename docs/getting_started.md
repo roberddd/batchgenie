@@ -32,4 +32,6 @@ BatchGenie is located in the N-Panel inside the `3D Viewport` under a tab named 
 
 ![Addon Location](images/addon_location.png){ .img-box align=left }
 
-All features include hover-over tooltips for quick details within the add-on. Some areas also have an extra :material-information-box: information icon, which opens a popup with additional information and a link to the relevant section of the documentation for further instructions. For more comprehensive guidance, you can access the full documentation by clicking the :blender_icon_help:icon in the BatchGenie main panel.
+All features include hover-over tooltips for quick details within the add-on. Some areas also have an extra :octicons-question-24: icon, which opens a popup with additional information and a link to the relevant section of the documentation for further instructions.
+
+For more comprehensive guidance, you can access the full documentation by clicking the :blender_icon_help:icon in the BatchGenie main panel.

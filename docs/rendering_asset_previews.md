@@ -112,68 +112,81 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
         ![Studio Presets](images/render_asset_previews_studio_presets.png){ .img-box .on-glb }
 
-    ??? info2 "Studio Settings"
-        When you select a Studio Preset, the following settings are available:
 
-        ![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box align=left }
+<h5>Studio Settings</h5>
 
-        <div style="clear:both"></div>
+When you select a Studio Preset, the following settings are available:
 
-        - **Material**: Choose from the built-in materials, which include some basic options with adjustable settings, or use your own material.
-        - **Transparent Backdrop**: *(Cycles Only)* Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.
-        - **Backdrop passes light**: Enables the backdrop to allow light to pass through it, preventing it from blocking light from world lights.
+![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box align=left }
 
-        - **Object Z Offset**: Allows you to adjust the object's height after its lowest point has been aligned with the ground. Use a positive value to lift the object above the ground or a negative value to lower it further.
+- **Material**: Choose from the built-in materials, which include some basic options with adjustable settings, or use your own material.
+- **Transparent Backdrop**: *(Cycles Only)* Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.
+- **Backdrop passes light**: Enables the backdrop to allow light to pass through it, preventing it from blocking light from world lights.
 
-<div style="clear:both"></div>
+- **Object Z Offset**: Allows you to adjust the object's height after its lowest point has been aligned with the ground. Use a positive value to lift the object above the ground or a negative value to lower it further. The offset is relative to the object or collection's height, making the adjustment proportional to its size.
+
+
+---
+
 
 - **Transparent Background**: Enables a transparent background in rendered images by toggling the 'Render > Film > Transparent' option for the render scene.
 - **Strength**: Adjusts the light strength of the world background.
 - **Saturation**: Adjusts the saturation of the world background. This setting is useful when you want to use an HDR image for lighting your scene but don't want the colors of the HDR to influence the colors in your final render. By adjusting the saturation, you can desaturate the HDR image, allowing you to retain the lighting effects without the HDR's color affecting your scene's appearance.
 
 - **Rotation**:
-    - **Sun Rotation**: Adjusts the horizontal angle of the sunlight in your scene or rotates the HDRI background for lighting. This changes the direction from which light illuminates objects.
+    - **Sun Rotation**: Adjusts the horizontal angle of the sunlight in your scene or rotates the HDRI background for lighting.
     - **Object Rotation**: Adjusts the rotation of the object.
     - **Camera Rotation**: Adjusts the rotation of the camera. Useful when you want to keep the lights & shadows in their current position but want to change the framing.
 
-    !!! tip "Tip"
+    !!! tip "Rotation Tip"
+        ![Camera Angle Example](images/render_asset_previews_scene_settings_rotation_example.gif){ .img-box align=left }
         You can also use the icon buttons to the left and right of the slider to adjust them in -/+ 45 degree increments.
 
-??? info2 "Camera Settings"
-    ![Camera Settings](images/render_asset_previews_camera_settings.png){ .img-box align=left }
 
-    - **Vertical Angle**: Adjusts the vertical angle of the camera, moving it up or down to change the perspective from which the scene is viewed, either looking up or down.
+<h5>Camera Settings</h5>
 
-        ??? abstract "Vertical Angle Example"
-            ![Camera Angle Example](images/render_asset_previews_camera_angle_example.png){ .img-box }
+![Camera Settings](images/render_asset_previews_camera_settings.png){ .img-box align=left }
 
-    - **Zoom**: Adjust the camera distance from the object. Zoom in for a close-up view or zoom out to add space around your object.
-    - **Focal Length**: Adjusts the focal length of the camera, affecting the field of view and perspective. A shorter focal length increases the field of view, creating a wide-angle effect, while a longer focal length decreases the field of view, producing a zoomed-in effect.
+- **Vertical Angle**: Adjusts the vertical angle of the camera, moving it up or down to change the perspective from which the scene is viewed, either looking up or down.
 
-    <div style="clear:both"></div>
+    ??? abstract "Vertical Angle Example"
+        ![Camera Angle Example](images/render_asset_previews_camera_angle_example.png){ .img-box }
 
-    - **Exposure**:  Adjusts the overall brightness of your scene by controlling the amount of light that reaches the camera, effectively brightening or darkening the rendered image.
+- **Zoom**: Adjust the camera distance from the object. Zoom in for a close-up view or zoom out to add space around your object. The zoom is relative to the object or collection's size, making the adjustment proportional to its size.
 
-        ??? abstract "Exposure Example"
-            ![Exposure Example](images/render_asset_previews_exposure_example.png){ .img-box }
+<div style="clear:both"></div>
 
-    - **Override camera orientation with**: Lets you use a custom camera angle. Choose between:
+- **Focal Length**: Adjusts the focal length of the camera, affecting the field of view and perspective. A shorter focal length increases the field of view, creating a wide-angle effect, while a longer focal length decreases the field of view, producing a zoomed-in effect.
 
-        - **View**: Set the render camera to match the current 3D view's perspective, ensuring the render viewpoint aligns with the 3D viewport
-        - **Active Camera**: Set the render camera to the position and orientation of the active camera, ensuring the render viewpoint matches the current active camera's view.
+    <!-- !!! abstract inline end "Exposure Example"
+        ![Exposure Example](images/render_asset_previews_exposure_example.png){ .img-box } -->
 
-        **Autoframe**: When using the override, the **Autoframe** option automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.
+- **Exposure**:  Adjusts the overall brightness of your scene by controlling the amount of light that reaches the camera, effectively brightening or darkening the rendered image.
 
-        *Note: Autoframe cannot be disabled when rendering materials. However, you can still render selected Assets, and Autoframe will be disabled for all other elements except materials.*
+- **Override camera orientation with**: Lets you use a custom camera angle. Choose between:
 
-- **Material Preview Object**:
+    - **View**: Set the render camera to match the current 3D view's perspective, ensuring the render viewpoint aligns with the 3D viewport
+    - **Active Camera**: Set the render camera to the position and orientation of the active camera, ensuring the render viewpoint matches the current active camera's view.
 
-    These settings are used when rendering material Assets.
+    **Autoframe**: When using the override, the **Autoframe** option automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.
 
-    - **Preview Object**: Select the model type used to display the material preview. Choose from options Sphere, Suzanne, Cylinder, or Custom. The Custom option allows you to use the currently selected object in your scene as the preview model.
-    - **Clear current materials**: When rendering previews using the 'Custom Object' option, enable this setting to show only the previewed material on the object. Disable to retain existing materials on the object, assigning the preview material to slot 1. Useful for objects with multiple materials.
-    - **Subdiv**: The number of subdivisions to apply to the model.
-    - **Adaptive Subdiv**: *(Cycles Only)* Dynamically adjusts the level of detail for subdivided surfaces based on the camera distance, optimizing render times while maintaining high-quality details where needed. Useful for materials with displacement.
+    !!! info2 "Autoframe"
+        - Autoframe cannot be disabled when rendering materials. However, you can still render selected Assets, and Autoframe will be disabled for all other elements except materials.
+
+        - If you disable **Autoframe** and use any of the '**Studio Presets**' keep in mind that the location of the object/collection will be set to the world origin (0, 0, 0) during render so you'll need to adjust your framing accordingly.
+
+
+---
+
+
+<h5>Material Preview Object</h5>
+
+These settings are used when rendering material Assets.
+
+- **Preview Object**: Select the model type used to display the material preview. Choose from options Sphere, Suzanne, Cylinder, or Custom. The Custom option allows you to use the currently selected object in your scene as the preview model.
+- **Clear current materials**: When rendering previews using the 'Custom Object' option, enable this setting to show only the previewed material on the object. Disable to retain existing materials on the object, assigning the preview material to slot 1. Useful for objects with multiple materials.
+- **Subdiv**: The number of subdivisions to apply to the model.
+- **Adaptive Subdiv**: *(Cycles Only)* Dynamically adjusts the level of detail for subdivided surfaces based on the camera distance, optimizing render times while maintaining high-quality details where needed. Useful for materials with displacement.
 
 
 ---
