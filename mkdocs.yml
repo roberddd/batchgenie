@@ -40,8 +40,8 @@ extra_css:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - Importing Textures: importing_textures.md
-  - Rendering Asset Previews: rendering_asset_previews.md
+  - Import Textures: import_textures.md
+  - Render Asset Previews: render_asset_previews.md
   - Utilities: utilities.md
   - Preferences: preferences.md
 

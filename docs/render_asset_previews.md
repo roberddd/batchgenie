@@ -147,10 +147,10 @@ When you select a Studio Preset, the following settings are available:
 
 ![Camera Settings](images/render_asset_previews_camera_settings.png){ .img-box align=left }
 
-- **Vertical Angle**: Adjusts the vertical angle of the camera, moving it up or down to change the perspective from which the scene is viewed, either looking up or down.
+- **Tilt**: Adjusts the camera’s tilt, allowing you to change the perspective by angling it up or down
 
-    ??? abstract "Vertical Angle Example"
-        ![Camera Angle Example](images/render_asset_previews_camera_angle_example.png){ .img-box }
+    ??? abstract "Tilt Example"
+        ![Camera Tilt Angle Example](images/render_asset_previews_camera_angle_example.png){ .img-box }
 
 - **Zoom**: Adjust the camera distance from the object. Zoom in for a close-up view or zoom out to add space around your object. The zoom is relative to the object or collection's size, making the adjustment proportional to its size.
 
@@ -171,7 +171,7 @@ When you select a Studio Preset, the following settings are available:
     **Autoframe**: When using the override, the **Autoframe** option automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.
 
     !!! info2 "Autoframe"
-        - Autoframe cannot be disabled when rendering materials. However, you can still render selected Assets, and Autoframe will be disabled for all other elements except materials.
+        - Autoframe cannot be disabled when rendering materials. However, you can still render selected Assets, and Autoframe will be disabled for all other Assets except materials.
 
         - If you disable **Autoframe** and use any of the '**Studio Presets**' keep in mind that the location of the object/collection will be set to the world origin (0, 0, 0) during render so you'll need to adjust your framing accordingly.
 

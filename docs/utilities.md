@@ -155,7 +155,7 @@ This utility lets you replace existing 'Shader Editor' nodes with custom Node-Gr
 
 - **Keep Original Shader Node**: Check this option if you want to retain the original node for manual inspection of the connections afterward. The original node will be moved to the side of the replaced node.
 - **Replacement Node-Group**: Select the custom Node-Group to replace the shader from a dropdown menu displaying all Node-Groups in the current blend file.
-- **Custom Attributes**: Set one or multiple socket attributes such as color or values on the new node. See [this section](importing_textures.md/#custom-attributes) in the documentation for detailed instructions.
+- **Custom Attributes**: Set one or multiple socket attributes such as color or values on the new node. See [this section](import_textures.md/#custom-attributes) in the documentation for detailed instructions.
 
 
 ---
@@ -174,7 +174,7 @@ This utility helps you locate materials with unconnected nodes in your file, suc
 - **Type**:
     - **All Unconnected Nodes**
     - **Image Texture Nodes**
-    - **BatchGenie Imported Textures**: Materials imported by BatchGenie that contain textures which could not be connected. See more [details here](importing_textures.md/#faq) about these nodes.
+    - **BatchGenie Imported Textures**: Materials imported by BatchGenie that contain textures which could not be connected. See more [details here](import_textures.md/#faq) about these nodes.
 - **Highlight Nodes**: Changes the color of the found nodes to red, making them easier to spot visually.
 
 <h5>Instructions</h5>
@@ -399,7 +399,7 @@ Helps delete any temporary files that might be left behind by BatchGenie. There 
     !!! info2 "Extra Info Nodes"
         Examples of these nodes include:
 
-        - '**Unable to connect**' nodes created during imports when there are issues connecting textures. [See details here](importing_textures.md/#faq).
+        - '**Unable to connect**' nodes created during imports when there are issues connecting textures. [See details here](import_textures.md/#faq).
 
         - '**Incorrect Color Space**' nodes created by the 'Color Space Validator' utility. [See details here](#color-space-validator).
 
@@ -545,7 +545,7 @@ This utility offers similar functionality to the [Replace Shader Nodes](#replace
     - **Active Node**: Select a node manually.
 - **Keep Original Node**: Check this option if you want to retain the original node for manual inspection of the connections afterward. The original node will be moved to the side of the replaced node.
 - **Replacement Node-Group**: Select the custom Node-Group to replace the shader from a dropdown menu displaying all Node-Groups in the current blend file.
-- **Custom Attributes**: Set one or multiple socket attributes such as color or values on the new node. See [this section](importing_textures.md/#custom-attributes) in the documentation for detailed instructions.
+- **Custom Attributes**: Set one or multiple socket attributes such as color or values on the new node. See [this section](import_textures.md/#custom-attributes) in the documentation for detailed instructions.
 
 
 ---
