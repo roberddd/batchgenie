@@ -518,6 +518,9 @@ The 'Catalog Details' section displays the UUID and the Asset Library Path of th
 
 ![Move Assets Catalog Example](images/utility_move_assets_catalog_example.png){ .img-box align=left }
 
+<h5>Instructions</h5>
+First, make sure you're in the specific Asset library where you want to move your assets. Once that's done, select the assets you want to move, choose the destination, and click OK.
+
 <div style="clear:both"></div>
 
 !!! info2 "How is this done?"

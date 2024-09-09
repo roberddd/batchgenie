@@ -19,8 +19,7 @@ To start using BatchGenie, you need to install the add-on in Blender. Follow the
 2. Open Blender and go to `Edit > Preferences`.
 3. In the Preferences window, navigate to the `Add-ons` tab.
 4. Locate the `Add-ons Settings` (:octicons-chevron-down-12: icon) in the top right corner.
-4. Click on `Install from Disk` and select the downloaded BatchGenie zip file.
-5. Once installed, enable the add-on by checking the box next to BatchGenie in the add-on list. **[WIP]**
+5. Click on `Install from Disk` and select the downloaded BatchGenie zip file.
 
 !!! info2 "Updates"
     BatchGenie respects your privacy. It operates offline and does not collect any data. Therefore, there is no auto-update functionality within the add-on. For updates, simply download the updated add-on manually from the store where you purchased it, uninstall the old version and reinstall the new using the same steps outlined in the instructions above.

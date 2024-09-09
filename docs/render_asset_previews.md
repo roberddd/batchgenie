@@ -18,7 +18,7 @@ When rendering via the Asset Browser, you can work with both internal and extern
 5. Click `Batch Render`, and BatchGenie will render all Assets that fit your selection filter.
 
 
-## Rendering via Asset Browser
+## Rendering via the Asset Browser
 
 1. Open the Asset Browser.
 2. Select the Assets you want to render.
@@ -121,7 +121,7 @@ When you select a Studio Preset, the following settings are available:
 
 - **Material**: Choose from the built-in materials, which include some basic options with adjustable settings, or use your own material.
 - **Transparent Backdrop**: *(Cycles Only)* Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.
-- **Backdrop passes light**: Enables the backdrop to allow light to pass through it, preventing it from blocking light from world lights.
+- **Backdrop passes light**: Enables the backdrop to allow light to pass through it, preventing it from blocking light from the world and casting shadows on your Assets.
 
 - **Object Z Offset**: Allows you to adjust the object's height after its lowest point has been aligned with the ground. Use a positive value to lift the object above the ground or a negative value to lower it further. The offset is relative to the object or collection's height, making the adjustment proportional to its size.
 
@@ -168,7 +168,7 @@ When you select a Studio Preset, the following settings are available:
     - **View**: Set the render camera to match the current 3D view's perspective, ensuring the render viewpoint aligns with the 3D viewport
     - **Active Camera**: Set the render camera to the position and orientation of the active camera, ensuring the render viewpoint matches the current active camera's view.
 
-    **Autoframe**: When using the override, the **Autoframe** option automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.
+    **Autoframe**: When using the override, the Autoframe option automatically adjusts the camera to frame the selected object perfectly, ensuring that it fits within the view without any clipping. Disable this option for manual framing of your Asset, such as for close-up shots.
 
     !!! info2 "Autoframe"
         - Autoframe cannot be disabled when rendering materials. However, you can still render selected Assets, and Autoframe will be disabled for all other Assets except materials.
@@ -246,6 +246,10 @@ Here, you'll find settings for the render engine, aspect ratio, resolution, and 
 `I'm experiencing unusual behavior with object location when using the Studio Setups. What should I do?`
 
 :   Try applying the Scale and Rotation transformations to your object(s). This should resolve the issue.
+
+`Why doesn't my render match the View when using the 'View Camera Override' function?`
+
+:   Adjust the View camera to match the rendering focal length. For example, if the default focal length under 'Render Settings' is 90mm, go to `3D View > View > View` and match it.
 
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}
