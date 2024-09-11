@@ -41,7 +41,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Replace Node Utility: Replace existing 'Shader Editor' nodes with custom Node-Groups.
     - Unconnected Nodes Finder: Identify unconnected nodes within materials and batch delete them if needed.
     - Find Zero Strength Nodes: Search for Normal Map, Bump, and Displacement nodes with zero values, potentially affecting material appearance.
-    - Color Space Validator: Verifies image textures for correct color space settings, with an option to automatically fix any issues
+    - Color Space Validator: Verifies image textures for correct color space settings, with an option to automatically fix any issues.
     - Reload Images: Update externally edited images in Blender, ensuring they refresh correctly.
     - Tagging Utilities: Easily add and remove tags for Assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed Asset information.
     - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.

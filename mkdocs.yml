@@ -47,7 +47,7 @@ nav:
 
 plugins:
   - search
-  - privacy
+  # - privacy #This seems to glitch with glightbox
   - glightbox:
       manual: true #So that not every image is added to the lightbox, add images manually with 'on-glb' class.
   - tags:
