@@ -59,7 +59,7 @@ document.querySelectorAll('a').forEach(link => {
         var time = this.innerText.match(/(\d+):(\d+)/);  // Extract the minutes and seconds from the link text
         if (time) {
             var seconds = parseInt(time[1]) * 60 + parseInt(time[2]);  // Convert time to seconds
-            videoPlayer.src = `https://www.youtube.com/embed/LvZfpLVrp6Y?start=${seconds}&autoplay=1&?rel=0`;
+            videoPlayer.src = `https://www.youtube.com/embed/yMMH5RZoKMk?start=${seconds}&autoplay=1&?rel=0`;
         }
     });
 });
