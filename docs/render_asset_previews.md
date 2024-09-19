@@ -94,7 +94,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
 #### Scene Settings
 
-![Scene Settings](images/render_asset_previews_scene_settings.png){ .img-box align=left }
+![Scene Settings](images/render_asset_previews_scene_settings[2x].png){ .img-box align=left width=32% }
 
 - **Light Preset**: Choose from a selection of different lighting presets to enhance your renders. Options include various sky setups as well as Blender's built-in HDRIs. There is also a 'Custom World' option that utilizes your scene's current 'World' for lighting, allowing you to use your own HDR images.
 

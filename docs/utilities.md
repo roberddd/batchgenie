@@ -136,7 +136,7 @@ This utility enables you to batch modify material settings across materials.
 
 > Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
 
-This utility lets you replace existing 'Shader Editor' nodes with custom Node-Groups. It targets the main shader connected to the 'Material Output' within the material
+This utility lets you replace existing 'Shader Editor' nodes with custom Node-Groups. It targets the main shader connected to the 'Material Output' within the material.
 
 
 *This utility is also available in the "Shader Editor" for processing individual nodes rather than in batch. See [this section](#replace-node) for details.*
@@ -344,7 +344,7 @@ After clicking `Search`, the interface will display a list of all materials with
 
 While not an all-encompassing renaming tool, this function provides targeted assistance for a few specific use cases. It includes options for aligning mesh names with object names and syncing image names with their file names, making it particularly useful when dealing imported Assets that have inconsistent naming conventions.
 
-![Batch Rename Utility](images/utility_batch_rename.png){ .img-box align=left }
+![Batch Rename Utility](images/utility_batch_rename.gif){ .img-box align=left }
 
 <h5>Options</h5>
 - **Set Mesh names same as Object names**
@@ -455,7 +455,7 @@ This feature works with both internal and external Assets, so you don't have to 
 
 ![Tag - Combine and Split](images/utility_asset_browser_tag_combine_split.gif){ .img-box align=left }
 
-Combine or split existing tags on Assets. It merges single-word tags into a single line, separated by commas (e.g., "tag1, tag2, tag3"), only if they don't contain spaces.
+Combine or split existing tags on Assets. Combine single-word tags into a single line, separated by commas (e.g., "tag1, tag2, tag3"), only if they don't contain spaces.
 
 The split function reverses this, separating combined tags that follow the exact "tag1, tag2, tag3" format. Tags with spaces, like "Long tag with spaces" are unaffected by either function.
 

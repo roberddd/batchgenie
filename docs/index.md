@@ -4,24 +4,50 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 
 ## Key Features
 
-- **Batch Import PBR Textures**: BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
-- **Batch Render Asset Previews**: Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
-- **Batch Utilities**: Utilize a variety of batch processing utilities designed to handle common tasks efficiently such as changing material or node attributes.
+<div class="grid cards grid_custom" markdown>
+
+-   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import PBR Textures__
+
+    ---
+
+    BatchGenie streamlines PBR texture importing with a single click, offering robust customization options for bulk imports, saving you time and effort while tailoring imports to your preferences.
+
+
+-   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Asset Previews__
+
+    ---
+
+    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
+
+</div>
+
+<div class="grid cards grid_custom"  markdown>
+
+-   :material-tools:{ .lg .middle style="color:var(--main-accent-color-blue)" } __Batch Utilities__
+
+    ---
+
+    Utilize a variety of batch processing utilities designed to handle common tasks efficiently such as changing material or node attributes.
+
+</div>
+
+
 
 ### Feature Details
 
 - Easy one-click interface for instant use, while offering advanced customization options.
 - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
+- Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
 - **Texture Import**:
     - Blazingly fast imports.
     - Supports both Metallic/Roughness and Specular/Glossiness workflow.
     - Supports for 16+ types of maps: Albedo, Metallic, Roughness, Gloss, Alpha, Subsurface Scattering, Specular, Transmission, Emission, Sheen Color, Normal, Bump, Ambient Occlusion, Cavity, Displacement, and PACKED & CUSTOM types.
         - Packed: ARM/ORM/RMA textures that combine AO, Roughness, and Metallic maps.
-        - Custom: Import any map and connect it to your chosen input via a dropdown menu.
+        - Custom: Import any map and connect it to your chosen input via a dropdown menu. Supports packed textures.
     - Automatically sets up all necessary nodes, including color space adjustments and other configurations for a smooth workflow without manual intervention. This includes detecting normal map format and adding conversion nodes if needed, as well as auto-detecting the alpha channel from the Albedo texture to use its alpha channel if available.
     - Supports all combinations of Normal, Bump & Displacement maps.
-    - Flexibly adjust the strength of Normal, Bump, Displacement, and Ambient Occlusion maps during import with the added convenience of bulk updates afterwards if needed.
+    - Flexibly adjust the strength of Normal, Bump, Displacement, Ambient Occlusion and Cavity maps during import with the added convenience of bulk updates afterwards if needed.
     - Logic adept at deciphering complex texture naming conventions and avoiding duplicates of similar maps such as Roughness & Gloss.
     - Ability to designate a custom node-group to substitute the Principled BSDF shader in imported materials, enabling precise material customization during the import process.
     - Custom Input Socket Attributes: This feature enables you to define attributes for any input socket on the main shader of imported textures. You can assign specific colors or values, or utilize randomly generated values as required, including both whole numbers and decimals. This can be particularly useful for populating 'Seed' sockets.
@@ -29,10 +55,10 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 
 - **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
-    - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes
+    - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
     - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
     - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
-    - Easy controls for light and background settings to tailor the images to your liking.
+    - Easy controls for light and background settings to tailor the images to your liking, with support for HDRI images.
     - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
 
 - **Utilities**:
@@ -55,11 +81,12 @@ You can buy the add-on in the following stores:
 
 <div class="grid" markdown>
 
-[:simple-gumroad: Gumroad](#){ .md-button .md-button--stretch }
+[:simple-gumroad:{ .gumroad } Gumroad](#){ .md-button .md-button--stretch }
 
-[:material-blender-software: BlenderMarket](#){ .md-button .md-button--stretch }
+[:blender_market: BlenderMarket](https://blendermarket.com/products/batchgenie){ .md-button .md-button--stretch }
 
 </div>
+
 
 
 ## Future Updates

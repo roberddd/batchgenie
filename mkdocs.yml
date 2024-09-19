@@ -1,5 +1,5 @@
 site_name: BatchGenie Documentation
-site_url: https://roberddd.github.io/BatchGenie/
+site_url: https://batchgenie.roberd.net/
 theme:
   name: material
   custom_dir: overrides #Remember to save mkdocs.yml to refresh the overrides
@@ -61,7 +61,7 @@ extra:
     - icon: material/web
       link: https://roberd.net
     - icon: material/github
-      link: https://github.com/roberddd/BatchGenie
+      link: https://batchgenie.roberd.net/
 
 markdown_extensions:
   - attr_list

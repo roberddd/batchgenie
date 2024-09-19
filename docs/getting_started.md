@@ -2,14 +2,68 @@ To get started, you have two options: Watch the introductory video guide below f
 
 ### Video Introduction
 
-![Video Placeholder](images/other/video_placeholder.png)
+<div class="video-wrapper">
+    <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/yMMH5RZoKMk?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
->
-- 00:00 Introduction
-- 02:00 Importing Textures
-- 10:00 Rendering Previews
-- 15:00 Utilities
+??? info2 "Video Timestamps"
+    <div class="chapter-list" markdown>
 
+    - [<span class="timestamp">00:00</span> Intro](javascript:void(0))
+    - [<span class="timestamp">00:21</span> Basics](javascript:void(0))
+    - [<span class="timestamp">01:29</span> Importing Textures](javascript:void(0))
+    - [<span class="timestamp">02:16</span> Import Settings](javascript:void(0))
+    - [<span class="timestamp">04:13</span> Import Settings - Replace Principled BSDF](javascript:void(0))
+    - [<span class="timestamp">06:12</span> Import Settings - Custom Attributes](javascript:void(0))
+    - [<span class="timestamp">08:09</span> Import Settings - Custom Texture](javascript:void(0))
+    - [<span class="timestamp">09:17</span> Import Preferences](javascript:void(0))
+    - [<span class="timestamp">10:13</span> Rendering Asset Previews](javascript:void(0))
+    - [<span class="timestamp">11:06</span> Rendering via the panel](javascript:void(0))
+    - [<span class="timestamp">12:25</span> Render Settings](javascript:void(0))
+    - [<span class="timestamp">15:25</span> Rendering via the Panel (part 2)](javascript:void(0))
+    - [<span class="timestamp">16:33</span> Render Settings - Studio Presets](javascript:void(0))
+    - [<span class="timestamp">17:49</span> Render Settings - Camera Override](javascript:void(0))
+    - [<span class="timestamp">20:49</span> Rendering via the Asset Browser](javascript:void(0))
+    - [<span class="timestamp">22:38</span> Utilities](javascript:void(0))
+    - [<span class="timestamp">22:57</span> Utilities - Locating the Utilities](javascript:void(0))
+    - [<span class="timestamp">23:36</span> Utilities - Quick Tips](javascript:void(0))
+    - [<span class="timestamp">24:01</span> Utility - Change Node Attributes](javascript:void(0))
+    - [<span class="timestamp">27:56</span> Utility - Change Material Settings](javascript:void(0))
+    - [<span class="timestamp">29:02</span> Utility - Replace Shader Nodes](javascript:void(0))
+    - [<span class="timestamp">31:10</span> Utility - Find Unconnected Nodes](javascript:void(0))
+    - [<span class="timestamp">34:47</span> Utility - Find Zero Strength Nodes](javascript:void(0))
+    - [<span class="timestamp">36:40</span> Utility - Color Space Validator](javascript:void(0))
+    - [<span class="timestamp">38:40</span> Utility - Batch Rename](javascript:void(0))
+    - [<span class="timestamp">40:37</span> Utility - Reload Images](javascript:void(0))
+    - [<span class="timestamp">41:01</span> Utility - Clean File](javascript:void(0))
+    - [<span class="timestamp">41:48</span> Shader Editor Utilities](javascript:void(0))
+    - [<span class="timestamp">42:01</span> Utility - Replace Node](javascript:void(0))
+    - [<span class="timestamp">43:34</span> Utility - Find Zero Strength Nodes (Shader Editor)](javascript:void(0))
+    - [<span class="timestamp">44:37</span> Asset Browser Utilities](javascript:void(0))
+    - [<span class="timestamp">45:05</span> Utility - Add Asset Tags](javascript:void(0))
+    - [<span class="timestamp">49:38</span> Utility - Combine & Split Asset Tags](javascript:void(0))
+    - [<span class="timestamp">50:52</span> Utility - Remove Asset Tags](javascript:void(0))
+    - [<span class="timestamp">52:52</span> Utility - Asset Metadata](javascript:void(0))
+    - [<span class="timestamp">54:03</span> Utility - Move Assets](javascript:void(0))
+    - [<span class="timestamp">55:37</span> Preferences](javascript:void(0))
+    - [<span class="timestamp">57:12</span> Wrap-Up](javascript:void(0))
+    - [<span class="timestamp">57:38</span> END](javascript:void(0))
+
+    </div>
+
+<script>
+document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent the default link behavior (including the jump)
+        var videoPlayer = document.getElementById('videoPlayer');
+        var time = this.innerText.match(/(\d+):(\d+)/);  // Extract the minutes and seconds from the link text
+        if (time) {
+            var seconds = parseInt(time[1]) * 60 + parseInt(time[2]);  // Convert time to seconds
+            videoPlayer.src = `https://www.youtube.com/embed/LvZfpLVrp6Y?start=${seconds}&autoplay=1&?rel=0`;
+        }
+    });
+});
+</script>
 
 ### Installation
 
@@ -29,8 +83,9 @@ To start using BatchGenie, you need to install the add-on in Blender. Follow the
 
 BatchGenie is located in the N-Panel inside the `3D Viewport` under a tab named `BatchGenie`, as shown in the image below. Alternatively, you can place it under the `Tool` tab by changing this setting in the Preferences.
 
-![Addon Location](images/addon_location.png){ .img-box align=left }
+![Addon Location](images/addon_location[2x].png){ .img-box align=left width=36% }
 
-All features include hover-over tooltips for quick details within the add-on. Some areas also have an extra :octicons-question-24: icon, which opens a popup with additional information and a link to the relevant section of the documentation for further instructions.
+Every feature includes hover-over tooltips, providing quick and detailed explanations directly within the add-on interface, making it easy to understand functionality without needing to leave the workspace. Some areas also have an extra :octicons-question-24: icon, which opens a popup with additional information and a link to the relevant section of the documentation for further instructions.
+
 
 For more comprehensive guidance, you can access the full documentation by clicking the :blender_icon_help:icon in the BatchGenie main panel.
