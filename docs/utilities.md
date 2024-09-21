@@ -2,7 +2,7 @@
 tags:
   - Troubleshoot
 ---
-BatchGenie offers a range of utilities to efficiently manage materials and other Assets. All utilities generate detailed reports in the console, providing insights into the actions performed by each utility. You can view these reports by navigating to `Window > Toggle System Console`.
+BatchGenie offers a range of utilities to efficiently manage materials and other Assets. All utilities generate detailed reports in the console, providing insights into the actions performed by each utility. You can view these reports by navigating to `Window > Toggle System Console` (Windows) or through the system console if you're using Linux (requires starting Blender from the console).
 
 ![Utilities](images/utilities.png){ .img-box align=right }
 

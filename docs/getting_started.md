@@ -3,7 +3,7 @@ To get started, you have two options: Watch the introductory video guide below f
 ### Video Introduction
 
 <div class="video-wrapper">
-    <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/yMMH5RZoKMk?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/Jy8BUlcdEkk?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ??? info2 "Video Timestamps"
@@ -59,13 +59,15 @@ document.querySelectorAll('a').forEach(link => {
         var time = this.innerText.match(/(\d+):(\d+)/);  // Extract the minutes and seconds from the link text
         if (time) {
             var seconds = parseInt(time[1]) * 60 + parseInt(time[2]);  // Convert time to seconds
-            videoPlayer.src = `https://www.youtube.com/embed/yMMH5RZoKMk?start=${seconds}&autoplay=1&?rel=0`;
+            videoPlayer.src = `https://www.youtube.com/embed/Jy8BUlcdEkk?start=${seconds}&autoplay=1&?rel=0`;
         }
     });
 });
 </script>
 
 ### Installation
+
+> BatchGenie has been verified to work with with Blender 4.2 on Windows & Linux (it should, in theory, work on MacOS as well).
 
 To start using BatchGenie, you need to install the add-on in Blender. Follow these steps:
 
