@@ -32,6 +32,11 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 </div>
 
 
+### Promo Video
+<div class="video-wrapper">
+    <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/o1rj7gl_im4?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 ### Feature Details
 
