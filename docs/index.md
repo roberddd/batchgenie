@@ -88,7 +88,7 @@ You can buy the add-on in the following stores:
 
 [:simple-gumroad:{ .gumroad } Gumroad](https://roberd.gumroad.com/l/BatchGenie){ .md-button .md-button--stretch }
 
-[:blender_market: BlenderMarket (COMING SOON!)](https://blendermarket.com/products/batchgenie){ .md-button .md-button--stretch }
+[:blender_market: BlenderMarket](https://blendermarket.com/products/batchgenie){ .md-button .md-button--stretch }
 
 </div>
 
