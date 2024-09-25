@@ -27,11 +27,15 @@ This utility enables you to batch modify attributes across multiple materials. I
 
 <h5>Settings</h5>
 
-- **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
-- **Selection**: Allows you to specify which materials to include in the batch run. Options listed below:
+- **Selection**: Allows you to specify which materials to include in the batch run:
     - **All Materials**
+    - **Materials marked as Assets**
+    - **Materials NOT marked as Assets**
     - **Materials on Selected Objects**
-- **Target**: Specify which node inside the material to target. Refer to the options listed below for details.
+- **Filter**: Enter keywords to filter materials by their names. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials with matching names, or `Include only` to process only those materials whose names contain the specified keywords.
+- **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
+
+- **Target**: Specify which node inside the material to target. Refer to the options listed below for details:
 
 === "Shader Node"
     ![Change Node Attributes Shader Node](images/utility_change_attribute_shader.png){ .img-box align=left }
@@ -115,10 +119,13 @@ This utility enables you to batch modify material settings across materials.
 
 <h5>Settings</h5>
 
-- **Only materials imported by BatchGenie**:  When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
-- **Selection**: Allows you to specify which materials to include in the batch run. Options listed below:
+- **Selection**: Allows you to specify which materials to include in the batch run:
     - **All Materials**
+    - **Materials marked as Assets**
+    - **Materials NOT marked as Assets**
     - **Materials on Selected Objects**
+- **Filter**: Enter keywords to filter materials by their names. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials with matching names, or `Include only` to process only those materials whose names contain the specified keywords.
+- **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
 - **Setting**:
     - **Displacement Type**
     - **Eevee Backface Culling**
@@ -146,10 +153,17 @@ This utility lets you replace existing 'Shader Editor' nodes with custom Node-Gr
 
 <h5>Settings</h5>
 
-- **Only materials imported by BatchGenie**:  When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
-- **Selection**: Allows you to specify which materials to include in the batch run. Options listed below:
+- **Selection**: Allows you to specify which materials to include in the batch run:
     - **All Materials**
+    - **Materials marked as Assets**
+    - **Materials NOT marked as Assets**
     - **Materials on Selected Objects**
+- **Filter**: Enter keywords to filter materials by their names. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials with matching names, or `Include only` to process only those materials whose names contain the specified keywords.
+- **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
+
+
+
+
 
 <div style="clear:both"></div>
 
@@ -344,11 +358,17 @@ After clicking `Search`, the interface will display a list of all materials with
 
 While not an all-encompassing renaming tool, this function provides targeted assistance for a few specific use cases. It includes options for aligning mesh names with object names and syncing image names with their file names, making it particularly useful when dealing imported Assets that have inconsistent naming conventions.
 
-![Batch Rename Utility](images/utility_batch_rename.gif){ .img-box align=left }
+![Batch Rename Utility](images/utility_batch_rename.png){ .img-box align=left }
 
 <h5>Options</h5>
 - **Set Mesh names same as Object names**
+    - **Selection**: Allows you to specify which objects to include in the batch run:
+        - **All Objects**
+        - **Objects marked as Assets**
+        - **Objects NOT marked as Assets**
+        - **Objects on Selected Objects**
 - **Set Image names same as the Image File names**
+
 
 <div style="clear:both"></div>
 
