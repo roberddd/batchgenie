@@ -32,8 +32,12 @@ This utility enables you to batch modify attributes across multiple materials. I
     - **Materials marked as Assets**
     - **Materials NOT marked as Assets**
     - **Materials on Selected Objects**
-- **Filter**: Enter keywords to filter materials by their names. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials with matching names, or `Include only` to process only those materials whose names contain the specified keywords.
-- **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
+
+![Utilities Material Filter](images/utility_filter_materials.png){ .img-box align=left style='margin-right:calc(1em + 10px)' }
+
+- **Filter**: Helps you to refine the selection made with the 'Selection'.
+    - **Keywords**: Enter keywords to filter materials by their names. Separate multiple keywords with spaces. Case-insensitive. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials containing any of the specified keywords in their names, or `Include only` to process only those materials whose names contain any of the specified keywords.
+    - **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
 
 - **Target**: Specify which node inside the material to target. Refer to the options listed below for details:
 
@@ -124,8 +128,12 @@ This utility enables you to batch modify material settings across materials.
     - **Materials marked as Assets**
     - **Materials NOT marked as Assets**
     - **Materials on Selected Objects**
-- **Filter**: Enter keywords to filter materials by their names. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials with matching names, or `Include only` to process only those materials whose names contain the specified keywords.
-- **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
+
+![Utilities Material Filter](images/utility_filter_materials.png){ .img-box align=left style='margin-right:calc(1em + 10px)' }
+
+- **Filter**: Helps you to refine the selection made with the 'Selection'.
+    - **Keywords**: Enter keywords to filter materials by their names. Separate multiple keywords with spaces. Case-insensitive. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials containing any of the specified keywords in their names, or `Include only` to process only those materials whose names contain any of the specified keywords.
+    - **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
 - **Setting**:
     - **Displacement Type**
     - **Eevee Backface Culling**
@@ -158,12 +166,14 @@ This utility lets you replace existing 'Shader Editor' nodes with custom Node-Gr
     - **Materials marked as Assets**
     - **Materials NOT marked as Assets**
     - **Materials on Selected Objects**
-- **Filter**: Enter keywords to filter materials by their names. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials with matching names, or `Include only` to process only those materials whose names contain the specified keywords.
-- **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
 
+<div style="clear:both"></div>
 
+![Utilities Material Filter](images/utility_filter_materials.png){ .img-box align=left style='margin-right:calc(1em + 10px)' }
 
-
+- **Filter**: Helps you to refine the selection made with the 'Selection'.
+    - **Keywords**: Enter keywords to filter materials by their names. Separate multiple keywords with spaces. Case-insensitive. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials containing any of the specified keywords in their names, or `Include only` to process only those materials whose names contain any of the specified keywords.
+    - **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
 
 <div style="clear:both"></div>
 
@@ -466,6 +476,12 @@ This feature works with both internal and external Assets, so you don't have to 
     ![Tag - Material Texture Resolution](images/utility_asset_browser_tag_material_texture_resolution.png){ .img-box align=left }
 
     Tags material Assets with the texture resolution, like 2K, 4K, or 8K, by identifying the albedo texture within the material and checking its resolution.
+
+=== "Material Type"
+    ![Tag - Material Type](images/utility_asset_browser_tag_material_type.gif){ .img-box align=left }
+
+    Tags material Assets with its type: "Texture-based" or "Procedural", with an option to include node counts for both types.
+
 
 !!! tip "Tip"
     Smart Tags will overwrite previously existing Smart Tags of the same type. For example, if you have added the Object Dimensions tag and then edited the object, you can reapply the tag to update it.

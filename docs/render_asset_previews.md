@@ -208,6 +208,10 @@ Here, you'll find settings for the render engine, aspect ratio, resolution, and 
     - **Save in Asset & Save Externally**: to save both within the file and as separate external files.
     - **Save Only External**: to save images only as external files.
 
+
+- **Add Incremental Filename Suffix**: When saving asset previews externally, this feature automatically appends an incrementing number to the end of filenames, ensuring each version is saved without overwriting previous files. This allows you to quickly iterate renders with various settings. For example, if your object is named "Suzanne", the rendered images will be saved as "Suzanne [1]", "Suzanne [2]", and so on.
+
+
 !!! info2 "More render settings"
     These render settings are copied from your current scene, and you can edit them by going to the `Render` tab in the Properties panel to make your desired changes.
 
