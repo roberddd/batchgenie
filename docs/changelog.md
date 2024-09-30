@@ -9,14 +9,24 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ### Versions
 
+#### 1.0.3
+
+  > Date: 2024.10.01
+
+- **New functionality**:
+    - New Utility `Load previews from disk`: Load custom Asset Preview images from a specified directory. [More info](utilities.md#load-previews-from-disk)
+
+- **Bugfix**:
+    - **CRITICAL**: Importing Textures: Importing metallic textures had unfortunately broken in one of the updates leading to 1.0.0. This has now been fixed.
+
 
 #### 1.0.2
 
   > Date: 2024.09.27
 
 - **New functionality**:
-    - Utility `Add Asset Tag`: New Smart Tag: 'Material Type'. Tags the material with its type: "Texture-based" or "Procedural", with an option to include node counts for both types. Example: "Procedural (56 nodes)".
-    - `Render Asset Previews`:  'Add Incremental Filename Suffix' option: When saving asset previews externally (outside of the blend file), this feature automatically appends an incrementing number to the end of filenames, ensuring each version is saved without overwriting previous files. This allows you to quickly iterate renders with various settings. For example, if your object is named "Suzanne", rendered images will be saved as "Suzanne [1]", "Suzanne [2]", etc.
+    - Utility `Add Asset Tag`: New Smart Tag: 'Material Type'. Tags the material with its type: "Texture-based" or "Procedural", with an option to include node counts for both types. Example: "Procedural (56 nodes)". [More info](utilities.md#Asset-tags-add-material-type)
+    - `Render Asset Previews`:  'Add Incremental Filename Suffix' option: When saving asset previews externally, this feature automatically appends an incrementing number to the end of filenames, ensuring each version is saved without overwriting previous files. This allows you to quickly iterate renders with various settings. For example, if your object is named "Suzanne", rendered images will be saved as "Suzanne[1].png", "Suzanne[2].png", etc. [More info](render_asset_previews.md#render-settings)
 
 - **UI**:
     - Improved UI & tooltips for the previously added 'Filtering' functions for some utilities.

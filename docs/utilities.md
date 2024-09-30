@@ -567,6 +567,19 @@ First, make sure you're in the specific Asset library where you want to move you
 ---
 
 
+### Load previews from disk
+
+> Location: Asset Browser ▸ BatchGenie Menu
+
+Load custom Asset Preview images from a specified directory. When assets are selected in the Asset Browser, this tool checks for image files in the selected folder that match the names of the Assets. If a matching image is found, it is assigned as the Asset's preview thumbnail.
+
+![Load Asset Previews from disk](images/utilities_asset_browser_misc.png){ .img-box align=left }
+
+<div style="clear:both"></div>
+
+---
+
+
 ## Single Operation Utilities
 
 ### Replace Node

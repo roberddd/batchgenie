@@ -94,7 +94,7 @@ You can buy the add-on in the following stores:
 
 
 
-## Future Updates
+## Updates
 
 My priority is ensuring compatibility with Blender's Long-Term Support (LTS) releases, but I will also strive to maintain functionality with other Blender updates whenever possible. Additionally, I have planned features and utilities that will be added in future updates to enhance the capabilities. For details on the current version, check the [Changelog](changelog.md).
 
