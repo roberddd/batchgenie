@@ -9,6 +9,18 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ### Versions
 
+#### 1.0.4
+
+  > Date: 2024.10.01
+
+- **Improved functionality**:
+    - Utility `Load previews from disk`: Now supports more image formats.
+
+- **Bugfix**:
+    - **CRITICAL**: Rendering objects: Issue with rendering objects via the Asset Browser caused in 1.0.3 update. Now fixed.
+
+
+
 #### 1.0.3
 
   > Date: 2024.10.01
