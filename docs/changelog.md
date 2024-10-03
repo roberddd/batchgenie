@@ -9,6 +9,19 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ### Versions
 
+
+#### 1.0.5
+
+  > Date: 2024.10.03
+
+- **Bugfix**:
+    - **CRITICAL**: `Rendering Assets`: Rendering Assets via the Asset Browser that are already present in your open scene may result in those objects being deleted from the scene. This issue has now been fixed, along with improvements to how temporary data is handled internally.
+    - Utility `Replace Shader Nodes` / Import Textures > setting `Replace Principled BSDF`: Geometry nodes are now filtered out, displaying only Shader Editor nodes in the dropdown.
+
+
+---
+
+
 #### 1.0.4
 
   > Date: 2024.10.01
@@ -17,8 +30,10 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
     - Utility `Load previews from disk`: Now supports more image formats.
 
 - **Bugfix**:
-    - **CRITICAL**: Rendering objects: Issue with rendering objects via the Asset Browser caused in 1.0.3 update. Now fixed.
+    - **CRITICAL**: `Rendering Assets`: Issue with rendering objects via the Asset Browser caused in 1.0.3 update. Now fixed.
 
+
+---
 
 
 #### 1.0.3
@@ -30,6 +45,9 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 - **Bugfix**:
     - **CRITICAL**: Importing Textures: Importing metallic textures had unfortunately broken in one of the updates leading to 1.0.0. This has now been fixed.
+
+
+---
 
 
 #### 1.0.2
