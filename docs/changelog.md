@@ -10,6 +10,21 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 ### Versions
 
 
+#### 1.0.6
+
+  > Date: 2024.10.05
+
+- **New functionality**:
+    - New `Export objects`: Basic exporting functionality added. In the near future, the export functionality will be expanded and will also be available in the Asset Browser for easy exporting of your assets in various formats. [More info](export.md)
+
+- **Improved functionality**:
+    - Utilities: Enhanced parallel processing speed. When working with external blend files, BatchGenie utilizes multiple Blender processes in the background for quicker performance. Now with even greater speed, achieving up to a 0.5-second improvement per external blend file opened.
+
+- **Bugfix**:
+    - `Rendering Assets`: A potential issue that could cause minor problems with cleaning temporary files after rendering has now been resolved.
+---
+
+
 #### 1.0.5
 
   > Date: 2024.10.03
