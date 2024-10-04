@@ -12,7 +12,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 #### 1.0.6
 
-  > Date: 2024.10.05
+  > Date: 2024.10.04
 
 - **New functionality**:
     - New `Export objects`: Basic exporting functionality added. In the near future, the export functionality will be expanded and will also be available in the Asset Browser for easy exporting of your assets in various formats. [More info](export.md)
