@@ -44,6 +44,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
 - Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
+
 - **Texture Import**:
     - Blazingly fast imports.
     - Supports both Metallic/Roughness and Specular/Glossiness workflow.
@@ -58,6 +59,9 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Custom Input Socket Attributes: This feature enables you to define attributes for any input socket on the main shader of imported textures. You can assign specific colors or values, or utilize randomly generated values as required, including both whole numbers and decimals. This can be particularly useful for populating 'Seed' sockets.
     - Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders.
 
+- **Exporting**:
+    - Batch exporting of objects to blend files.
+
 - **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
     - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
@@ -67,6 +71,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
 
 - **Utilities**:
+    - Utilities are available for working with your current blend file and are integrated into the Asset Browser for quick access.
     - Tools for bulk updating material settings such as Displacement and eevee specific settings.
     - Node Attribute Changer: Target various nodes or custom node-groups within materials to change socket values, set specific colors, or use random values for seed sockets.
     - Replace Node Utility: Replace existing 'Shader Editor' nodes with custom Node-Groups.
@@ -77,6 +82,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Tagging Utilities: Easily add and remove tags for Assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed Asset information.
     - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
     - Move Asset: Organize your Assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
+    - Load previews from disk:  Directly load custom asset preview images from a specified directory.
     - Plus a few other small utilities!
 
 
