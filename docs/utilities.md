@@ -389,7 +389,7 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 
     **Set Image names same as the Image File names**:
 
-    **Use Case:** You imported external models, and all texture names are generic like 'color map', 'roughness map', and 'normal map', making it difficult to track them. This feature solves the issue by renaming image names in Blender to match the actual file names. For example, instead of 'color map', it could be 'Bark_2K_BaseColor'.
+    **Use Case**: You imported external models, and all texture names are generic like 'color map', 'roughness map', and 'normal map', making it difficult to track them. This feature solves the issue by renaming image names in Blender to match the actual file names. For example, instead of 'color map', it could be 'Bark_2K_BaseColor'.
 
     ![Batch Rename Texture Example](images/utility_batch_rename_texture_example.gif){ .img-box }
 

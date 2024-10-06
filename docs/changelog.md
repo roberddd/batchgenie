@@ -10,6 +10,17 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 ### Versions
 
 
+#### 1.0.7
+
+  > Date: 2024.10.05
+
+- **New / Improved functionality**:
+    - `Exporting `: The functionality has been expanded to support exporting collections and materials. New options are now available to customize the export process. [More info](export.md)
+
+
+---
+
+
 #### 1.0.6
 
   > Date: 2024.10.04
@@ -22,6 +33,8 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 - **Bugfix**:
     - `Rendering Assets`: A potential issue that could cause minor problems with cleaning temporary files after rendering has now been resolved.
+
+
 ---
 
 
