@@ -60,7 +60,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders.
 
 - **Exporting**:
-    - Batch exporting of objects to blend files.
+    - Batch exporting of objects, collections & materials to blend files.
 
 - **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
