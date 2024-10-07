@@ -16,7 +16,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 - **New functionality**:
     - `Exporting`: Now integrated into the Asset Browser. More settings added; customize the export name & pack texture option. [More info](export.md)
-    - `Pack Textures`: Inside the Asset Browser, you can now select assets and pack the textures for these assets, ensuring that your assets maintain their appearance without relying on external texture files. [More info](utilities.md#pack-textures)
+    - New utility `Pack Textures`: Inside the Asset Browser, you can now select assets and pack the textures for these assets, ensuring that your assets maintain their appearance without relying on external texture files. [More info](utilities.md#pack-textures)
 
 - **Bugfix**:
     - `Exporting`: The `Keep Outliner Hierarchy` setting now correctly exports objects that are directly in the root Scene Collection.

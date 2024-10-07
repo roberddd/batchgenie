@@ -1,3 +1,14 @@
+:root {
+  /* BatchGenie specific */
+  --main-accent-color-red: #E0425D;
+  --main-accent-color-green: #15ac59;
+  --main-accent-color-blue: #4952d3;
+  --main-accent-color-orange: #ffa500;
+  --main-box-bg: #f1f1f1;
+  --main-box-border-color: #e0e0e0;
+}
+
+
 /* ######## < MOBILE > ######## */
 @media (max-width: 768px) {
   .img-box {
@@ -50,7 +61,7 @@
     border: .05rem solid #4B4D58 !important; /* Adjust border color for dark mode */
   }
 }
-/* ######## < GRID > ######## */
+/* ######## </ GRID > ######## */
 
 /* Shop button */
 .md-typeset .md-button--stretch {
