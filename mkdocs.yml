@@ -41,9 +41,9 @@ extra_css:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - Import Textures: import_textures.md
+  - Importing: import.md
   - Exporting: export.md
-  - Render Asset Previews: render_asset_previews.md
+  - Render Assets: render.md
   - Utilities: utilities.md
   - Preferences: preferences.md
 
@@ -57,6 +57,10 @@ plugins:
   - mermaid2
   # - info:
   #     enabled_on_serve: true
+  - redirects:
+      redirect_maps:
+        'import_textures.md': 'import.md' #Redirect from old import_textures to new import page
+        'render_asset_previews.md': 'render.md'
 
 extra:
   social:

@@ -10,6 +10,23 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 ### Versions
 
 
+#### 1.0.8
+
+  > Date: 2024.10.07
+
+- **New functionality**:
+    - `Exporting`: Now integrated into the Asset Browser. More settings added; customize the export name & pack texture option. [More info](export.md)
+    - `Pack Textures`: Inside the Asset Browser, you can now select assets and pack the textures for these assets, ensuring that your assets maintain their appearance without relying on external texture files. [More info](utilities.md#pack-textures)
+
+- **Bugfix**:
+    - `Exporting`: The `Keep Outliner Hierarchy` setting now correctly exports objects that are directly in the root Scene Collection.
+    - Utility `Load previews from disk`: Sometimes when selecting the folder, the current blend file was selected in the file browser, causing the selected file path to include the .blend file, which resulted in no previews being found. This has now been resolved.
+
+- **UI**:
+    - Minor UI and layout adjustments.
+
+---
+
 #### 1.0.7
 
   > Date: 2024.10.05
@@ -17,9 +34,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 - **New / Improved functionality**:
     - `Exporting `: The functionality has been expanded to support exporting collections and materials. New options are now available to customize the export process. [More info](export.md)
 
-
 ---
-
 
 #### 1.0.6
 
@@ -34,9 +49,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 - **Bugfix**:
     - `Rendering Assets`: A potential issue that could cause minor problems with cleaning temporary files after rendering has now been resolved.
 
-
 ---
-
 
 #### 1.0.5
 
@@ -46,9 +59,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
     - **CRITICAL**: `Rendering Assets`: Rendering Assets via the Asset Browser that are already present in your open scene may result in those objects being deleted from the scene. This issue has now been fixed, along with improvements to how temporary data is handled internally.
     - Utility `Replace Shader Nodes` / Import Textures > setting `Replace Principled BSDF`: Geometry nodes are now filtered out, displaying only Shader Editor nodes in the dropdown.
 
-
 ---
-
 
 #### 1.0.4
 
@@ -60,9 +71,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 - **Bugfix**:
     - **CRITICAL**: `Rendering Assets`: Issue with rendering objects via the Asset Browser caused in 1.0.3 update. Now fixed.
 
-
 ---
-
 
 #### 1.0.3
 
@@ -74,16 +83,14 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 - **Bugfix**:
     - **CRITICAL**: Importing Textures: Importing metallic textures had unfortunately broken in one of the updates leading to 1.0.0. This has now been fixed.
 
-
 ---
-
 
 #### 1.0.2
 
   > Date: 2024.09.27
 
 - **New functionality**:
-    - Utility `Add Asset Tag`: New Smart Tag: 'Material Type'. Tags the material with its type: "Texture-based" or "Procedural", with an option to include node counts for both types. Example: "Procedural (56 nodes)". [More info](utilities.md#Asset-tags-add-material-type)
+    - Utility `Add Asset Tag`: New Smart Tag: 'Material Type'. Tags the material with its type: "Texture-based" or "Procedural", with an option to include node counts for both types. Example: "Procedural (56 nodes)". [More info](utilities.md)
     - `Render Asset Previews`:  'Add Incremental Filename Suffix' option: When saving asset previews externally, this feature automatically appends an incrementing number to the end of filenames, ensuring each version is saved without overwriting previous files. This allows you to quickly iterate renders with various settings. For example, if your object is named "Suzanne", rendered images will be saved as "Suzanne[1].png", "Suzanne[2].png", etc. [More info](render_asset_previews.md#render-settings)
 
 - **UI**:

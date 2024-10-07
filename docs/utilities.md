@@ -569,11 +569,38 @@ First, make sure you're in the specific Asset library where you want to move you
 
 ### Load previews from disk
 
-> Location: Asset Browser ▸ BatchGenie Menu
+> Location: Asset Browser ▸ BatchGenie Menu ▸ Misc
 
 Load custom Asset Preview images from a specified directory. When assets are selected in the Asset Browser, this tool checks for image files in the selected folder that match the names of the Assets. Supported image formats include `.png`, `.jpg`, `.jpeg`, `.tga`, `.exr`, `.webp`, `.tif`, `.tiff`, and `.bmp`. The tool prioritizes image formats in this specific order, starting with `.png` and stopping once a matching image is found.
 
 ![Load Asset Previews from disk](images/utilities_asset_browser_misc.png){ .img-box align=left }
+
+<h5>Instructions</h5>
+
+1. Select the Assets you want to load previews for in the Asset Browser.
+- Navigate to `BatchGenie > Misc > Load previews from disk`.
+
+<div style="clear:both"></div>
+
+
+---
+
+
+### Pack Textures
+
+> Location: Asset Browser ▸ BatchGenie Menu ▸ Misc
+
+This feature packs all associated textures into their respective blend files, ensuring that your assets retain their appearance without the need for external texture files.
+
+![Load Asset Previews from disk](images/utilities_asset_browser_misc.png){ .img-box align=left }
+
+!!! warning "Note"
+    This feature packs textures for all Assets inside the blend file, which can affect other Assets that you have not selected but reside in the same blend file as one of the selected Assets.
+
+<h5>Instructions</h5>
+
+1. Select the Assets you want to pack from the Asset Browser.
+- Navigate to `BatchGenie > Misc > Pack Textures`.
 
 <div style="clear:both"></div>
 
