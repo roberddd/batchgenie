@@ -44,7 +44,6 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
 - Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
-
 - **Texture Import**:
     - Blazingly fast imports.
     - Supports both Metallic/Roughness and Specular/Glossiness workflow.
@@ -60,7 +59,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders.
 
 - **Exporting**:
-    - Batch exporting of objects, collections & materials to blend files.
+    - Batch export objects, collections, and materials to blend files with ease. This feature is directly integrated into the Asset Browser for seamless access and functionality
 
 - **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
@@ -83,6 +82,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
     - Move Asset: Organize your Assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
     - Load previews from disk:  Directly load custom asset preview images from a specified directory.
+    - Pack Textures: Easily pack textures for assets in the Asset Browser with a single click.
     - Plus a few other small utilities!
 
 
