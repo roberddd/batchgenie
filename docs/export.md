@@ -1,9 +1,8 @@
 # Exporting
 
-To find the exporting tools, you can either:
+BatchGenie streamlines the export of your assets, making it easy to organize your library or share them with others. Exporting is done through the BatchGenie main panel in the `3D Viewport` or via the Asset Browser under `BatchGenie > Misc > Export`.
 
-- Navigate to the main `BatchGenie panel` in the `3D Viewport` and click on Export.
-- Alternatively, if you're exporting via the Asset Browser, go to `BatchGenie > Misc > Export` inside the Asset Browser.
+### Via the BatchGenie panel
 
 ![Export Panel](images/export_panel.gif){ .img-box align=right }
 
@@ -49,7 +48,7 @@ To find the exporting tools, you can either:
     - **Asset Type**: Automatically appends the asset type (e.g., Object, Material, Collection) to the name for easier identification.
 - **Asset status**:
     - **Keep current**: Keeps current Asset status.
-    - **Mark as Asset**: Marks the Exported objects as Assets, making them easily accessible in Blender's Asset Browser for future use.
+    - **Mark as Asset**: Marks the Exported items as Assets, making them easily accessible in Blender's Asset Browser for future use.
     - **Clear Asset**: Clears the Asset mark.
 - **Add Metadata**: Description, License, Copyright & Author
 
@@ -59,6 +58,8 @@ To find the exporting tools, you can either:
 
 ### Via Asset Browser
 
-If you're exporting via the Asset Browser, you'll be presented with similar settings as in the main panel. Note the panel on the right side with the settings:
 
-![Export Panel](images/export_asset_browser_file_view.png){ .img-box }
+
+If you're exporting via the Asset Browser, you'll see settings similar to those in the main panel, displayed alongside the file browser view where you select the export directory, as shown in the image:
+
+![Export Panel](images/export_asset_browser_file_view.png){ .img-box width=80% }

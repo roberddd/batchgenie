@@ -445,7 +445,7 @@ Helps delete any temporary files that might be left behind by BatchGenie. There 
 
 Add or remove tags from your Assets. Select any number of Assets of any type, choose the desired tags to add, and BatchGenie will assign them to the appropriate Assets. These can be either regular tags or Smart Tags that apply the property of your choice to the Asset.
 
-This feature works with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.
+*This feature works with both internal and external Assets, so you don't have to open each individual Asset Blend file separately.*
 
 <div style="clear:both"></div>
 

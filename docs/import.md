@@ -1,6 +1,16 @@
-# Importing PBR Textures
 
-![Example Import](images/import_example.gif){ .img-box align=right }
+# Importing
+![Example Import](images/main_panel.png){ .img-box align=right }
+
+Importing is done through the BatchGenie main panel found in the `3D Viewport`. Currently, there are two types of imports available: [**PBR Textures**](#import-pbr-textures) and [**Blend Files**](#import-blend-files). The `PBR Texture` option imports PBR texture sets from a folder and compiles them into ready-to-use materials. The `Blend File` option allows you to import objects, collections, and materials from multiple blend files at once.
+
+
+
+<div style="clear:both"></div>
+
+## Import PBR Textures
+
+![Example Import](images/import_example.gif){ .img-box align=left }
 
 1. Open the main BatchGenie panel.
 2. Go to the `Batch Import PBR Texture` section.
@@ -25,7 +35,7 @@
 #### General Settings
 
 - **Include files in root**: Import textures located directly in the root of the selected folder.
-- **Include Subfolders**: Import textures from subfolders within the selected folder. By default, BatchGenie only searches for subfolders one level deep, but this depth can be adjusted in the Preferences.
+- **Include Subfolders**: Import textures from subfolders within the selected folder. By default, BatchGenie only searches for subfolders one level deep, but this depth can be adjusted in the [Preferences](preferences.md#import).
 - **Skip existing**: Do not import materials if a material with the same name already exists.
 - **Use Fake User**: Use Fake User on imported materials. Ensures that imported materials are saved with your project, even if they're not currently in use. This prevents them from being automatically removed when you save your file.
 - **Mark as Asset**: Marks imported materials as Assets, making them easily accessible in Blender's Asset Browser for future use.
@@ -50,7 +60,7 @@
 
             Benchmark performed with PNG files on an Intel i7-14700K CPU. While this additional time might seem minor, it becomes significant when compared to the setting being disabled. For example, without this setting enabled, importing a folder with 183 different 4K and 8K texture sets, totaling 725 images and weighing 50GB, takes only 3 seconds.
 
-- **DirectX Normals**: If your materials use DirectX normals but this isn't indicated in their filenames(and the add-on's DirectX detection isn't recognizing them), enable this option to add a 'DirectX to OpenGL' node for normal conversion. See [Preferences](preferences.md#advanced) to adjust this function.
+- **DirectX Normals**: If your materials use DirectX normals but this isn't indicated in their filenames(and the add-on's DirectX detection isn't recognizing them), enable this option to add a 'DirectX to OpenGL' node for normal conversion. See [Preferences](preferences.md) to adjust this function.
 - **Filter**: Filter out unwanted textures. Example usage would be to filter out DirectX normal maps by using the filter 'DirectX' or 'DX'.
 
 
@@ -105,6 +115,12 @@ BatchGenie searches for keywords to match and connect the sockets in the new Nod
 !!! tip "Tip"
     If the Node-Group contains a socket named 'Normal Color', BatchGenie will connect the Normal Map texture directly to this socket, bypassing the Normal Map Node.
 
+
+
+<figure markdown="span">
+  ![Example Import With Extra Everything](images/Import_custom-node-group-material-example.png){ .img-box .on-glb width=60% data-title="Example of an import with a custom Node-Group," }
+  <figcaption>Example of an import with a custom Node-Group.</figcaption>
+</figure>
 
 ---
 
@@ -165,7 +181,38 @@ The last texture option is **Custom** which makes it possible to import any cust
     So in this example BatchGenie will look for any images that contain the words 'Translucency' or 'Scattering' and connect them to a socket named 'Translucent Map' from a custom Node-Group.
 
 
+
+
+## Import Blend Files
+
+The `Blend Files` option allows you to import objects, collections, and materials from multiple blend files at once. This feature is designed to streamline asset management by letting you quickly gather specific asset types from various blend files into your current project.
+
+![Import Blend Files](images/import_blend-files.gif){ .img-box align=left }
+
+- **Directory**: The directory from which BatchGenie should locate Blend files.
+- **Type**: Object, Collection or Material
+- **Selection**: Allows you to specify which items to include in the import.
+    - **Marked as Asset**
+    - **NOT marked as asset**
+    - **All**
+
+### Import Settings
+
+- **Include Subfolders**: If `enabled`, imports will also include files from subfolders within the selected folder. If `disabled`, only files directly in the selected folder will be processed. By default, BatchGenie searches subfolders one level deep, but this depth can be adjusted in the [Preferences](preferences.md#import).
+- **Use Fake User**: Use Fake User on imported items.
+- **Asset status**:
+    - **Keep current**: Keeps current Asset status.
+    - **Mark as Asset**: Marks the Imported items as Assets, making them easily accessible in Blender's Asset Browser for future use.
+    - **Clear Asset**: Clears the Asset mark.
+- **Add Metadata**: Description, License, Copyright & Author
+<div style="clear:both"></div>
+
+
+
+
 ## FAQ
+
+### Texture Import related
 
 `How should the texture folder structure look?`
 
@@ -186,7 +233,7 @@ The last texture option is **Custom** which makes it possible to import any cust
 
 `How are DirectX & OpenGL normal maps handled?`
 
-:   BatchGenie attempts to identify the type of normal map by examining the texture names, which you can configure in the [Preferences](preferences.md#advanced-import-settings). If your normal maps do not indicate their format, I highly recommend [this guide](https://www.texturecan.com/post/3/DirectX-vs-OpenGL-Normal-Map/){ target="_blank" } over at **texturecan.com** for help in identifying your maps.
+:   BatchGenie attempts to identify the type of normal map by examining the texture names, which you can configure in the [Preferences](preferences.md#import). If your normal maps do not indicate their format, I highly recommend [this guide](https://www.texturecan.com/post/3/DirectX-vs-OpenGL-Normal-Map/){ target="_blank" } over at **texturecan.com** for help in identifying your maps.
 
 `How fast is the importer?`
 
@@ -196,7 +243,11 @@ The last texture option is **Custom** which makes it possible to import any cust
 
 :   Currently supported formats include `bmp, png, jpg, jpeg, tga, exr, tif, tiff, webp`. Blender supports additional exotic formats, which you can find [here](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }. These should work as well, but they are currently filtered out because I have been unable to test them since they are very uncommon formats. If you need support for these formats, please let me know.
 
+### Blend File Import related
 
+`How should the folder structure look?`
+
+:   No specific structure is required. Blend files can be located directly in the selected folder or within subfolders at multiple levels. By default, BatchGenie searches subfolders one level deep, but you can adjust this depth in the Preferences.
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}
 

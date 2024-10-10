@@ -8,6 +8,10 @@
   --main-box-border-color: #e0e0e0;
 }
 
+.img-box{
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
 
 /* ######## < MOBILE > ######## */
 @media (max-width: 768px) {
@@ -19,7 +23,7 @@
   }
   /* Target images aligned right */
   .img-box[align="right"] {
-     float: right; /* Solves issue on mobile for images that are floating right... so float it right again.. two rights make wrong */
+     float: right; /* Solves issue on mobile for images that are floating right...so float it right again..*/
     /* margin-left: 0px;
     margin-right: auto;  */
   }
@@ -32,7 +36,12 @@
 }
 /* ######## </ MOBILE > ######## */
 
-/* ### < GUMROAD BUTTON > ### */
+/* ######## < SHOP BUTTONS > ######## */
+.md-typeset .md-button--stretch {
+  width: 99%;
+  text-align: center;
+}
+/* Gumroad */
 .gumroad{
   color: #ed98e6;
   transition: color 0.3s ease;
@@ -40,14 +49,13 @@
 .md-button:hover .gumroad {
   color: rgb(31, 31, 31);
 }
-/* ### </ GUMROAD BUTTON > ### */
+/* ######## </ SHOP BUTTONS > ######## */
 
 /* ######## < GRID > ######## */
 /* Light mode */
 .md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
   background-color: #f1f1f1; /* Light background */
 }
-
 .md-typeset .grid_custom>ul>li:hover {
   border: .05rem solid rgb(155, 155, 155) !important;
 }
@@ -55,7 +63,6 @@
 [data-md-color-scheme="slate"]{
   .md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
     background-color: #1A1C23;
-
   }
   .md-typeset .grid_custom>ul>li:hover {
     border: .05rem solid #4B4D58 !important; /* Adjust border color for dark mode */
@@ -63,20 +70,9 @@
 }
 /* ######## </ GRID > ######## */
 
-/* Shop button */
-.md-typeset .md-button--stretch {
-  width: 99%;
-  text-align: center;
-
-}
-
-.img-box{
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-}
-
-/* ### Replace the Social in the footer */
-/* desktop */
+/* ######## < FOOTER > ########  */
+/* Replace the Social in the footer */
+/* Desktop */
 .batchgenie_footer_container {
   display: flex;
   /* justify-content: center; */
@@ -87,20 +83,21 @@
 .batchgenie_footer_link {
   margin: 0 .6rem;
 }
-/* mobile */
+/* Mobile */
 @media (max-width: 768px) {
   .batchgenie_footer_container {
     justify-content: flex-end; /* Align content on smaller screens */
     text-align: center;
     margin: auto;
   }
-
   .batchgenie_footer_link {
     margin: 0 .3rem; /* Adjust margin for mobile */
   }
 }
+/* ######## </ FOOTER > ########  */
 
-/* Custom 'info2' admonition */
+/* ######## < ADMONITION > ########  */
+/* Custom 'info2' */
 :root {
   --md-admonition-icon--info2: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h-2V7h2m0 10h-2v-6h2m-1-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>');
 }
@@ -118,6 +115,7 @@
   -webkit-mask-image: var(--md-admonition-icon--info2);
           mask-image: var(--md-admonition-icon--info2);
 }
+/* ######## </ ADMONITION > ########  */
 
 /* ######## < VIDEO PLAYER > ######## */
 .video-wrapper {
@@ -165,5 +163,23 @@
 }
 .mermaid .nodeLabel {
   color: #15144e !important;
-
 }
+/* ######## </ Mermaid Diagrams > ######## */
+
+/* ######## < CHANGELOG > ######## */
+/* Compact */
+.md-typeset .changelog>blockquote>p{ /* Date */
+  margin-bottom:-0.9em;
+  margin-top:-0.5em;
+}
+.md-typeset .changelog>ul>li { /* Main List items */
+  list-style-type: none;
+  margin-bottom:0.9em;
+  margin-top: -0.1em;
+  margin-left: 0.75em;
+}
+.md-typeset .changelog>ul>li>ul {
+  margin-top:-0.1em;
+  line-height: 1.5; /* 1.6 is default */
+}
+/* ######## </ CHANGELOG > ######## */

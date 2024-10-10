@@ -6,11 +6,11 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 
 <div class="grid cards grid_custom" markdown>
 
--   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import PBR Textures__
+-   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import__
 
     ---
 
-    Streamlined PBR texture importing with a single click, offering robust customization options for bulk imports to save time and effort while tailoring the process to your preferences.
+    Streamlined asset importing with a single click, including PBR textures and more, offering robust customization options for bulk imports to save time and effort while tailoring the process to your preferences.
 
 
 -   :material-export-variant:{ .lg .middle style="color:var(--main-accent-color-orange)" } __Batch Export__
@@ -53,22 +53,25 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
     - Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
-    - **Texture Import**:
-        - Blazingly fast imports.
-        - Supports both Metallic/Roughness and Specular/Glossiness workflow.
-        - Supports for 16+ types of maps: Albedo, Metallic, Roughness, Gloss, Alpha, Subsurface Scattering, Specular, Transmission, Emission, Sheen Color, Normal, Bump, Ambient Occlusion, Cavity, Displacement, and PACKED & CUSTOM types.
-            - Packed: ARM/ORM/RMA textures that combine AO, Roughness, and Metallic maps.
-            - Custom: Import any map and connect it to your chosen input via a dropdown menu. Supports packed textures.
-        - Automatically sets up all necessary nodes, including color space adjustments and other configurations for a smooth workflow without manual intervention. This includes detecting normal map format and adding conversion nodes if needed, as well as auto-detecting the alpha channel from the Albedo texture to use its alpha channel if available.
-        - Supports all combinations of Normal, Bump & Displacement maps.
-        - Flexibly adjust the strength of Normal, Bump, Displacement, Ambient Occlusion and Cavity maps during import with the added convenience of bulk updates afterwards if needed.
-        - Logic adept at deciphering complex texture naming conventions and avoiding duplicates of similar maps such as Roughness & Gloss.
-        - Ability to designate a custom node-group to substitute the Principled BSDF shader in imported materials, enabling precise material customization during the import process.
-        - Custom Input Socket Attributes: This feature enables you to define attributes for any input socket on the main shader of imported textures. You can assign specific colors or values, or utilize randomly generated values as required, including both whole numbers and decimals. This can be particularly useful for populating 'Seed' sockets.
-        - Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders.
+    - **Importing**:
+        - **Texture Import**:
+            - Blazingly fast imports.
+            - Supports both Metallic/Roughness and Specular/Glossiness workflow.
+            - Supports for 16+ types of maps: Albedo, Metallic, Roughness, Gloss, Alpha, Subsurface Scattering, Specular, Transmission, Emission, Sheen Color, Normal, Bump, Ambient Occlusion, Cavity, Displacement, and PACKED & CUSTOM types.
+                - Packed: ARM/ORM/RMA textures that combine AO, Roughness, and Metallic maps.
+                - Custom: Import any map and connect it to your chosen input via a dropdown menu. Supports packed textures.
+            - Automatically sets up all necessary nodes, including color space adjustments and other configurations for a smooth workflow without manual intervention. This includes detecting normal map format and adding conversion nodes if needed, as well as auto-detecting the alpha channel from the Albedo texture to use its alpha channel if available.
+            - Supports all combinations of Normal, Bump & Displacement maps.
+            - Flexibly adjust the strength of Normal, Bump, Displacement, Ambient Occlusion and Cavity maps during import with the added convenience of bulk updates afterwards if needed.
+            - Logic adept at deciphering complex texture naming conventions and avoiding duplicates of similar maps such as Roughness & Gloss.
+            - Ability to designate a custom node-group to substitute the Principled BSDF shader in imported materials, enabling precise material customization during the import process.
+            - Custom Input Socket Attributes: This feature enables you to define attributes for any input socket on the main shader of imported textures. You can assign specific colors or values, or utilize randomly generated values as required, including both whole numbers and decimals. This can be particularly useful for populating 'Seed' sockets.
+            - Supports a mix of subfolders and files, allowing processing of textures located in both the root folder and subfolders.
+        - **Blend File Import**:
+            - Import objects, collections, and materials from multiple blend files at once.
 
     - **Exporting**:
-        - Batch export objects, collections, and materials to blend files with ease. This feature is directly integrated into the Asset Browser for seamless access and functionality
+        - Batch export objects, collections, and materials to blend files with ease. This feature is directly integrated into the Asset Browser for seamless access and functionality.
 
     - **Asset Preview Rendering**:
         - One click batch rendering making the process swift and efficient.
@@ -97,7 +100,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 
 ## Where to get the add-on?
 
-You can buy the add-on in the following stores:
+You can buy BatchGenie in the following stores:
 
 <div class="grid" markdown>
 
