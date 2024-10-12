@@ -11,16 +11,25 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+#### 1.1.0
+
+  > Date: 2024.10.12
+
+- **Bugfix**:
+    - `Rendering`: Fixed an issue where rendering for certain collections would complete, but the cleanup of temporary files failed due to specific material node-groups. As a result, BatchGenie was unable to set the newly rendered image as the asset thumbnail. This has now been resolved.
+- **UI**:
+    - `Exporting`: A progress bar is now displayed when exporting, with plans to implement it in other areas soon.
+
+---
+
 #### 1.0.9
 
   > Date: 2024.10.10
 
 - **New functionality**:
     - `Importing`: Batch import of blend files is now available. Import Objects, Collections and Materials. [More info](import.md#import-blend-files)
-
 - **Improved functionality**:
     - `Rendering Assets`: The chosen 'Lighting Setup' will now be saved, so the next time you start Blender, it will remember your setting.
-
 - **UI**:
     - Redesigned Add-on `Preferences` with a new tabbed layout, replacing the previous single-page "wall of text" format for better organization and usability.
 
@@ -33,11 +42,9 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 - **New functionality**:
     - `Exporting`: Now integrated into the Asset Browser. More settings added; customize the export name & pack texture option. [More info](export.md)
     - New utility `Pack Textures`: Inside the Asset Browser, you can now select assets and pack the textures for these assets, ensuring that your assets maintain their appearance without relying on external texture files. [More info](utilities.md#pack-textures)
-
 - **Bugfix**:
     - `Exporting`: The `Keep Outliner Hierarchy` setting now correctly exports objects that are directly in the root Scene Collection.
     - Utility `Load previews from disk`: Sometimes when selecting the folder, the current blend file was selected in the file browser, causing the selected file path to include the .blend file, which resulted in no previews being found. This has now been resolved.
-
 - **UI**:
     - Minor UI and layout adjustments.
 
