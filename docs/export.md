@@ -62,8 +62,10 @@ BatchGenie streamlines the export of your assets, making it easy to organize you
 
 When exporting via the Asset Browser, you'll be presented with settings similar to those in the main panel, shown alongside the file browser where you select the export directory, as seen in the image below.
 
-An additional option available is:
+Few additional options available:
 
+- **Export as**: Choose whether to export the selected Assets as individual blend files or as one combined blend file.
 - **Duplicate naming Format**: Choose how duplicate Asset names are handled during export, allowing you to customize the format in which a number is appended to avoid naming conflicts.
+
 
 ![Export Panel](images/export_asset_browser_file_view.png){ .img-box width=80% }
