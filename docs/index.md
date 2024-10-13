@@ -71,7 +71,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
             - Import objects, collections, and materials from multiple blend files at once.
 
     - **Exporting**:
-        - Batch export objects, collections, and materials to blend files with ease. This feature is directly integrated into the Asset Browser for seamless access and functionality.
+        - Batch export objects, collections, and materials to blend files with ease. You can choose to export them as individual blend files or combine all selected assets into a single blend file. This feature is directly integrated into the Asset Browser for seamless access and functionality.
 
     - **Asset Preview Rendering**:
         - One click batch rendering making the process swift and efficient.

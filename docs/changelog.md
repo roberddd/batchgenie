@@ -11,6 +11,16 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+#### 1.1.2
+
+  > Date: 2024.10.13
+
+- **Improved functionality**:
+    - `Exporting `: When exporting via the Asset Browser, you now have the option to export selected assets as a single combined blend file, in addition to saving them as individual files.
+- **Bugfix**:
+    - CRITICAL: `Add Tags`: A previous update caused all 'Smart Tags' to stop working. This issue has now been resolved, restoring full functionality to the tagging system.
+
+---
 
 #### 1.1.1
 
