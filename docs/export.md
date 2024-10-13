@@ -60,6 +60,10 @@ BatchGenie streamlines the export of your assets, making it easy to organize you
 
 
 
-If you're exporting via the Asset Browser, you'll see settings similar to those in the main panel, displayed alongside the file browser view where you select the export directory, as shown in the image:
+When exporting via the Asset Browser, you'll be presented with settings similar to those in the main panel, shown alongside the file browser where you select the export directory, as seen in the image below.
+
+An additional option available is:
+
+- **Duplicate naming Format**: Choose how duplicate Asset names are handled during export, allowing you to customize the format in which a number is appended to avoid naming conflicts.
 
 ![Export Panel](images/export_asset_browser_file_view.png){ .img-box width=80% }

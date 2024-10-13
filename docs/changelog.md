@@ -11,12 +11,24 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+
+#### 1.1.1
+
+  > Date: 2024.10.13
+
+- **Improved functionality**:
+    - `Exporting `: When exporting via the Asset Browser, you can now add a suffix to handle duplicate asset names. For instance, if you're exporting two assets both named "Cube," you can choose how they are renamed, such as "Cube.blend" and "Cube (2).blend".
+- **Bugfix**:
+    - `Exporting`: Fixed an issue where exporting local Assets from your current file via the Asset Browser, while not in the 'Current File' library, resulted in empty .blend files. This has now been resolved.
+
+---
+
 #### 1.1.0
 
   > Date: 2024.10.12
 
 - **Bugfix**:
-    - `Rendering`: Fixed an issue where rendering for certain collections would complete, but the cleanup of temporary files failed due to specific material node-groups. As a result, BatchGenie was unable to set the newly rendered image as the asset thumbnail. This has now been resolved.
+    - `Rendering`: Fixed an issue where rendering for certain collections would complete, but the cleanup of temporary files failed due to specific material node-groups. As a result, BatchGenie was unable to set the newly rendered image as the Asset thumbnail. This has now been resolved.
 - **UI**:
     - `Exporting`: A progress bar is now displayed when exporting, with plans to implement it in other areas soon.
 
@@ -41,7 +53,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 - **New functionality**:
     - `Exporting`: Now integrated into the Asset Browser. More settings added; customize the export name & pack texture option. [More info](export.md)
-    - New utility `Pack Textures`: Inside the Asset Browser, you can now select assets and pack the textures for these assets, ensuring that your assets maintain their appearance without relying on external texture files. [More info](utilities.md#pack-textures)
+    - New utility `Pack Textures`: Inside the Asset Browser, you can now select Assets and pack the textures for these Assets, ensuring that your Assets maintain their appearance without relying on external texture files. [More info](utilities.md#pack-textures)
 - **Bugfix**:
     - `Exporting`: The `Keep Outliner Hierarchy` setting now correctly exports objects that are directly in the root Scene Collection.
     - Utility `Load previews from disk`: Sometimes when selecting the folder, the current blend file was selected in the file browser, causing the selected file path to include the .blend file, which resulted in no previews being found. This has now been resolved.
@@ -64,7 +76,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
   > Date: 2024.10.04
 
 - **New functionality**:
-    - New `Export objects`: Basic exporting functionality added. In the near future, the export functionality will be expanded and will also be available in the Asset Browser for easy exporting of your assets in various formats. [More info](export.md)
+    - New `Export objects`: Basic exporting functionality added. In the near future, the export functionality will be expanded and will also be available in the Asset Browser for easy exporting of your Assets in various formats. [More info](export.md)
 - **Improved functionality**:
     - Utilities: Enhanced parallel processing speed. When working with external blend files, BatchGenie utilizes multiple Blender processes in the background for quicker performance. Now with even greater speed, achieving up to a 0.5-second improvement per external blend file opened.
 - **Bugfix**:
@@ -110,7 +122,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 - **New functionality**:
     - Utility `Add Asset Tag`: New Smart Tag: 'Material Type'. Tags the material with its type: "Texture-based" or "Procedural", with an option to include node counts for both types. Example: "Procedural (56 nodes)". [More info](utilities.md)
-    - `Render Asset Previews`:  'Add Incremental Filename Suffix' option: When saving asset previews externally, this feature automatically appends an incrementing number to the end of filenames, ensuring each version is saved without overwriting previous files. This allows you to quickly iterate renders with various settings. For example, if your object is named "Suzanne", rendered images will be saved as "Suzanne[1].png", "Suzanne[2].png", etc. [More info](render_asset_previews.md#render-settings)
+    - `Render Asset Previews`:  'Add Incremental Filename Suffix' option: When saving Asset previews externally, this feature automatically appends an incrementing number to the end of filenames, ensuring each version is saved without overwriting previous files. This allows you to quickly iterate renders with various settings. For example, if your object is named "Suzanne", rendered images will be saved as "Suzanne[1].png", "Suzanne[2].png", etc. [More info](render_asset_previews.md#render-settings)
 - **UI**:
     - Improved UI & tooltips for the previously added 'Filtering' functions for some utilities.
     - Improved the layout & content of the 'info' popup that is available in many places.
