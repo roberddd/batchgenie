@@ -11,9 +11,18 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
-#### 1.1.2
+### 1.1.3 <small>2024-10-15</small>
 
-  > Date: 2024.10.13
+- **New functionality**:
+    - Added utility `Set Origin`: Adjust object origins to the minimum, maximum, or center along the X, Y, or Z axis based on their bounding box. [More info](utilities.md#set-origin)
+- **Bugfix**:
+    - Utility `Change Node Attributes`: Fixed an issue where the 'Only materials imported by BatchGenie' filter did not work when targeting 'Shader Node'.
+- **UI**:
+    - Minor improvements: Enhanced tooltips, small layout adjustments, and fixed a few typos.
+
+---
+
+### 1.1.2 <small>2024-10-13</small>
 
 - **Improved functionality**:
     - `Exporting `: When exporting via the Asset Browser, you now have the option to export selected assets as a single combined blend file, in addition to saving them as individual files.
@@ -22,9 +31,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.1.1
-
-  > Date: 2024.10.13
+### 1.1.1 <small>2024-10-13</small>
 
 - **Improved functionality**:
     - `Exporting `: When exporting via the Asset Browser, you can now add a suffix to handle duplicate asset names. For instance, if you're exporting two assets both named "Cube," you can choose how they are renamed, such as "Cube.blend" and "Cube (2).blend".
@@ -33,9 +40,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.1.0
-
-  > Date: 2024.10.12
+### 1.1.0 <small>2024-10-12</small>
 
 - **Bugfix**:
     - `Rendering`: Fixed an issue where rendering for certain collections would complete, but the cleanup of temporary files failed due to specific material node-groups. As a result, BatchGenie was unable to set the newly rendered image as the Asset thumbnail. This has now been resolved.
@@ -44,9 +49,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.9
-
-  > Date: 2024.10.10
+### 1.0.9 <small>2024-10-10</small>
 
 - **New functionality**:
     - `Importing`: Batch import of blend files is now available. Import Objects, Collections and Materials. [More info](import.md#import-blend-files)
@@ -57,9 +60,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.8
-
-  > Date: 2024.10.07
+### 1.0.8 <small>2024-10-07</small>
 
 - **New functionality**:
     - `Exporting`: Now integrated into the Asset Browser. More settings added; customize the export name & pack texture option. [More info](export.md)
@@ -72,18 +73,14 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.7
-
-  > Date: 2024.10.05
+### 1.0.7 <small>2024-10-05</small>
 
 - **New / Improved functionality**:
     - `Exporting `: The functionality has been expanded to support exporting collections and materials. New options are now available to customize the export process. [More info](export.md)
 
 ---
 
-#### 1.0.6
-
-  > Date: 2024.10.04
+### 1.0.6 <small>2024-10-04</small>
 
 - **New functionality**:
     - New `Export objects`: Basic exporting functionality added. In the near future, the export functionality will be expanded and will also be available in the Asset Browser for easy exporting of your Assets in various formats. [More info](export.md)
@@ -94,9 +91,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.5
-
-  > Date: 2024.10.03
+### 1.0.5 <small>2024-10-03</small>
 
 - **Bugfix**:
     - **CRITICAL**: `Rendering Assets`: Rendering Assets via the Asset Browser that are already present in your open scene may result in those objects being deleted from the scene. This issue has now been fixed, along with improvements to how temporary data is handled internally.
@@ -104,9 +99,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.4
-
-  > Date: 2024.10.01
+### 1.0.4 <small>2024-10-01</small>
 
 - **Improved functionality**:
     - Utility `Load previews from disk`: Now supports more image formats.
@@ -115,9 +108,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.3
-
-  > Date: 2024.10.01
+### 1.0.3 <small>2024-10-01</small>
 
 - **New functionality**:
     - New Utility `Load previews from disk`: Load custom Asset Preview images from a specified directory. [More info](utilities.md#load-previews-from-disk)
@@ -126,9 +117,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.2
-
-  > Date: 2024.09.27
+### 1.0.2 <small>2024-09-27</small>
 
 - **New functionality**:
     - Utility `Add Asset Tag`: New Smart Tag: 'Material Type'. Tags the material with its type: "Texture-based" or "Procedural", with an option to include node counts for both types. Example: "Procedural (56 nodes)". [More info](utilities.md)
@@ -142,9 +131,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.1
-
-  > Date: 2024.09.25
+### 1.0.1 <small>2024-09-25</small>
 
 - **New functionality**:
     - Utilities: `Change Node Attributes`, `Change Material Settings`, & `Replace Shader Nodes`: New keyword filtering function to filter materials by their names to include or exclude them from the batch process.
@@ -158,9 +145,9 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 ---
 
-#### 1.0.0
+### 1.0.0 <small>2024-09-21</small>
 
-  > Date: 2024.09.21. Compatibility: Blender 4.2 LTS +
+  > Compatibility: Blender 4.2 LTS +
 
   - First public release.
 

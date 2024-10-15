@@ -17,6 +17,25 @@ BatchGenie offers a range of utilities to efficiently manage materials and other
 
 ## Batch Utilities
 
+### Set Origin
+
+> Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
+
+Adjust the origin of Mesh objects to the minimum, maximum, or center along the X, Y, or Z axis based on their bounding box.
+
+![Set Origin Utility](images/utility_set-origin.png){ .img-box align=left }
+
+<h5>Settings</h5>
+- **Selection**: Allows you to specify which objects to target:
+    - **Selected Objects**
+    - **All Objects**
+    - **Objects marked as Assets**
+    - **Objects NOT marked as Assets**
+
+
+---
+
+
 ### Change Node Attributes
 
 > Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
@@ -376,7 +395,7 @@ While not an all-encompassing renaming tool, this function provides targeted ass
         - **All Objects**
         - **Objects marked as Assets**
         - **Objects NOT marked as Assets**
-        - **Objects on Selected Objects**
+        - **Selected Objects**
 - **Set Image names same as the Image File names**
 
 

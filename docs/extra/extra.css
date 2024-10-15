@@ -168,7 +168,7 @@
 
 /* ######## < CHANGELOG > ######## */
 /* Compact */
-.md-typeset .changelog>blockquote>p{ /* Date */
+.md-typeset .changelog>blockquote>p{ /* Blockquote for blender version compability */
   margin-bottom:-0.9em;
   margin-top:-0.5em;
 }
@@ -181,5 +181,13 @@
 .md-typeset .changelog>ul>li>ul {
   margin-top:-0.1em;
   line-height: 1.5; /* 1.6 is default */
+}
+h3 small { /* Date */
+  margin-left: 0.7em;
+  font-size: 75%;
+}
+.changelog h3{
+  margin-top:-0.1em;
+  margin-bottom:-0.3em;
 }
 /* ######## </ CHANGELOG > ######## */
