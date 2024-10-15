@@ -6,28 +6,28 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
 
 <div class="grid cards grid_custom" markdown>
 
+-   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Assets__
+
+    ---
+
+    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
+
+
 -   :material-image-multiple:{ .lg .middle style="color:var(--main-accent-color-red)" } __Batch Import__
 
     ---
 
     Streamlined asset importing with a single click, including PBR textures and more, offering robust customization options for bulk imports to save time and effort while tailoring the process to your preferences.
 
+</div>
+
+<div class="grid cards grid_custom"  markdown>
 
 -   :material-export-variant:{ .lg .middle style="color:var(--main-accent-color-orange)" } __Batch Export__
 
     ---
 
     Batch export objects, collections, and materials directly from the Asset Browser, streamlining your workflow and ensuring your assets are ready for use in any project.
-
-</div>
-
-<div class="grid cards grid_custom"  markdown>
-
--   :material-camera:{ .lg .middle style="color:var(--main-accent-color-green)" } __Batch Render Asset Previews__
-
-    ---
-
-    Create high-quality previews for your Assets, including materials, objects, and collections, to showcase them externally or enhance your Asset library, ensuring it is visually informative and easy to browse.
 
 
 -   :material-tools:{ .lg .middle style="color:var(--main-accent-color-blue)" } __Batch Utilities__
@@ -53,6 +53,14 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
     - Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
+    - **Asset Preview Rendering**:
+        - One click batch rendering making the process swift and efficient.
+        - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
+        - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
+        - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
+        - Easy controls for light and background settings to tailor the images to your liking, with support for HDRI images.
+        - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
+
     - **Importing**:
         - **Texture Import**:
             - Blazingly fast imports.
@@ -73,14 +81,6 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
     - **Exporting**:
         - Batch export objects, collections, and materials to blend files with ease. You can choose to export them as individual blend files or combine all selected assets into a single blend file. This feature is directly integrated into the Asset Browser for seamless access and functionality.
 
-    - **Asset Preview Rendering**:
-        - One click batch rendering making the process swift and efficient.
-        - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
-        - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
-        - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
-        - Easy controls for light and background settings to tailor the images to your liking, with support for HDRI images.
-        - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
-
     - **Utilities**:
         - Utilities are available for working with your current blend file and are integrated into the Asset Browser for quick access.
         - Tools for bulk updating material settings such as Displacement and eevee specific settings.
@@ -95,6 +95,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
         - Move Asset: Organize your Assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
         - Load previews from disk:  Directly load custom asset preview images from a specified directory.
         - Pack Textures: Easily pack textures for assets in the Asset Browser with a single click.
+        - Set Origin: Quickly set object origins.
         - Plus a few other small utilities!
 
 

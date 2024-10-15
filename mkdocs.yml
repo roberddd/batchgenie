@@ -41,9 +41,9 @@ extra_css:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
+  - Render Assets: render.md
   - Importing: import.md
   - Exporting: export.md
-  - Render Assets: render.md
   - Utilities: utilities.md
   - Preferences: preferences.md
 
