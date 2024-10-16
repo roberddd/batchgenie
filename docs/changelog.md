@@ -11,6 +11,13 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.1.4 <small>2024-10-16</small>
+
+- **Bugfix**:
+    - **CRITICAL** `Render`: The rendering functionality via the main panel had stopped working due to internal changes in previous versions, with rendering still functioning through the Asset Browser. This issue has now been resolved.
+
+---
+
 ### 1.1.3 <small>2024-10-15</small>
 
 - **New functionality**:
