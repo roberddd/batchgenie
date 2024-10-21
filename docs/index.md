@@ -58,7 +58,7 @@ Welcome to BatchGenie, an add-on designed to simplify and automate common Asset 
         - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
         - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
         - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
-        - Easy controls for light and background settings to tailor the images to your liking, with support for HDRI images.
+        - Easy controls for lighting and background settings, enhanced with Render Presets to streamline setup. You can choose from ready-to-use lighting configurations that automatically adjust light parameters, including support for HDRI images.
         - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
 
     - **Importing**:

@@ -94,42 +94,57 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
 
 #### Scene Settings
 
-![Scene Settings](images/render_asset_previews_scene_settings[2x].png){ .img-box align=left width=32% }
+Choose between ready-to-use Presets for quick setups or Manual mode for full control. You can switch to Manual mode at any time and save your adjustments as custom presets.
 
-- **Light Preset**: Choose from a selection of different lighting presets to enhance your renders. Options include various sky setups as well as Blender's built-in HDRIs. There is also a 'Custom World' option that utilizes your scene's current 'World' for lighting, allowing you to use your own HDR images.
+<!-- ![Scene Settings](images/render_asset_previews_scene_settings[2x].png){ .img-box align=left width=32% } -->
 
-    ??? abstract "Light Presets Example"
-        This popup is shown when clicking on the Light Preset icon.
+=== "Presets Mode"
+    ![Scene Settings - Presets Mode](images/render_scene-settings_presets-mode.png){ .img-box align=left }
 
-        ![Light Presets](images/render_asset_previews_lighting_presets.png){ .img-box .on-glb }
+    The presets shown below are available starting in version 1.1.5, with plans for fine-tuning and expansion in future updates.
 
-- **Studio Preset**: Allows you to add a studio backdrop as a background if desired. The backdrop automatically scales to fit the object you are rendering, ensuring that the background matches your asset's size and position.
+    ![Asset Preview Panel](images/render_presets.png){ .img-box width=66% }
 
-    *Note: Studio Presets are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio backdrop can be finicky and may not always work as planned.*
+=== "Manual Mode"
+    ![Scene Settings - Manual Mode](images/render_scene-settings_presets-manual.png){ .img-box align=left }
 
-    ??? abstract "Studio Presets Example"
-        This popup is shown when clicking on the Studio Preset icon.
+    - **Lighting**: Choose from a selection of different lighting setups to enhance your renders. Options include various sky setups and HDRIs. There is also a 'Custom World' option that utilizes your scene's current 'World' for lighting, allowing you to use your own HDR images.
 
-        ![Studio Presets](images/render_asset_previews_studio_presets.png){ .img-box .on-glb }
+        ??? abstract "Lighting Setups"
+            BatchGenie includes a few built-in HDRIs and also leverages Blender's built-in HDRIs.
 
+            ![Light Presets](images/render_lighting-setups.png){ .img-box .on-glb }
 
-<h5>Studio Settings</h5>
+    - **Studio**: Allows you to add a studio backdrop as a background if desired. The backdrop automatically scales to fit the object you are rendering, ensuring that the background matches your asset's size and position.
 
-When you select a Studio Preset, the following settings are available:
+        *Note: Studio Presets are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio backdrop can be finicky and may not always work as planned.*
 
-![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box align=left }
+        ??? abstract "Studio Presets Example"
+            This popup is shown when clicking on the Studio Preset icon.
 
-- **Material**: Choose from the built-in materials, which include some basic options with adjustable settings, or use your own material.
-- **Transparent Backdrop**: *(Cycles Only)* Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.
-- **Backdrop passes light**: Enables the backdrop to allow light to pass through it, preventing it from blocking light from the world and casting shadows on your Assets.
+            ![Studio Presets](images/render_studio-preset.png){ .img-box .on-glb }
 
-- **Object Z Offset**: Allows you to adjust the object's height after its lowest point has been aligned with the ground. Use a positive value to lift the object above the ground or a negative value to lower it further. The offset is relative to the object or collection's height, making the adjustment proportional to its size.
+    <div style="clear:left"></div>
 
+    <h5>Studio Settings</h5>
 
----
+    When you select a Studio Preset, the following settings are available:
 
+    ![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box align=left }
 
-- **Transparent Background**: Enables a transparent background in rendered images by toggling the 'Render > Film > Transparent' option for the render scene.
+    - **Material**: Choose from the built-in materials, which include some basic options with adjustable settings, or use your own material.
+    - **Transparent Backdrop**: *(Cycles Only)* Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.
+    - **Backdrop passes light**: Enables the backdrop to allow light to pass through it, preventing it from blocking light from the world and casting shadows on your Assets.
+
+    - **Object Z Offset**: Allows you to adjust the object's height after its lowest point has been aligned with the ground. Use a positive value to lift the object above the ground or a negative value to lower it further. The offset is relative to the object or collection's height, making the adjustment proportional to its size.
+
+    ---
+
+    - **Transparent Background**: Enables a transparent background in rendered images by toggling the 'Render > Film > Transparent' option for the render scene.
+    - **Save as Preset**: Saves the current scene settings as a preset, including the following: Lighting and studio setups, world strength, world saturation, sun rotation, and camera rotation. Presets that you have created can be removed via Preferences.
+
+    ---
+
 - **Strength**: Adjusts the light strength of the world background.
 - **Saturation**: Adjusts the saturation of the world background. This setting is useful when you want to use an HDR image for lighting your scene but don't want the colors of the HDR to influence the colors in your final render. By adjusting the saturation, you can desaturate the HDR image, allowing you to retain the lighting effects without the HDR's color affecting your scene's appearance.
 

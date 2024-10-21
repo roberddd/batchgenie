@@ -92,6 +92,8 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
 ## Render { style="margin-top:0" }
 
+- **Custom Render Presets**: Presets you've created will appear in this dropdown for removal. You can also open the folder containing the presets for backup.
+
 - **Denoise**: When the Denoising option is enabled during rendering in the BatchGenie panel under  `Render Settings `, the following settings are applied. They reflect Blender's default options for denoising.
 
     !!! info2 "Which Denoiser should I choose?"
@@ -113,4 +115,7 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
 - **External Asset Processing Max Threads**: Controls the number of parallel processes used when handling external Assets via the Asset Browser utilities. Specifically, it determines how many Blender processes run in the background when adding tags or metadata to Assets located outside the current blend file. Adjust this setting based on your system's capabilities to achieve optimal performance when processing external Assets. <br>Note that '**Max Threads**' does not apply to rendering Assets. The rendering process itself is the primary bottleneck, rather than the integration of rendered images with Assets.
 
+<h4 style="margin-bottom:-0.5em;">Troubleshooting</h4>
+
+- **Light Preset Thumbnails**: Generate thumbnails for the built-in HDR images used as Light Presets. This option is useful if you’ve added HDRIs to Blender (as explained [here](render.md#faq)) but they are not yet visible and you want to avoid restarting Blender, as thumbnails are generated upon startup
 - **Debug To Console**: Outputs debug information to the console, useful for troubleshooting. To view the console, go to `Window > Toggle System Console` (Windows) or through the system console if you're using Linux (requires starting Blender from the console).
