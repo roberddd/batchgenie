@@ -113,22 +113,20 @@ Choose between ready-to-use Presets for quick setups or Manual mode for full con
         ??? abstract "Lighting Setups"
             BatchGenie includes a few built-in HDRIs and also leverages Blender's built-in HDRIs.
 
-            ![Light Presets](images/render_lighting-setups.png){ .img-box .on-glb }
+            ![Light Setups](images/render_lighting-setups.png){ .img-box .on-glb }
 
     - **Studio**: Allows you to add a studio backdrop as a background if desired. The backdrop automatically scales to fit the object you are rendering, ensuring that the background matches your asset's size and position.
 
-        *Note: Studio Presets are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio backdrop can be finicky and may not always work as planned.*
+        *Note: Studio Setups are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio backdrop can be finicky and may not always work as planned.*
 
-        ??? abstract "Studio Presets Example"
-            This popup is shown when clicking on the Studio Preset icon.
-
-            ![Studio Presets](images/render_studio-preset.png){ .img-box .on-glb }
+        ??? abstract "Studio Setups"
+            ![Studio Setups](images/render_studio-setups.png){ .img-box .on-glb }
 
     <div style="clear:left"></div>
 
     <h5>Studio Settings</h5>
 
-    When you select a Studio Preset, the following settings are available:
+    When you select a Studio Setup, the following settings are available:
 
     ![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box align=left }
 
@@ -188,7 +186,7 @@ Choose between ready-to-use Presets for quick setups or Manual mode for full con
     !!! info2 "Autoframe"
         - Autoframe cannot be disabled when rendering materials. However, you can still render selected Assets, and Autoframe will be disabled for all other Assets except materials.
 
-        - If you disable **Autoframe** and use any of the '**Studio Presets**' keep in mind that the location of the object/collection will be set to the world origin (0, 0, 0) during render so you'll need to adjust your framing accordingly.
+        - If you disable **Autoframe** and use any of the '**Studio Setups**' keep in mind that the location of the object/collection will be set to the world origin (0, 0, 0) during render so you'll need to adjust your framing accordingly.
 
 
 ---
@@ -250,7 +248,7 @@ Here, you'll find settings for the render engine, aspect ratio, resolution, and 
 
 ## FAQ
 
-`Can I add custom Light Presets?`
+`Can I add custom lights to the Lighting Setups?`
 
 :   Yes! The list can be expanded by directly adding your own HDRIs to Blender via `Preferences > Lights > HDRI's` which makes them available in this list.
 
