@@ -8,9 +8,24 @@ hide:
 Here, you can find a list of all updates, enhancements, and bug fixes made to BatchGenie over time. Date Format: YYYY-MM-DD.
 
 
+
 ### Versions
 
 <div class="changelog" markdown>
+
+### 1.1.5 <small>2024-10-21</small>
+
+This major update enhances the rendering section and introduces preset functionality, including bundled HDRIs that come with the addon. As a result, the file sizes have increased slightly, and I'm now testing separate builds for Windows, Linux, and Mac.
+
+- **New / Improved functionality**:
+    - `Rendering `: The Scene settings have been revamped and now include ready-to-use Presets that automatically set many parameters related to lighting and studio setups. This update also includes bundled HDRIs that come with the addon.
+    You still have full manual control as before, but now you have a quick starting point that you can modify to your liking. You can also save custom presets, which will appear in the same list, complete with automatically rendered image previews. More presets will be added in the future.
+- **UI**:
+    - The Scene settings have been significantly updated to accommodate the new preset functionality. The lighting preview images have also been improved. Previously small, they are now larger and will automatically generate when you add custom HDRIs.
+- **Misc**:
+    - `Preferences`: Added an option to remove saved 'Render Presets' and a 'Re-generate' button to refresh built-in HDR thumbnails used in Lighting Setups.
+
+---
 
 ### 1.1.4 <small>2024-10-16</small>
 
