@@ -8,7 +8,6 @@ hide:
 Here, you can find a list of all updates, enhancements, and bug fixes made to BatchGenie over time. Date Format: YYYY-MM-DD.
 
 
-
 ### Versions
 
 <div class="changelog" markdown>
