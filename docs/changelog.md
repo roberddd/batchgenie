@@ -13,6 +13,20 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.1.6 <small>2024-10-22</small>
+
+- **Improved functionality**:
+    - `Render `: When rendering via the main panel, the 'selection' filter has been expanded with more choices. For Object & Material rendering, you can now also choose "Non Assets" as the selection.
+- **UI**:
+    - Fixed a typo where it said 'Sun Rotation' instead of 'HDRI Rotation' when using rendering presets.
+    - 'Save as Preset' had the wrong hover tooltip.
+    - Renamed Render settings that used the word 'Backdrop' (such as 'Transparent Backdrop') to 'Studio' for clarity. For example, 'Transparent Studio'.
+    - Improved info and error messages in some areas of the UI.
+- **Bugfix**:
+    - `Render `: The 'Mark as Asset' checkbox is now correctly displayed in the UI when the 'selection filter' is set to 'All objects' while rendering objects.
+
+---
+
 ### 1.1.5 <small>2024-10-21</small>
 
 This major update enhances the rendering section and introduces preset functionality, including bundled HDRIs that come with the addon. As a result, the file sizes have increased slightly, and I'm now testing separate builds for Windows, Linux, and Mac.

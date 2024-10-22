@@ -41,6 +41,8 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Selection**: Allows you to specify which objects to include in the rendering process based on predefined criteria. Options listed below:
         - **Selected Objects**: Choose the currently selected object(s) in your scene. When using this option, you have the option to mark the objects as Assets.
         - **Objects marked as Assets**: Objects in the your file that are marked as Assets.
+        - **Objects NOT marked as Assets**: Objects in the your file that are NOT marked as Assets.
+        - **All objects**: All objects in the your file regardless if they are marked as Assets or not.
 
     <div style="clear:both"></div>
 
@@ -75,6 +77,7 @@ You can access the settings through both the BatchGenie panel and the BatchGenie
     - **Selection**:  Allows you to specify which materials to include in the rendering process based on predefined criteria. Options listed below:
         - **Materials on Selected Objects**: All materials assigned to the the currently selected object(s) in your scene. When using this option, you have the option to mark the materials as Assets.
         - **Materials marked as Assets**: Materials in your file that are marked as Assets.
+        - **Materials NOT marked as Assets**: Materials in the your file that are NOT marked as Assets.
         - **All materials**: All materials in your file regardless if they are marked as Assets or not. When using this option, you have the option to mark the materials as Assets.
 
     <div style="clear:right"></div>
@@ -115,9 +118,9 @@ Choose between ready-to-use Presets for quick setups or Manual mode for full con
 
             ![Light Setups](images/render_lighting-setups.png){ .img-box .on-glb }
 
-    - **Studio**: Allows you to add a studio backdrop as a background if desired. The backdrop automatically scales to fit the object you are rendering, ensuring that the background matches your asset's size and position.
+    - **Studio**: Allows you to add a studio backdrop as a background if desired. The studio automatically scales to fit the object you are rendering, ensuring that the background matches your asset's size and position.
 
-        *Note: Studio Setups are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio backdrop can be finicky and may not always work as planned.*
+        *Note: Studio Setups are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio can be finicky and may not always work as planned.*
 
         ??? abstract "Studio Setups"
             ![Studio Setups](images/render_studio-setups.png){ .img-box .on-glb }
@@ -128,11 +131,11 @@ Choose between ready-to-use Presets for quick setups or Manual mode for full con
 
     When you select a Studio Setup, the following settings are available:
 
-    ![Studio Settings](images/render_asset_previews_studio_settings.png){ .img-box align=left }
+    ![Studio Settings](images/render_studio-settings.png){ .img-box align=left }
 
     - **Material**: Choose from the built-in materials, which include some basic options with adjustable settings, or use your own material.
-    - **Transparent Backdrop**: *(Cycles Only)* Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.
-    - **Backdrop passes light**: Enables the backdrop to allow light to pass through it, preventing it from blocking light from the world and casting shadows on your Assets.
+    - **Transparent Studio**: *(Cycles Only)* Makes the studio backdrop see-through while remaining visible in reflections and bouncing back light to the objects.
+    - **Studio passes light**: Enables the studio to allow light to pass through it, preventing it from blocking light from the world and casting shadows on your Assets.
 
     - **Object Z Offset**: Allows you to adjust the object's height after its lowest point has been aligned with the ground. Use a positive value to lift the object above the ground or a negative value to lower it further. The offset is relative to the object or collection's height, making the adjustment proportional to its size.
 
@@ -152,7 +155,7 @@ Choose between ready-to-use Presets for quick setups or Manual mode for full con
     - **Camera Rotation**: Adjusts the rotation of the camera. Useful when you want to keep the lights & shadows in their current position but want to change the framing.
 
     !!! tip "Rotation Tip"
-        ![Camera Angle Example](images/render_asset_previews_scene_settings_rotation_example.gif){ .img-box align=left }
+        ![Camera Angle Example](images/render_scene-settings_rotation-example.gif){ .img-box align=left }
         You can also use the icon buttons to the left and right of the slider to adjust them in -/+ 45 degree increments.
 
 
