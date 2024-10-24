@@ -106,7 +106,10 @@ Choose between ready-to-use Presets for quick setups or Manual mode for full con
 
     The presets shown below are available starting in version 1.1.5, with plans for fine-tuning and expansion in future updates.
 
-    ![Asset Preview Panel](images/render_presets.png){ .img-box width=66% }
+    ![Render Presets](images/render_presets.png){ .img-box width=66% }
+
+    !!! info2 "Saving Presets"
+        To save a preset, you need to switch to manual mode.
 
 === "Manual Mode"
     ![Scene Settings - Manual Mode](images/render_scene-settings_presets-manual.png){ .img-box align=left }
@@ -142,7 +145,12 @@ Choose between ready-to-use Presets for quick setups or Manual mode for full con
     ---
 
     - **Transparent Background**: Enables a transparent background in rendered images by toggling the 'Render > Film > Transparent' option for the render scene.
-    - **Save as Preset**: Saves the current scene settings as a preset, including the following: Lighting and studio setups, world strength, world saturation, sun rotation, and camera rotation. Presets that you have created can be removed via Preferences.
+    - **Save as Preset**: Saves the current scene settings as a preset, allowing you to configure which settings are stored. When saving, BatchGenie will automatically render a preview for the preset, making it visible alongside the built-in presets for easy access.
+
+        ![Studio Settings](images/render_save-preset.png){ .img-box align=left } For exact details on which settings are saved, hover your mouse over the buttons to view all the information.
+
+        !!! info2 "How to delete Presets"
+            Presets that you have created can be removed via [Preferences](preferences.md#render).
 
     ---
 
@@ -250,6 +258,10 @@ Here, you'll find settings for the render engine, aspect ratio, resolution, and 
 
 
 ## FAQ
+
+`How fast is the rendering with BatchGenie?`
+
+:   Rendering speed depends on your system's performance and the chosen settings. BatchGenie doesn't modify or accelerate the rendering process, it uses Blender's standard workflow. However, with default settings, most Asset Previews should render in around 1 second.
 
 `Can I add custom lights to the Lighting Setups?`
 

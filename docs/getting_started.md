@@ -2,7 +2,7 @@ To get started, you have two options: Watch the introductory video guide below f
 
 ### Video Introduction
 
-<div class="video-wrapper">
+<div class="youtube-wrapper">
     <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/Jy8BUlcdEkk?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 

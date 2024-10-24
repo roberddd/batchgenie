@@ -12,6 +12,20 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.1.7 <small>2024-10-24</small>
+
+- **Improved functionality**:
+    - `Render `: The save preset functionality:
+        - You can now select exactly which settings to store in the preset, whether it's light, studio, or camera settings.
+        - Presets will now be stored in the Blender add-on preset folder, ensuring they remain intact even if you update or reinstall BatchGenie.
+        If you are using versions 1.1.5 or 1.1.6 and have saved render presets, please back them up manually via the preferences by using the 'Open Custom Presets Folder' button and copying the files before installing the new version.
+        After installation, follow the same steps to paste the files back into the new location.
+    - `Export `: Now includes 'Remove Special Characters' under 'Modify Export Filename' to assist with tricky filenames during export. The UI related to this has also been improved.
+- **UI**:
+    - The 'Info' popups shown in various places in the UI have received a design improvement.
+---
+
+
 ### 1.1.6 <small>2024-10-22</small>
 
 - **Improved functionality**:

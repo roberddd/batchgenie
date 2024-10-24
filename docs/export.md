@@ -43,9 +43,11 @@ BatchGenie streamlines the export of your assets, making it easy to organize you
 ![Export Panel](images/export_settings.png){ .img-box align=left }
 
 - **Pack Textures**: Pack all associated textures into their respective blend files, ensuring that your assets maintain their appearance without relying on external texture files
-- **Modify Export Filename**: Customize the file names by adding a prefix (characters added before the name) and/or a suffix (characters added after the name). These can be defined in two ways:
-    - **Custom**: Allows you to enter any custom characters of your choice.
-    - **Asset Type**: Automatically appends the asset type (e.g., Object, Material, Collection) to the name for easier identification.
+- **Modify Export Filename**: Customize the output file names.
+    - **Remove special characters**: Removes all special characters from Asset names. This is useful for Assets with unconventional names that may cause issues during export. Note that certain special characters, such as <>:\"/\\|?*, are removed automatically and replaced with an underscore, even without using this function.
+    - **Prefix & Suffix**: Add prefix (characters added before the name) and/or a suffix (characters added after the name). These can be defined in two ways:
+        - **Custom**: Allows you to enter any custom characters of your choice.
+        - **Asset Type**: Automatically appends the asset type (e.g., Object, Material, Collection) to the name for easier identification.
 - **Asset status**:
     - **Keep current**: Keeps current Asset status.
     - **Mark as Asset**: Marks the Exported items as Assets, making them easily accessible in Blender's Asset Browser for future use.
@@ -58,9 +60,9 @@ BatchGenie streamlines the export of your assets, making it easy to organize you
 
 ### Via Asset Browser
 
+![Export Panel](images/export_asset-browser.png){ .img-box align=right }
 
-
-When exporting via the Asset Browser, you'll be presented with settings similar to those in the main panel, shown alongside the file browser where you select the export directory, as seen in the image below.
+When exporting via the Asset Browser, you'll be presented with settings similar to those in the main panel, shown alongside the file browser where you select the export directory.
 
 Few additional options available:
 
@@ -68,4 +70,3 @@ Few additional options available:
 - **Duplicate naming Format**: Choose how duplicate Asset names are handled during export, allowing you to customize the format in which a number is appended to avoid naming conflicts.
 
 
-![Export Panel](images/export_asset_browser_file_view.png){ .img-box width=80% }

@@ -8,10 +8,37 @@
   --main-box-border-color: #e0e0e0;
 }
 
-.img-box{
+/* ######## < IMAGE & Video > ######## */
+.img-box, video{
   box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
 }
+video {
+  height: auto; /* Keep the aspect ratio intact */
+  max-width: 1920px;
+  /* margin: 1em 0.75em 1em 0; */
+  border-left: 6px solid rgb(29, 99, 45);
+}
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.video-wrapper video{ /* Override the setting for wrapped videos */
+  border-radius: 0px 4px 4px 4px;
+}
+.video-wrapper::before {
+  content: 'How to use';
+  position: absolute;
+  top: -25px;
+  /* left: -10px; */
+  background-color: rgb(29, 99, 45);
+  color: white;
+  font-size: 12px;
+  padding: 3px 18px;
+  border-radius: 4px 4px 0 0;
+  /* transform: rotate(-5deg); */
+}
+/* ######## </ IMAGE & Video > ######## */
 
 /* ######## < MOBILE > ######## */
 @media (max-width: 768px) {
@@ -27,11 +54,8 @@
     /* margin-left: 0px;
     margin-right: auto;  */
   }
-}
-/* Header */
-@media (max-width: 768px) {
-  .md-header__topic {
-    font-size: calc(1rem - 0.27rem); /* Subtracting from the base size */
+  video {
+    width: 100%;
   }
 }
 /* ######## </ MOBILE > ######## */
@@ -117,8 +141,8 @@
 }
 /* ######## </ ADMONITION > ########  */
 
-/* ######## < VIDEO PLAYER > ######## */
-.video-wrapper {
+/* ######## < YOUTUBE PLAYER > ######## */
+.youtube-wrapper {
   position: relative;
   display: block;
   height: 0;
@@ -126,7 +150,7 @@
   overflow: hidden;
   padding-bottom: 56.25%;
 }
-.video-wrapper > iframe {
+.youtube-wrapper > iframe {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -148,7 +172,7 @@
   color: var(--md-primary-bg-color--light);
   font-weight: bold;
 }
-/* ######## </ VIDEO PLAYER > ######## */
+/* ######## </ YOUTUBE PLAYER > ######## */
 
 /* ######## < Mermaid Diagrams > ######## */
 .mermaid .node rect {
