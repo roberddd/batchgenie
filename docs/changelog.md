@@ -12,6 +12,13 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+<!-- ### 1.1.8 <small>2024-11-xx</small>
+
+- **Improved functionality**:
+    - `Importing `: Now has logic to handle custom node-groups with built in Bump nodes. So if you have a node-group with a socket input called Bump Height the bump map will be connected there instead of adding an additional bump node.
+
+--- -->
+
 ### 1.1.7 <small>2024-10-24</small>
 
 - **Improved functionality**:
