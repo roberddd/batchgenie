@@ -283,6 +283,16 @@ Here, you'll find settings for the render engine, aspect ratio, resolution, and 
 
 :   Adjust the View camera to match the rendering focal length. For example, if the default focal length under 'Render Settings' is 90mm, go to `3D View > View > View` and match it.
 
+`I can't find my saved custom presets after upgrading Blender to a new major version.`
+
+:   When upgrading to a new major version (e.g., from 4.2 to 4.3), you need to manually transfer your presets.
+
+    To do this, go to the Preferences menu and click the "Open Custom Presets Folder" button. Copy all the files from that folder.
+    If you still have the previous version of Blender installed, you can transfer your presets either **before** or **after** upgrading. Simply use the old version to copy the presets and paste them into the new version after the upgrade.
+
+    Example: from `...\Blender\4.2\extensions\user_default\BatchGenie\presets\custom` to `...\Blender\4.3\extensions\user_default\BatchGenie\presets\custom`
+
+    For minor upgrades (e.g., from 4.2.1 to 4.2.2), no manual transfer is needed, as your presets will be preserved.
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}
 

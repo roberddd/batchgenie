@@ -12,12 +12,15 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
-<!-- ### 1.1.8 <small>2024-11-xx</small>
+### 1.1.8 <small>2024-11-26</small>
 
 - **Improved functionality**:
-    - `Importing `: Now has logic to handle custom node-groups with built in Bump nodes. So if you have a node-group with a socket input called Bump Height the bump map will be connected there instead of adding an additional bump node.
+    - `Importing Textures`: Added logic to handle custom node groups with built-in Bump nodes. If a node group has a socket input named **"Bump Height"**, the bump map will now connect directly to it instead of adding an additional Bump node. [More info](import.md#replace-principled-bsdf)
+    - `Importing Blend files`: The interface now feels more responsive during imports and displays "Import in progress" to clearly indicate that the operation is running.
+- **Misc**:
+    - `Blender 4.3`: Verified compatibility with Blender 4.3. This should also apply to all previous versions of BatchGenie, as no breaking changes in version 4.3 affect the components used.
 
---- -->
+---
 
 ### 1.1.7 <small>2024-10-24</small>
 

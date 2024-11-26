@@ -112,8 +112,11 @@ Use a custom Node-Group instead of a Principled BSDF for the imported materials.
 
 BatchGenie searches for keywords to match and connect the sockets in the new Node-Group, treating them as if they were part of a regular shader.
 
-!!! tip "Tip"
-    If the Node-Group contains a socket named 'Normal Color', BatchGenie will connect the Normal Map texture directly to this socket, bypassing the Normal Map Node.
+<div style="clear:left"></div>
+
+!!! tip "Tips"
+    If the Node Group contains a socket named "**Normal Color**", BatchGenie will connect the Normal Map texture directly to this socket, bypassing the Normal Map node.
+    Similarly, if the socket is named "**Bump Height**", BatchGenie will connect the Bump texture directly to this socket, bypassing the Bump node.
 
 
 
