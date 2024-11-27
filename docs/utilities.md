@@ -615,7 +615,7 @@ Load custom Asset Preview images from a specified directory. When assets are sel
 
 > Location: Asset Browser ▸ BatchGenie Menu ▸ Misc
 
-This feature packs all associated textures into their respective blend files, ensuring that your assets retain their appearance without the need for external texture files.
+This utility packs all associated textures into their respective blend files, ensuring that your assets retain their appearance without the need for external texture files.
 
 ![Load Asset Previews from disk](images/utilities_asset_browser_misc.png){ .img-box align=left }
 
@@ -629,6 +629,27 @@ This feature packs all associated textures into their respective blend files, en
 
 <div style="clear:both"></div>
 
+
+### Export Asset Details to Excel
+
+> Location: Asset Browser ▸ BatchGenie Menu ▸ Misc
+
+This utility allows you to export detailed information about Assets from the Asset Browser to an Excel file.
+
+![Export Asset Details to Excel](images/utilities_asset_browser_misc.png){ .img-box align=left }
+
+<h5>Instructions</h5>
+
+1. In the Asset Browser, select the Assets you want to include in the export.
+- Run the `Export Asset Details to Excel` utility.
+- Choose which details you want to include in the export by selecting the corresponding checkboxes.
+    - Available Details: Asset Name, Type, Path, Tags, Description, Author, Copyright, License.
+- Specify the file name and save location in the file browser.
+- The generated Excel file will contain the details of the selected Assets, organized into columns such as name, type, and metadata.
+
+
+
+<div style="clear:both"></div>
 
 ---
 

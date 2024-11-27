@@ -12,6 +12,19 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.1.9 <small>2024-11-27</small>
+
+- **New functionality**:
+    - **New Utility: `Export Asset Details to Excel`**: This utility allows you to export detailed information about assets from the Asset Browser to an Excel file. Currently, it's fairly basic, but it will be expanded in future updates.
+    - **Utility: `Batch Rename`**: A new option, "Set Material Names Same as Object Names," allows you to rename materials based on their associated object names. You can choose to append the object name as a prefix, suffix, or completely replace the material name with the object name.
+- **Improved functionality**:
+    - **`Importing Blend Files`**: You can now modify the names of imported assets by adding either a suffix or a prefix during the import process.
+    - **`Importing Textures`**: The "Custom Texture" option has been expanded to allow up to three individual custom textures, instead of being limited to one.
+- **Bugfix**:
+    - **`Importing Textures`**: The keyword for the "Custom Texture" option is now case-insensitive, as specified in the tooltip.
+
+---
+
 ### 1.1.8 <small>2024-11-26</small>
 
 - **Improved functionality**:
