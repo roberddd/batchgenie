@@ -12,6 +12,13 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.0 <small>2024-11-29</small>
+
+- **Improved functionality**:
+    - **`Importing Textures`**: The "Custom Texture" option now includes the ability to connect the Alpha output in addition to the Color output when using the "Standard Texture" setting.
+
+---
+
 ### 1.1.9 <small>2024-11-27</small>
 
 - **New functionality**:
