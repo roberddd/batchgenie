@@ -440,6 +440,7 @@ You can convert images back and forth between the following formats: `Png, Jpg, 
     - **In**: Select the source for image conversion.
         - **Images used by this Blend file**: All images used by the current Blend file.
         - **Choose a directory**: Images in a specified folder.
+            - **Include Subfolders**: Whether to include images in subfolders when selecting a directory
 - **Output**
     - **Save as**: Choose the file format to convert to, along with quality settings (if available for the selected format).
     - **In**: Choose where to save the converted images.
