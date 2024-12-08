@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 Explore the powerful features of BatchGenie. This section provides an in-depth look at how the add-on simplifies asset management, rendering, and utilities, streamlining your workflow in Blender
 { data-search-exclude }
 

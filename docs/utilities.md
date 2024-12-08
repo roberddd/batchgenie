@@ -63,7 +63,6 @@ This utility enables you to batch modify attributes across multiple materials. I
 - **Filter**: Helps you to refine the selection made with the 'Selection'.
     - **Keywords**: Enter keywords to filter materials by their names. Separate multiple keywords with spaces. Case-insensitive. When you type in this field, the  `Exclude` and `Include only` buttons will appear. Use `Exclude` to skip materials containing any of the specified keywords in their names, or `Include only` to process only those materials whose names contain any of the specified keywords.
     - **Only materials imported by BatchGenie**: When enabled, this option ensures that the batch operation only affect materials imported by BatchGenie. Disabling it applies changes to all materials in your file, regardless of their origin.
-
 - **Target**: Specify which node inside the material to target. Refer to the options listed below for details:
 
 === "Shader Node"
@@ -153,6 +152,8 @@ This utility enables you to batch modify material settings across materials.
     - **Materials marked as Assets**
     - **Materials NOT marked as Assets**
     - **Materials on Selected Objects**
+
+<div style="clear:right"></div>
 
 ![Utilities Material Filter](images/utility_filter_materials.png){ .img-box align=left style='margin-right:calc(1em + 10px)' }
 
@@ -396,6 +397,7 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 ![Batch Rename Utility](images/utility_batch_rename.png){ .img-box align=left }
 
 <h5>Options</h5>
+
 - **Set Mesh names same as Object names**
     - **Selection**: Allows you to specify which objects to include in the batch run:
         - **All Objects**
@@ -422,13 +424,78 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 ---
 
 
+### Convert Images
+
+> Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
+
+This utility allows you to seamlessly convert images between multiple formats, supporting both lossless and lossy compression methods. It's ideal for optimizing file sizes, preparing assets for various workflows, or standardizing image formats across projects.
+You can convert images back and forth between the following formats: `Png, Jpg, Webp, Tga, Tif, Bmp`.
+
+![Convert Images Utility](images/utility_convert-images.png){ .img-box align=left  }
+
+<h5>Options</h5>
+
+- **Selection**
+    - **Target**: Select the file format to target.
+    - **In**: Select the source for image conversion.
+        - **Images used by this Blend file**: All images used by the current Blend file.
+        - **Choose a directory**: Images in a specified folder.
+- **Output**
+    - **Save as**: Choose the file format to convert to, along with quality settings (if available for the selected format).
+    - **In**: Choose where to save the converted images.
+        - **Original Location**: Save converted images in the same location as the original files.
+        - **Output Folder**: Save converted images in a specified output folder.
+            - **Maintain Folder Hierarchy**: Preserve the original folder structure when saving files. Only available when using **Output Folder** option.
+    - **Overwrite**: Overwrite the output file if it already exists.
+    - **Delete Original**: Delete the original image file after it has been successfully converted.
+- **Modifications**
+    - **Resize Image**: Enable this option to resize the image during conversion.
+
+
+
+!!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
+    Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
+
+You can cancel the operation at any time by pressing the ESC key. The utility will complete any ongoing tasks and display a summary of processed and skipped files.
+
+<div style="clear:both"></div>
+
+
+---
+
+
+### Relink Converted Images
+
+> Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
+
+This utility helps you update Blender's links to images that have been converted to a different file format. When image files are converted (e.g., from `.png` or `.tif` to `.jpg` or `.webp`) to save disk space or optimize performance, Blender may lose track of the original image links due to the change in file extensions. This utility automatically relinks the converted images by searching for the corresponding files and updating their links based on customizable conditions.
+
+![Relink Converted Images Utility](images/utility_relink-converted-images.png){ .img-box align=left }
+
+<h5>Options</h5>
+
+- **Old Format**: Select the file format you are converting from. The supported formats in Blender include: `Png, Jpg, Jpeg, Tga, Webp, Exr, Tif, Tiff, Bmp, Sgi, Rgb, Bw, Jp2, J2c, Cin, Dpx, Hdr`.
+- **New Format**: Choose the file format you are converting to. The available formats match those listed for the "Old Format".
+- **File Verification**:
+    - **Verify if old file exists**: Ensures that the old file exists before attempting to relink.
+    - **Link if old file does not exist**: This option will only link the new file if the old file is missing.
+    - **Always link new file**: Links the new file regardless of whether the old file is found.
+    - **Skip relink if old file exists**: Skips the relinking process if the old file still exists.
+
+!!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
+    - Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
+
+
+---
+
+
 ### Reload Images
 
 > Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
 
 If you have edited any of your textures externally and the changes are not visible in Blender, use this utility to reload all images in your your file.
 
-![Reload Images Utility](images/utility_reload_images.png){ .img-box }
+![Reload Images Utility](images/utility_reload-images.png){ .img-box }
 
 
 ---

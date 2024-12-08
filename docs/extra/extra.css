@@ -8,6 +8,10 @@
   --main-box-border-color: #e0e0e0;
 }
 
+.md-typeset h5 {
+  margin-bottom:-1em;
+}
+
 /* ######## < IMAGE & Video > ######## */
 .img-box, video{
   box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.4);
