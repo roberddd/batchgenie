@@ -394,20 +394,42 @@ After clicking `Search`, the interface will display a list of all materials with
 
 While not an all-encompassing renaming tool, this function provides targeted assistance for a few specific use cases. It includes options for aligning mesh names with object names and syncing image names with their file names, making it particularly useful when dealing imported Assets that have inconsistent naming conventions.
 
-![Batch Rename Utility](images/utility_batch_rename.png){ .img-box align=left }
+=== "Set Mesh names same as Object names"
+    ![Batch Rename Utility](images/utility_batch-rename-1.png){ .img-box align=left }
 
-<h5>Options</h5>
+    <h5>Options</h5>
 
-- **Set Mesh names same as Object names**
     - **Selection**: Allows you to specify which objects to include in the batch run:
         - **All Objects**
         - **Objects marked as Assets**
         - **Objects NOT marked as Assets**
         - **Selected Objects**
-- **Set Image names same as the Image File names**
+
+=== "Set Image names same as the Image File names"
+    ![Batch Rename Utility](images/utility_batch-rename-2.png){ .img-box align=left }
 
 
-<div style="clear:both"></div>
+
+=== "Set Material names same as Object names"
+    ![Batch Rename Utility](images/utility_batch-rename-3.png){ .img-box align=left }
+
+    <h5>Options</h5>
+
+    - **Selection**: Allows you to specify which objects to include in the batch run:
+        - **All Objects**
+        - **Objects marked as Assets**
+        - **Objects NOT marked as Assets**
+        - **Selected Objects**
+    - **Naming Options**:
+        - **Add as Prefix**: Adds the object name as a prefix to the material name (e.g., `ObjectName_OriginalMaterialName`).
+        - **Add as Suffix**: Adds the object name as a suffix to the material name ( (e.g., `OriginalMaterialName_ObjectName`).
+        - **Complete Rename**: Replace the material name with the object name.
+
+
+
+
+
+
 
 ??? abstract "Examples"
     **Set Mesh names same as Object names**:
@@ -452,14 +474,12 @@ You can convert images back and forth between the following formats: `Png, Jpg, 
 - **Modifications**
     - **Resize Image**: Enable this option to resize the image during conversion.
 
-
-
 !!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
     Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
 
-You can cancel the operation at any time by pressing the ESC key. The utility will complete any ongoing tasks and display a summary of processed and skipped files.
-
-<div style="clear:both"></div>
+!!! tip "Tips"
+    - **Cancel the Operation**: You can cancel the operation at any time by pressing the **ESC** key. The utility will complete any ongoing tasks and display a summary of processed and skipped files.
+    - **Choosing the Best Image Format**: For a balance between image quality and file size, **WebP** is often the best choice. It provides significant storage savings and is generally more efficient than PNG or JPEG. WebP supports both **lossy** and **lossless** compression, along with features like transparency, making it a versatile option. For more details about supported image formats in Blender, check the [official documentation](https://docs.blender.org/manual/en/latest/files/media/image_formats.html).
 
 
 ---

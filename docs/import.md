@@ -162,13 +162,13 @@ Here you can choose which texture types to import. Usually, having everything en
 
 <h5>Custom Texture</h5>
 
-The last texture option is **Custom** which makes it possible to import any custom type of map.
+This option allows you to import and connect up to three custom textures, giving you the flexibility to add any additional maps that suit your specific needs.
 
 ![Custom Texture Example](images/import_custom_texture.gif){ .img-box align=left }
 
 - **Keyword(s)**: Enter one or more keywords separated by spaces to search and identify your custom textures during the import process. Case-insensitive.
 - **Texture Type**:
-    - **Standard**: Connects the texture using the conventional method, linking the color output to your chosen socket.
+    - **Standard**: Connects the texture using the conventional method, linking the color & Alpha outputs to your chosen sockets.
     - **Packed**: Used for textures where multiple maps are combined into one file. This option separates the texture into individual R, G, B, and A channels, connecting each to different sockets. Most packed maps use RGB channels, but some utilize all four.
 
 <div style="clear:both"></div>

@@ -41,17 +41,19 @@ Explore the powerful features of BatchGenie. This section provides an in-depth l
 
 - **Utilities**:
     - Utilities are available for working with your current blend file and are integrated into the Asset Browser for quick access.
-    - Tools for bulk updating material settings such as Displacement and eevee specific settings.
-    - Node Attribute Changer: Target various nodes or custom node-groups within materials to change socket values, set specific colors, or use random values for seed sockets.
-    - Replace Node Utility: Replace existing 'Shader Editor' nodes with custom Node-Groups.
-    - Unconnected Nodes Finder: Identify unconnected nodes within materials and batch delete them if needed.
-    - Find Zero Strength Nodes: Search for Normal Map, Bump, and Displacement nodes with zero values, potentially affecting material appearance.
-    - Color Space Validator: Verifies image textures for correct color space settings, with an option to automatically fix any issues.
-    - Reload Images: Update externally edited images in Blender, ensuring they refresh correctly.
-    - Tagging Utilities: Easily add and remove tags for assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed asset information.
-    - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
-    - Move Asset: Organize your assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual asset Blend file.
-    - Load previews from disk:  Directly load custom asset preview images from a specified directory.
-    - Pack Textures: Easily pack textures for assets in the Asset Browser with a single click.
-    - Set Origin: Quickly set object origins.
-    - Export Asset Details to Excel: Export detailed information about your assets from the Asset Browser into an Excel file for easy analysis and management
+    - **Change Material Settings**: Bulk updating material settings such as Displacement and eevee specific settings.
+    - **Node Attribute Changer**: Target various nodes or custom node-groups within materials to change socket values, set specific colors, or use random values for seed sockets.
+    - **Replace Node Utility**: Replace existing 'Shader Editor' nodes with custom Node-Groups.
+    - **Unconnected Nodes Finder**: Identify unconnected nodes within materials and batch delete them if needed.
+    - **Find Zero Strength Nodes**: Search for Normal Map, Bump, and Displacement nodes with zero values, potentially affecting material appearance.
+    - **Color Space Validator**: Verifies image textures for correct color space settings, with an option to automatically fix any issues.
+    - **Convert Images**: Convert images in the selected source to your desired format, supporting bulk processing within Blender's current project or from a specified directory.
+    - **Reload Images**: Update externally edited images in Blender, ensuring they refresh correctly.
+    - **Relink Converted Images**: This utility helps you update Blender's links to images that have been converted to a different file format.
+    - **Tagging Utilities**: Easily add and remove tags for assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed asset information.
+    - **Metadata Adjustment**: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
+    - **Move Asset:** Organize your assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual asset Blend file.
+    - **Load previews from disk**:  Directly load custom asset preview images from a specified directory.
+    - **Pack Textures**: Easily pack textures for assets in the Asset Browser with a single click.
+    - **Set Origin**: Quickly set object origins.
+    - **Export Asset Details to Excel**: Export detailed information about your assets from the Asset Browser into an Excel file for easy analysis and management
