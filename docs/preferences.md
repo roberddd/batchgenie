@@ -35,7 +35,9 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
         ![Minimize Nodes Example](images/preferences_minimize_example.png)
 
- <div style="clear:both"></div>
+  <div style="clear:both"></div>
+
+  - **Use Extended Formats**: Enables support for additional image file types when importing textures. By default, BatchGenie looks for `Png`, `Jpg`, `Jpeg`, `Tga`, `Webp`, `Exr`, `Tif`, `Tiff`, and `Bmp`. Enabling this setting expands the search to include `Sgi`, `Rgb`, `Bw`, `Jp2`, `J2c`, `Cin`, `Dpx`, and `Hdr`. This option is recommended only if you plan to import textures in these less common formats. For more information on supported formats, see the [Blender documentation](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }.
 
   <h5>Material Name Settings</h5>
 
@@ -117,5 +119,5 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
 <h4 style="margin-bottom:-0.5em;">Troubleshooting</h4>
 
-- **Light Setup Thumbnails**: Generate thumbnails for the built-in HDR images used as Light Setups. This option is useful if you've added HDRIs to Blender (as explained [here](render.md#faq)) but they are not yet visible and you want to avoid restarting Blender, as thumbnails are generated upon startup
+- **Light Setup Thumbnails**: Generate thumbnails for the built-in HDR images used as Light Setups. This option is useful if you've added HDRIs to Blender (as explained [here](render.md#faq)) but they are not yet visible and you want to avoid restarting Blender, as thumbnails are generated upon startup.
 - **Debug To Console**: Outputs debug information to the console, useful for troubleshooting. To view the console, go to `Window > Toggle System Console` (Windows) or through the system console if you're using Linux (requires starting Blender from the console).

@@ -244,7 +244,7 @@ The `Blend Files` option allows you to import objects, collections, and material
 
 `What image formats are supported?`
 
-:   Currently supported formats include `bmp, png, jpg, jpeg, tga, exr, tif, tiff, webp`. Blender supports additional exotic formats, which you can find [here](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }. These should work as well, but they are currently filtered out because I have been unable to test them since they are very uncommon formats. If you need support for these formats, please let me know.
+:   All image formats supported by Blender are supported by BatchGenie. If you need to import textures in less common formats, check the [Use Extended Formats](preferences.md#import) option in the Preferences.
 
 ### Blend File Import related
 

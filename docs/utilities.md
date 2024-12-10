@@ -735,7 +735,8 @@ This utility allows you to export detailed information about Assets from the Ass
 - Specify the file name and save location in the file browser.
 - The generated Excel file will contain the details of the selected Assets, organized into columns such as name, type, and metadata.
 
-
+!!! abstract  "Example"
+    ![Export Asset Details to Excel Example](images/utility_export-asset-details-to-excel.png){ .img-box .on-glb }
 
 <div style="clear:both"></div>
 

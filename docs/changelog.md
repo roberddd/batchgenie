@@ -12,6 +12,15 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.2 <small>2024-12-10</small>
+
+- **Improved functionality**:
+    - **`Importing Textures`**: Added the `Use Extended Formats` option to support additional image formats when importing textures, allowing BatchGenie to accept all formats supported by Blender.
+- **Bugfix**:
+    - **`Importing Textures`**: Fixed an issue where texture sets with certain naming schemes could not be imported from the selected root folder.
+
+---
+
 ### 1.2.1 <small>2024-12-08</small>
 
 - **New functionality**:
@@ -19,6 +28,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
     - **New Utility: `Relink Converted Images`**: This utility helps you update Blender's links to images that have been converted to a different file format. [More info](utilities.md#relink-converted-images)
 - **Misc**:
     - **Dry Run** Introduced for the two new utilities above. Simulate the batch process without modifying anything, previewing the actions in the console. Coming soon to other utilities.
+
 ---
 
 ### 1.2.0 <small>2024-11-29</small>
