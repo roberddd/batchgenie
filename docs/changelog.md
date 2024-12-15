@@ -12,6 +12,17 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.3 <small>2024-12-15</small>
+- **Improved functionality**:
+    - The **`Custom Attributes`** functionality, available in `Import Textures` and the `Replace Shader Nodes` utility, now supports setting Boolean socket types (the socket type added in version 4.1).
+- **Misc**:
+    - **Dry Run**: Added to several more utilities in the main panel. This allows you to simulate batch processes without making changes, previewing the actions in the console.
+    - **Log to File**: A new option in the preferences to log output to a file for troubleshooting purposes.
+- **Bugfix**:
+    - **`Custom Attributes`**: The functionality available in `Import Textures` and `Replace Shader Nodes` had specific configurations that caused the import/replace button to be grayed out. This issue has now been resolved.
+
+---
+
 ### 1.2.2 <small>2024-12-10</small>
 
 - **Improved functionality**:
@@ -27,7 +38,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
     - **New Utility: `Convert Images`**: Convert images in the selected source to your desired format, supporting bulk processing within Blender's current project or from a specified directory. [More info](utilities.md#convert-images)
     - **New Utility: `Relink Converted Images`**: This utility helps you update Blender's links to images that have been converted to a different file format. [More info](utilities.md#relink-converted-images)
 - **Misc**:
-    - **Dry Run** Introduced for the two new utilities above. Simulate the batch process without modifying anything, previewing the actions in the console. Coming soon to other utilities.
+    - **Dry Run**: Introduced for the two new utilities above. Simulate the batch process without modifying anything, previewing the actions in the console. Coming soon to other utilities.
 
 ---
 

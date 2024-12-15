@@ -143,6 +143,7 @@ For example, you could set the IOR value for each imported material to a specifi
 - **Value**: Set a specific value.
 - **Random Integer**: Set a randomly generated number as the value.
 - **Random Float**: Set a randomly generated number with 5 decimals as the value. Example: 3.14159
+- **Boolean**: True / False.
 
 *For both Random Integer and Random Float, you can specify the range for the randomly generated values.*
 

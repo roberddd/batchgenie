@@ -48,7 +48,7 @@ Adjust the origin of Mesh objects to the minimum, maximum, or center along the X
 
 This utility enables you to batch modify attributes across multiple materials. It’s useful for making consistent adjustments to properties like roughness, metallic, or any other material attribute.
 
-![Change Node Attributes Utility](images/utility_change_attribute.png){ .img-box align=left }
+![Change Node Attributes Utility](images/utility_change-attribute.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -130,6 +130,9 @@ This utility enables you to batch modify attributes across multiple materials. I
     Targets all sockets containing the word 'seed' inside the material and populates them with random numbers. You can specify the range for the randomly generated values by adjusting the A & B.
 
 
+!!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
+    Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
+
 !!! tip "Tip"
     If you need further details about the batch run check out the report via `Window > Toggle System Console`
 
@@ -179,11 +182,9 @@ This utility enables you to batch modify material settings across materials.
 
 This utility lets you replace existing 'Shader Editor' nodes with custom Node-Groups. It targets the main shader connected to the 'Material Output' within the material.
 
-
 *This utility is also available in the "Shader Editor" for processing individual nodes rather than in batch. See [this section](#replace-node) for details.*
 
-
-![Replace Shader Nodes Utility](images/utility_replace_shader_nodes.png){ .img-box align=left }
+![Replace Shader Nodes Utility](images/utility_replace-shader-nodes.png){ .img-box align=left }
 
 <h5>Settings</h5>
 
@@ -203,9 +204,12 @@ This utility lets you replace existing 'Shader Editor' nodes with custom Node-Gr
 
 <div style="clear:both"></div>
 
-- **Keep Original Shader Node**: Check this option if you want to retain the original node for manual inspection of the connections afterward. The original node will be moved to the side of the replaced node.
 - **Replacement Node-Group**: Select the custom Node-Group to replace the shader from a dropdown menu displaying all Node-Groups in the current blend file.
+- **Keep Original Shader Node**: Check this option if you want to retain the original node for manual inspection of the connections afterward. The original node will be moved to the side of the replaced node.
 - **Custom Attributes**: Set one or multiple socket attributes such as color or values on the new node. See [this section](import_textures.md/#custom-attributes) in the documentation for detailed instructions.
+
+!!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
+    Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
 
 
 ---
@@ -426,11 +430,6 @@ While not an all-encompassing renaming tool, this function provides targeted ass
         - **Complete Rename**: Replace the material name with the object name.
 
 
-
-
-
-
-
 ??? abstract "Examples"
     **Set Mesh names same as Object names**:
 
@@ -442,6 +441,10 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 
     ![Batch Rename Texture Example](images/utility_batch_rename_texture_example.gif){ .img-box }
 
+
+
+!!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
+    Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
 
 ---
 
@@ -504,7 +507,7 @@ This utility helps you update Blender's links to images that have been converted
     - **Skip relink if old file exists**: Skips the relinking process if the old file still exists.
 
 !!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
-    - Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
+    Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
 
 
 ---
