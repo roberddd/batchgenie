@@ -12,6 +12,19 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.4 <small>2024-12-20</small>
+- **Improved Functionality**:
+    - **Render Assets**: The max `tilt` has now been adjusted to allow for full 360 degrees of rotation in cases where you do not want to use the `Camera Override` function to reach certain angles.
+    - **Utility Load Asset Previews From Disk**: Expanded file format support from *only* the most common ones to include all 14 formats supported by Blender. Also, the "filename" field was disabled for clarity since it is not needed when selecting a directory.
+- **Misc / UI**:
+    - **Export to Blend via Asset Browser**: The file save dialog was unclear when saving as a combined `.blend` file due to the presence of "two" filename fields. Only the field in the panel was correct, while using the other resulted in incorrect save paths. This has now been resolved. The dialog now uses Blender's default filename field, with additional information shown in the panel for clarity.
+    - **Importing**: The max `Subfolder Traversing Depth` setting in Preferences has been increased to 50, providing more flexibility for complex folder structures.
+- **Bugfixes**:
+    - **Render Assets** (Linux-specific): Issues with saving render presets due to them being stored in the wrong directory have now been resolved.
+    - **Export to Blend via Asset Browser**: The `Pack Textures` option was not functioning correctly, and textures were always packed. This option has been temporarily disabled in the interface (to clarify that all textures are packed). The issue will be investigated further soon. **Note**: The `Pack Textures` option works correctly when exporting via the main BatchGenie panel instead of the Asset Browser.
+
+---
+
 ### 1.2.3 <small>2024-12-15</small>
 - **Improved functionality**:
     - The **`Custom Attributes`** functionality, available in `Import Textures` and the `Replace Shader Nodes` utility, now supports setting Boolean socket types (the socket type added in version 4.1).
