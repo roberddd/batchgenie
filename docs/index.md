@@ -87,6 +87,8 @@ You can buy BatchGenie in the following stores:
 
 [:blender_market: BlenderMarket](https://blendermarket.com/products/batchgenie){ .md-button .md-button--stretch }
 
+[:simple-payhip: Payhip](https://shop.roberd.net/b/tv3QV){ .md-button .md-button--stretch }
+
 </div>
 
 <!--
