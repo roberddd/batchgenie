@@ -12,15 +12,27 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.5 <small>2024-12-28</small>
+- **Improved Functionality**:
+    - **Utility `Change Node Attributes`**: Now supports setting Boolean socket types when targeting 'Shader Nodes'.
+    - **Utility `Change Node Attributes`**: Now supports changing the "Invert" setting for Bump nodes.
+    - **Utility `Convert Images`**: Now supports selecting the sampling method when downscaling images. Additionally, the "rescale image" option has been renamed to "downscale image" to clarify its purpose for downscaling.
+- **UI**:
+    - All input fields that accept user-defined values have had their min & max ranges adjusted to accommodate a wider range of values. If the interface shows a maximum limit, you can, in 99% of cases, manually input a custom value to exceed or fall below the displayed range. This functionality is mentioned in the hover tooltip for each field.
+- **Bugfix**:
+    - **`Export Assets`**: Fixed a typo in the code that caused issues with asset export.
+
+---
+
 ### 1.2.4 <small>2024-12-20</small>
 - **Improved Functionality**:
     - **Render Assets**: The max `tilt` has now been adjusted to allow for full 360 degrees of rotation in cases where you do not want to use the `Camera Override` function to reach certain angles.
-    - **Utility Load Asset Previews From Disk**: Expanded file format support from *only* the most common ones to include all 14 formats supported by Blender. Also, the "filename" field was disabled for clarity since it is not needed when selecting a directory.
+    - **Utility `Load Asset Previews From Disk`**: Expanded file format support from *only* the most common ones to include all 14 formats supported by Blender. Also, the "filename" field was disabled for clarity since it is not needed when selecting a directory.
 - **Misc / UI**:
     - **Export to Blend via Asset Browser**: The file save dialog was unclear when saving as a combined `.blend` file due to the presence of "two" filename fields. Only the field in the panel was correct, while using the other resulted in incorrect save paths. This has now been resolved. The dialog now uses Blender's default filename field, with additional information shown in the panel for clarity.
     - **Importing**: The max `Subfolder Traversing Depth` setting in Preferences has been increased to 50, providing more flexibility for complex folder structures.
 - **Bugfixes**:
-    - **Render Assets** (Linux-specific): Issues with saving render presets due to them being stored in the wrong directory have now been resolved.
+    - **Render Assets**: (Linux-specific) Issues with saving render presets due to them being stored in the wrong directory have now been resolved.
     - **Export to Blend via Asset Browser**: The `Pack Textures` option was not functioning correctly, and textures were always packed. This option has been temporarily disabled in the interface (to clarify that all textures are packed). The issue will be investigated further soon. **Note**: The `Pack Textures` option works correctly when exporting via the main BatchGenie panel instead of the Asset Browser.
 
 ---
@@ -66,7 +78,7 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 - **New functionality**:
     - **New Utility: `Export Asset Details to Excel`**: This utility allows you to export detailed information about assets from the Asset Browser to an Excel file. Currently, it's fairly basic, but it will be expanded in future updates.
-    - **Utility: `Batch Rename`**: A new option, "Set Material Names Same as Object Names," allows you to rename materials based on their associated object names. You can choose to append the object name as a prefix, suffix, or completely replace the material name with the object name.
+    - **Utility `Batch Rename`**: A new option, "Set Material Names Same as Object Names," allows you to rename materials based on their associated object names. You can choose to append the object name as a prefix, suffix, or completely replace the material name with the object name.
 - **Improved functionality**:
     - **`Importing Blend Files`**: You can now modify the names of imported assets by adding either a suffix or a prefix during the import process.
     - **`Importing Textures`**: The "Custom Texture" option has been expanded to allow up to three individual custom textures, instead of being limited to one.
@@ -137,9 +149,9 @@ This major update enhances the rendering section and introduces preset functiona
 ### 1.1.3 <small>2024-10-15</small>
 
 - **New functionality**:
-    - Added utility `Set Origin`: Adjust object origins to the minimum, maximum, or center along the X, Y, or Z axis based on their bounding box. [More info](utilities.md#set-origin)
+    - **New utility `Set Origin`**: Adjust object origins to the minimum, maximum, or center along the X, Y, or Z axis based on their bounding box. [More info](utilities.md#set-origin)
 - **Bugfix**:
-    - Utility `Change Node Attributes`: Fixed an issue where the 'Only materials imported by BatchGenie' filter did not work when targeting 'Shader Node'.
+    - **Utility `Change Node Attributes`**: Fixed an issue where the 'Only materials imported by BatchGenie' filter did not work when targeting 'Shader Node'.
 - **UI**:
     - Minor improvements: Enhanced tooltips, small layout adjustments, and fixed a few typos.
 

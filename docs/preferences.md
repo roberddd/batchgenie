@@ -37,7 +37,10 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
   <div style="clear:both"></div>
 
-  - **Use Extended Formats**: Enables support for additional image file types when importing textures. By default, BatchGenie looks for `Png`, `Jpg`, `Jpeg`, `Tga`, `Webp`, `Exr`, `Tif`, `Tiff`, and `Bmp`. Enabling this setting expands the search to include `Sgi`, `Rgb`, `Bw`, `Jp2`, `J2c`, `Cin`, `Dpx`, and `Hdr`. This option is recommended only if you plan to import textures in these less common formats. For more information on supported formats, see the [Blender documentation](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }.
+  - **Use Extended Formats**: Enables support for additional image file types when importing textures. By default, BatchGenie looks for `Png`, `Jpg`, `Jpeg`, `Tga`, `Webp`, `Exr`, `Tif`, `Tiff`, and `Bmp`. Enabling this setting expands the search to include `Sgi`, `Rgb`, `Bw`, `Jp2`, `J2c`, `Cin`, `Dpx`, and `Hdr`. This option is recommended only if you plan to import textures in these less common formats.
+  <br>This setting also applies to the [Load Previews from Disk](utilities.md#load-previews-from-disk) utility in the Asset Browser.
+  <br>For more information on supported formats, see the [Blender documentation](https://docs.blender.org/manual/en/latest/files/media/image_formats.html){ target="_blank" }.
+
 
   <h5>Material Name Settings</h5>
 

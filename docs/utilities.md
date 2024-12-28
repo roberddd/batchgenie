@@ -74,16 +74,14 @@ This utility enables you to batch modify attributes across multiple materials. I
     <h5>Settings</h5>
 
     - **Socket**: The name or number of the socket you want to update. Socket numbers start from the top at 0 (e.g., 0 for Base Color, 1 for Roughness, 2 for IOR, etc.). This field is case-sensitive.
-
     - **Type**:
-
         - **Color**: Set a specific color.
         - **Value**: Set a specific value.
         - **Random Integer**: Set a randomly generated number as the value.
         - **Random Float**: Set a randomly generated number with 5 decimals as the value. Example: 3.14159
+        - **Boolean**: True / False.
 
         *For both Random Integer and Random Float, you can specify the range for the randomly generated values.*
-
 
     - **Additive**: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.
 
@@ -108,7 +106,6 @@ This utility enables you to batch modify attributes across multiple materials. I
 
     - **Additive**: When enabled, this option allows you to adjust the current value of by adding or subtracting your chosen value instead of replacing it. For example, if the 'Emission Strength' of a node is set to 1.0 and you enter a value of 5 with 'Additive' enabled, the new value will be 6. If you enter a value of -2, the new value will be -1.
 
-
 === "Normal Map Nodes"
     ![Change Node Attributes Normal Map Nodes](images/utility_change_attribute_normal.png){ align=left .img-box }
     Targets all Normal Map Nodes inside the material and allows you to set a new Strength value to be applied.
@@ -119,7 +116,10 @@ This utility enables you to batch modify attributes across multiple materials. I
 
 === "Bump Nodes"
     ![Change Node Attributes Bump Nodes](images/utility_change_attribute_bump.png){ align=left .img-box }
-    Targets all Bump Nodes inside the material and allows you to set a new Strength value to be applied.
+    Targets all Bump Nodes inside the material and you can adjust the following attributes:
+
+    - **Strength**: Specify the new strength to be applied.
+    - **Invert**: Invert the bump mapping direction to push into the surface instead of out.
 
     <div style="clear:both"></div>
 
@@ -128,7 +128,6 @@ This utility enables you to batch modify attributes across multiple materials. I
 === "Seed Sockets"
     ![Change Node Attributes Seed Sockets](images/utility_change_attribute_seed.png){ align=left .img-box }
     Targets all sockets containing the word 'seed' inside the material and populates them with random numbers. You can specify the range for the randomly generated values by adjusting the A & B.
-
 
 !!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
     Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
@@ -456,7 +455,7 @@ While not an all-encompassing renaming tool, this function provides targeted ass
 This utility allows you to seamlessly convert images between multiple formats, supporting both lossless and lossy compression methods. It's ideal for optimizing file sizes, preparing assets for various workflows, or standardizing image formats across projects.
 You can convert images back and forth between the following formats: `Png, Jpg, Webp, Tga, Tif, Bmp`.
 
-![Convert Images Utility](images/utility_convert-images.png){ .img-box align=left  }
+![Convert Images Utility](images/utility_convert-images.png){ .img-box align=left }
 
 <h5>Options</h5>
 
@@ -475,7 +474,12 @@ You can convert images back and forth between the following formats: `Png, Jpg, 
     - **Overwrite**: Overwrite the output file if it already exists.
     - **Delete Original**: Delete the original image file after it has been successfully converted.
 - **Modifications**
-    - **Resize Image**: Enable this option to resize the image during conversion.
+    - **Downscale Image**: Enable this option to downscale the image during conversion.
+        - **Method**: Choose the resampling method to use when resizing images:
+            - **Lanczos (High Quality, Default)**
+            - **Nearest Neighbor (Pixel Art)**
+            - **Bilinear (Intermediate Quality)**
+            - **Bicubic (Smooth Gradients)**
 
 !!! info2 "Dry Run (:blender_icon_ghost_enabled:Symbol)"
     Simulate the batch process without making any changes. Useful for previewing the actions that will be taken. Results are displayed in the console for review.
@@ -492,7 +496,7 @@ You can convert images back and forth between the following formats: `Png, Jpg, 
 
 > Location: 3D Viewport ▸ BatchGenie N-Panel ▸ Utilities
 
-This utility helps you update Blender's links to images that have been converted to a different file format. When image files are converted (e.g., from `.png` or `.tif` to `.jpg` or `.webp`) to save disk space or optimize performance, Blender may lose track of the original image links due to the change in file extensions. This utility automatically relinks the converted images by searching for the corresponding files and updating their links based on customizable conditions.
+This utility helps you update Blender's links to images that have been converted to a different file format. When image files are converted (e.g., from `Png` or `Tif` to `Jpg` or `Webp`) to save disk space or optimize performance, Blender may lose track of the original image links due to the change in file extensions. This utility automatically relinks the converted images by searching for the corresponding files and updating their links based on customizable conditions.
 
 ![Relink Converted Images Utility](images/utility_relink-converted-images.png){ .img-box align=left }
 
@@ -687,7 +691,9 @@ First, make sure you're in the specific Asset library where you want to move you
 
 > Location: Asset Browser ▸ BatchGenie Menu ▸ Misc
 
-Load custom Asset Preview images from a specified directory. When assets are selected in the Asset Browser, this tool checks for image files in the selected folder that match the names of the Assets. Supported image formats include `.png`, `.jpg`, `.jpeg`, `.tga`, `.exr`, `.webp`, `.tif`, `.tiff`, and `.bmp`. The tool prioritizes image formats in this specific order, starting with `.png` and stopping once a matching image is found.
+Load custom Asset Preview images from a specified directory. When assets are selected in the Asset Browser, this tool checks for image files in the selected folder that match the names of the assets.
+
+Supports all image formats that are natively supported by Blender. The tool prioritizes common formats in the following order: `Png`, `Jpg`, `Jpeg`, `Tga`, `Webp`, `Exr`, `Tif`, `Tiff`, and `Bmp`. It stops searching once a matching image is found. If you need support for less common formats (`Sgi`, `Rgb`, `Bw`, `Jp2`, `J2c`, `Cin`, `Dpx`, `Hdr`), ensure [Use Extended Formats](preferences.md#import) is enabled in the BatchGenie Preferences.
 
 ![Load Asset Previews from disk](images/utilities_asset_browser_misc.png){ .img-box align=left }
 

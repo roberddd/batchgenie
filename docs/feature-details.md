@@ -47,7 +47,7 @@ Explore the powerful features of BatchGenie. This section provides an in-depth l
     - **Unconnected Nodes Finder**: Identify unconnected nodes within materials and batch delete them if needed.
     - **Find Zero Strength Nodes**: Search for Normal Map, Bump, and Displacement nodes with zero values, potentially affecting material appearance.
     - **Color Space Validator**: Verifies image textures for correct color space settings, with an option to automatically fix any issues.
-    - **Convert Images**: Convert images in the selected source to your desired format, supporting bulk processing within Blender's current project or from a specified directory.
+    - **Convert Images**: Convert images in the selected source to your desired format, supporting bulk processing within Blender's current project or from a specified directory, and optionally downscale images during the process.
     - **Reload Images**: Update externally edited images in Blender, ensuring they refresh correctly.
     - **Relink Converted Images**: This utility helps you update Blender's links to images that have been converted to a different file format.
     - **Tagging Utilities**: Easily add and remove tags for assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed asset information.
