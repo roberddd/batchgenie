@@ -12,6 +12,13 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.6 <small>2025-01-03</small>
+- **Bugfix**:
+    - **`Render Assets`**: Fixed an oversight where a leftover row of code caused the render to crash if the scene was not named "Scene".
+    - **`Render Assets`**: The Eevee setting "Screen Tracing Precision" under 'Raytracing' is now properly applied when rendering with Eevee.
+
+---
+
 ### 1.2.5 <small>2024-12-28</small>
 - **Improved Functionality**:
     - **Utility `Change Node Attributes`**: Now supports setting Boolean socket types when targeting 'Shader Nodes'.
