@@ -399,16 +399,16 @@ For details about the current version and updates, check the [Changelog](https:/
 # Feature Summary
 
 - Easy one-click interface for instant use, while offering advanced customization options.
-- Both rendering and all utilities work with local and external Assets, so you don't have to open each Asset file individually when working with them.
+- Both rendering and all utilities work with local and external assets directly from the Asset Browser, so you don't have to open each asset file individually to work with them.
 - Built-in parallel processing when working with external assets, allowing multiple assets to be processed simultaneously in the background.
 
 - **Asset Preview Rendering**:
     - One click batch rendering making the process swift and efficient.
-    - Supports rendering of multiple types of Assets: materials, collections, and objects, including VDB volumes.
-    - Seamless Asset Browser integration allows you to easily select and render images for your existing Assets. You can render any combination of different Asset types, including materials, objects, and collections.
-    - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported Assets and your existing Asset Library.
+    - Supports rendering of multiple types of assets: materials, collections, and objects, including VDB volumes.
+    - Seamless Asset Browser integration allows you to easily select and render images for your existing assets. You can render any combination of different asset types, including materials, objects, and collections.
+    - Advanced filtering to find and replace missing or low-quality Asset Previews for both newly imported assets and your existing Asset Library.
     - Easy controls for lighting and background settings, enhanced with Render Presets to streamline setup. You can choose from ready-to-use lighting configurations that automatically adjust light parameters, including support for HDRI images.
-    - Render to external locations: Expand beyond Asset previews by saving images externally, facilitating the quick creation of professional showcase images for your Assets.
+    - Render to external locations: Expand beyond Asset Previews by saving images externally, facilitating the quick creation of professional showcase images for your assets.
 
 - **Importing**:
     - **Texture Import**:
@@ -428,21 +428,24 @@ For details about the current version and updates, check the [Changelog](https:/
         - Import objects, collections, and materials from multiple blend files at once.
 
 - **Exporting**:
-    - Batch export objects, collections, and materials to blend files with ease. You can choose to export them as individual blend files or combine all selected assets into a single blend file. This feature is directly integrated into the Asset Browser for seamless access and functionality.
+    - Batch export objects, collections, and materials to blend files. You can choose to export them as individual blend files or combine all selected assets into a single blend file. This feature is directly integrated into the Asset Browser for seamless access and functionality, but is also available inside the 3D View for exporting assets directly from your current scene.
 
 - **Utilities**:
     - Utilities are available for working with your current blend file and are integrated into the Asset Browser for quick access.
-    - Tools for bulk updating material settings such as Displacement and eevee specific settings.
-    - Node Attribute Changer: Target various nodes or custom node-groups within materials to change socket values, set specific colors, or use random values for seed sockets.
-    - Replace Node Utility: Replace existing 'Shader Editor' nodes with custom Node-Groups.
-    - Unconnected Nodes Finder: Identify unconnected nodes within materials and batch delete them if needed.
-    - Find Zero Strength Nodes: Search for Normal Map, Bump, and Displacement nodes with zero values, potentially affecting material appearance.
-    - Color Space Validator: Verifies image textures for correct color space settings, with an option to automatically fix any issues.
-    - Reload Images: Update externally edited images in Blender, ensuring they refresh correctly.
-    - Tagging Utilities: Easily add and remove tags for Assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed Asset information.
-    - Metadata Adjustment: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
-    - Move Asset: Organize your Assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual Asset Blend file.
-    - Load previews from disk:  Directly load custom asset preview images from a specified directory.
-    - Pack Textures: Easily pack textures for assets in the Asset Browser with a single click.
-    - Set Origin: Quickly set object origins.
-    - Plus a few other small utilities!
+    - **Change Material Settings**: Bulk updating material settings such as Displacement and eevee specific settings.
+    - **Node Attribute Changer**: Target various nodes or custom node-groups within materials to change socket values, set specific colors, or use random values for seed sockets.
+    - **Replace Node Utility**: Replace existing 'Shader Editor' nodes with custom Node-Groups.
+    - **Unconnected Nodes Finder**: Identify unconnected nodes within materials and batch delete them if needed.
+    - **Find Zero Strength Nodes**: Search for Normal Map, Bump, and Displacement nodes with zero values, potentially affecting material appearance.
+    - **Color Space Validator**: Verifies image textures for correct color space settings, with an option to automatically fix any issues.
+    - **Convert Images**: Convert images in the selected source to your desired format, supporting bulk processing within Blender's current project or from a specified directory, and optionally downscale images during the process.
+    - **Reload Images**: Update externally edited images in Blender, ensuring they refresh correctly.
+    - **Relink Converted Images**: This utility helps you update Blender's links to images that have been converted to a different file format.
+    - **Tagging Utilities**: Easily add and remove tags for assets in the Asset Browser. The Smart Tag feature lets you choose to add tags like dimensions, triangle and vertex counts, and texture resolution, offering detailed asset information.
+    - **Metadata Adjustment**: Easily adjust metadata in the Asset Browser, allowing batch additions of description, license, copyright, and author.
+    - **Move Asset:** Organize your assets efficiently by moving them to the correct Asset Catalogs with a single click, without having to open each individual asset Blend file.
+    - **Load previews from disk**:  Directly load custom asset preview images from a specified directory.
+    - **Pack Textures**: Easily pack textures for assets in the Asset Browser with a single click.
+    - **Set Origin**: Quickly set object origins.
+    - **Export Asset Details to Excel**: Export detailed information about your assets from the Asset Browser into an Excel file for easy analysis and management
+
