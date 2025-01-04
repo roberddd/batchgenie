@@ -274,6 +274,26 @@ This utility includes options for aligning mesh names with object names and sync
 
 ---
 
+### Convert Images
+
+![Convert Images](images/utility_convert-images.png){ .img-box align=right }
+
+Convert images in the selected source to your desired format, supporting bulk processing within Blender's current project or from a specified directory, and optionally downscale images during the process.
+
+<div style="clear:both"></div>
+
+---
+
+### Relink Converted Images
+
+![Convert Images](images/utility_relink-converted-images.png){ .img-box align=left }
+
+This utility helps you update Blender's links to images that have been converted to a different file format.
+
+<div style="clear:both"></div>
+
+---
+
 ### Reload Images
 
 ![Reload Images](images/utility_reload_images.png){ .img-box align=right }
@@ -373,6 +393,10 @@ Batch load custom Asset Preview images from a specified directory.
 #### Pack Textures
 
 This feature packs all associated textures into their respective blend files, ensuring that your assets retain their appearance without the need for external texture files.
+
+####  Export Asset Details to Excel
+
+Export detailed information about your assets from the Asset Browser into an Excel file for easy analysis and management
 
 <div style="clear:both"></div>
 
