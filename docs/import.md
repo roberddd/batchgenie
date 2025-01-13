@@ -191,10 +191,36 @@ This option allows you to import and connect up to three custom textures, giving
 
 The `Blend Files` option allows you to import objects, collections, and materials from multiple blend files at once. This feature is designed to streamline asset management by letting you quickly gather specific asset types from various blend files into your current project.
 
-![Import Blend Files](images/import_blend-files.gif){ .img-box align=left }
+![Import Blend Files](images/import_blend-files.png){ .img-box align=left }
 
 - **Directory**: The directory from which BatchGenie should locate Blend files.
-- **Type**: Object, Collection or Material
+- **Type**: Type of Asset to import.
+    - **Object**
+    - **Collection**
+    - **Material**
+    - **Textures**
+    - **Images**
+    - **Worlds**
+    - **Scenes**
+    - **Nodes**
+- **Sub Type**: Provides finer control by letting you specify the exact type of Asset to import (applicable only for **Objects** and **Nodes**).
+    - **Object**:
+        - **All**: Includes all types of objects.
+        - **Meshes**
+        - **Curves**
+        - **Metaballs**
+        - **Text**
+        - **Grease Pencils**
+        - **Armatures**
+        - **Lattices**
+        - **Lights**
+        - **Cameras**
+    - **Nodes**:
+        - **All**
+        - **Shader Node Groups**: Shader and World Node Groups
+        - **Geometry Node Groups**
+        - **Geometry Node Trees**: Includes the entire geometry node tree, including all node groups inside it.
+        - **Compositing Node Groups**
 - **Selection**: Allows you to specify which items to include in the import.
     - **Marked as Asset**
     - **NOT marked as asset**
@@ -203,7 +229,13 @@ The `Blend Files` option allows you to import objects, collections, and material
 ### Import Settings
 
 - **Include Subfolders**: If `enabled`, imports will also include files from subfolders within the selected folder. If `disabled`, only files directly in the selected folder will be processed. By default, BatchGenie searches subfolders one level deep, but this depth can be adjusted in the [Preferences](preferences.md#import).
-- **Use Fake User**: Use Fake User on imported items.
+- **Use Fake User**: Use Fake User on imported items. Note: This cannot be disabled to ensure data integrity.
+
+![Import Blend Files](images/import_blend-files_modify-asset-names.png){ .img-box align=right }
+
+- **Modify Imported Asset Names**: Add a prefix (a set of characters placed before the name) or a suffix (a set of characters placed after the name) to the names of imported Assets.
+
+
 - **Asset status**:
     - **Keep current**: Keeps current Asset status.
     - **Mark as Asset**: Marks the Imported items as Assets, making them easily accessible in Blender's Asset Browser for future use.
@@ -211,7 +243,8 @@ The `Blend Files` option allows you to import objects, collections, and material
 - **Add Metadata**: Description, License, Copyright & Author
 <div style="clear:both"></div>
 
-
+!!! tip "Tip"
+    You can cancel the operation at any time by pressing the ESC key.
 
 
 ## FAQ

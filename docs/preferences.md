@@ -123,5 +123,5 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 <h4 style="margin-bottom:-0.5em;">Troubleshooting</h4>
 
 - **Light Setup Thumbnails**: Generate thumbnails for the built-in HDR images used as Light Setups. This option is useful if you've added HDRIs to Blender (as explained [here](render.md#faq)) but they are not yet visible and you want to avoid restarting Blender, as thumbnails are generated upon startup.
-- **Debug To Console**: Outputs debug information to the console, useful for troubleshooting. To view the console, go to `Window > Toggle System Console` (Windows) or through the system console if you're using Linux (requires starting Blender from the console).
+- **Debug To Console**: Outputs debug information to the console, useful for troubleshooting. To view the console, go to `Window > Toggle System Console` (Windows) or through the system console if you're using Linux (requires starting Blender from the console). This should only be enabled if you need to troubleshoot, as it may have a slight performance hit.
 - **Log to File**: When enabled, all debug information and error messages are saved to a log file for easier troubleshooting and analysis. Useful for tracking issues.

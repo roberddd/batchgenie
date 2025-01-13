@@ -12,6 +12,15 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.7 <small>2025-01-13</small>
+- **Improved Functionality**:
+    - **`Import Blend Files`**: Added support for importing additional Asset types, allowing more granular control during import. The "Use Fake User" setting is now mandatory to ensure data integrity.
+- **Bugfixes**:
+    - **CRITICAL `Render Assets`**: Fixed an issue where objects within nested collections were not rendered.
+    - **`Import Blend Files`**: Resolved a bug where importing collections with nested collections caused multiple copies of the nested collections to be created.
+
+---
+
 ### 1.2.6 <small>2025-01-03</small>
 - **Bugfix**:
     - **`Render Assets`**: Fixed an oversight where a leftover row of code caused the render to crash if the scene was not named "Scene".
@@ -149,7 +158,7 @@ This major update enhances the rendering section and introduces preset functiona
 ### 1.1.4 <small>2024-10-16</small>
 
 - **Bugfix**:
-    - **CRITICAL** `Render`: The rendering functionality via the main panel had stopped working due to internal changes in previous versions, with rendering still functioning through the Asset Browser. This issue has now been resolved.
+    - **CRITICAL `Render`**: The rendering functionality via the main panel had stopped working due to internal changes in previous versions, with rendering still functioning through the Asset Browser. This issue has now been resolved.
 
 ---
 
