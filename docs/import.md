@@ -1,6 +1,6 @@
 
 # Importing
-![Example Import](images/main_panel.png){ .img-box align=right }
+![Import Textures Panel](images/import_textures.png){ .img-box align=right }
 
 Importing is done through the BatchGenie main panel found in the `3D Viewport`. Currently, there are two types of imports available: [**PBR Textures**](#import-pbr-textures) and [**Blend Files**](#import-blend-files). The `PBR Texture` option imports PBR texture sets from a folder and compiles them into ready-to-use materials. The `Blend File` option allows you to import objects, collections, and materials from multiple blend files at once.
 
@@ -29,17 +29,32 @@ Importing is done through the BatchGenie main panel found in the `3D Viewport`. 
 
 ### Import Settings
 
-![Import Settings](images/import_settings.png){ .img-box align=left }
+![Import Textures Settings](images/import_textures_settings.png){ .img-box align=left }
 
 
 #### General Settings
 
-- **Include files in root**: Import textures located directly in the root of the selected folder.
-- **Include Subfolders**: Import textures from subfolders within the selected folder. By default, BatchGenie only searches for subfolders one level deep, but this depth can be adjusted in the [Preferences](preferences.md#import).
+- **Include files in root**: Import textures located directly in the root of the selected folder, which can contain any number of mixed textures.
+- **Include Subfolders**: Import textures from subfolders within the selected folder, where each subfolder contains one distinct set of textures.
+    - **Subfolder Traversing Depth**: Specify how many levels deep to search for subfolders when importing. For example, a depth of 1 means only the immediate subfolders within the selected folder will be searched. Adjust this setting to control the folder depth for more complex directory structures.
+
+    ??? abstract "Example diagram of traversing"
+        ```mermaid
+        graph TD
+            A[Main Folder]
+            A --> B[Subfolder Level 1]
+            B --> C[Subfolder Level 2]
+            C --> D[Subfolder Level 3]
+            B --> E[Another Subfolder Level 2]
+            E --> F[Subfolder Level 3]
+            A --> G[Another Subfolder Level 1]
+        ```
+
 - **Skip existing**: Do not import materials if a material with the same name already exists.
 - **Use Fake User**: Use Fake User on imported materials. Ensures that imported materials are saved with your project, even if they're not currently in use. This prevents them from being automatically removed when you save your file.
 - **Mark as Asset**: Marks imported materials as Assets, making them easily accessible in Blender's Asset Browser for future use.
-
+- **Pack Textures**: When enabled, textures are packed into the .blend file during import. This ensures that all textures are embedded within the file, making it self-contained and portable.
+- **DirectX Normals**: If your materials use DirectX normals but this isn't indicated in their filenames(and the add-on's DirectX detection isn't recognizing them), enable this option to add a 'DirectX to OpenGL' node for normal conversion. See [Preferences](preferences.md) to adjust this function.
 - **Alpha from Base Color**: Use the Alpha channel from the 'Base Color' texture and ignore separate Alpha textures. Options include:
     - **No**
     - **Auto**: Tries to automatically detect the presence of data in the alpha channel, but with a significant processing time impact. See the info box below for details.
@@ -60,7 +75,6 @@ Importing is done through the BatchGenie main panel found in the `3D Viewport`. 
 
             Benchmark performed with PNG files on an Intel i7-14700K CPU. While this additional time might seem minor, it becomes significant when compared to the setting being disabled. For example, without this setting enabled, importing a folder with 183 different 4K and 8K texture sets, totaling 725 images and weighing 50GB, takes only 3 seconds.
 
-- **DirectX Normals**: If your materials use DirectX normals but this isn't indicated in their filenames(and the add-on's DirectX detection isn't recognizing them), enable this option to add a 'DirectX to OpenGL' node for normal conversion. See [Preferences](preferences.md) to adjust this function.
 - **Filter**: Filter out unwanted textures. Example usage would be to filter out DirectX normal maps by using the filter 'DirectX' or 'DX'.
 
 
@@ -69,16 +83,15 @@ Importing is done through the BatchGenie main panel found in the `3D Viewport`. 
 
 #### Material Settings
 
-![Import Material Settings](images/import_material_settings.png){ .img-box align=left }
+![Import Material Settings](images/import_textures_material-settings.png){ .img-box align=left }
 
 - **Displacement**: Sets the displacement setting of the imported materials. Choose `Bump Only` for surface texture simulation, `Displacement` for actual geometric displacement, or `Displacement & Bump` for a combination of both effects.
-
  - Eevee Specific Settings:
     - Render Method
     - Transparent Shadows
     - Raytrace Transmission
 
-    *For further technical details see [this section](https://docs.blender.org/manual/en/4.2/render/eevee/material_settings.html){ target="_blank" } in the Blender manual.*
+*For further technical details see [this section](https://docs.blender.org/manual/en/4.2/render/eevee/material_settings.html){ target="_blank" } in the Blender manual.*
 
 
 ---
@@ -86,16 +99,11 @@ Importing is done through the BatchGenie main panel found in the `3D Viewport`. 
 
 #### Image Texture Node Settings
 
-![Import Texture Node Settings](images/import_image_texture_node_settings.png){ .img-box align=left }
+![Import Texture Node Settings](images/import_textures_image-texture-node-settings.png){ .img-box align=left }
 
-- **Mapping**: The dropdown menu allows you to select the texture mapping method for the textures. Options include UV, Object, and None. Upon selection, the add-on automatically adds the corresponding Texture Coordinate and Mapping nodes to the material.
-
+- **Mapping**: The dropdown menu allows you to select the texture mapping method for the textures. Options include `UV`, `Object`, and `None`. Upon selection, the add-on automatically adds the corresponding Texture Coordinate and Mapping nodes to the material.
 - **Texture Interpolation**: Adjust the interpolation method for image texture nodes. This setting controls how textures are sampled and smoothed. Options include Blender's default options.<br>There are two selections: the '**default**' option, applied to all textures except displacement, and a separate setting specifically for displacement textures.
-
-<div style="clear:both"></div>
-
 - **Projection**: The 'Projection' option allows you to choose and adjust the texture projection method for the material. Options include Blender's default methods. For 'Box' projection, there will also be a 'Blend' amount slider available.
-
 - **Texture Extension**: Defines how the image is extrapolated past its original bounds. Options include Blender's default methods.
 
 *For further technical details about texture Interpolation, Projection & Extension see the [this section](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html){ target="_blank" } in the Blender manual.*
@@ -106,24 +114,21 @@ Importing is done through the BatchGenie main panel found in the `3D Viewport`. 
 
 #### Replace Principled BSDF
 
-Use a custom Node-Group instead of a Principled BSDF for the imported materials. Easily pick from a dropdown that shows all Node-Groups in the current blend file.
+Use a custom Node Group instead of a Principled BSDF for imported materials. This allows for precise material customization during the import process to fit your needs. The interface provides a dropdown that lists all Node-Groups in the current Blend file.
 
-![Replace Principled BSDF Custom Node-Group](images/Import_custom_node_group.png){ .img-box align=left }
+![Replace Principled BSDF Custom Node-Group](images/Import_custom_node_group.png){ .img-box align=right }
 
-BatchGenie searches for keywords to match and connect the sockets in the new Node-Group, treating them as if they were part of a regular shader.
-
-<div style="clear:left"></div>
+BatchGenie searches for keywords to match and connect sockets in the new Node Group, allowing some flexibility in socket naming. However, sockets should still be named in a way that clearly indicates their purpose. For example, a socket for a roughness texture should include the word **"roughness"**, but additional keywords are allowed, such as **"roughness surface"**. See the example image below.
 
 !!! tip "Tips"
     If the Node Group contains a socket named "**Normal Color**", BatchGenie will connect the Normal Map texture directly to this socket, bypassing the Normal Map node.
     Similarly, if the socket is named "**Bump Height**", BatchGenie will connect the Bump texture directly to this socket, bypassing the Bump node.
 
-
-
 <figure markdown="span">
-  ![Example Import With Extra Everything](images/Import_custom-node-group-material-example.png){ .img-box .on-glb width=60% data-title="Example of an import with a custom Node-Group," }
+  ![Example Import With Extra Everything](images/Import_custom-node-group-material-example.png){ .img-box .on-glb width=60% data-title="Example of an import with a custom Node-Group. Also the 'custom texture' feature is being used here to connect the extra translucency/scattering texture to the 'Translucent Map' socket." }
   <figcaption>Example of an import with a custom Node-Group.</figcaption>
 </figure>
+
 
 ---
 
@@ -194,6 +199,23 @@ The `Blend Files` option allows you to import objects, collections, and material
 ![Import Blend Files](images/import_blend-files.png){ .img-box align=left }
 
 - **Directory**: The directory from which BatchGenie should locate Blend files.
+- **Include Subfolders**: If `enabled`, imports will also include files from subfolders within the selected folder. If `disabled`, only files directly in the selected folder will be processed.
+    - **Subfolder Traversing Depth**: Specify how many levels deep to search for subfolders when importing. For example, a depth of 1 means only the immediate subfolders within the selected folder will be searched. Adjust this setting to control the folder depth for more complex directory structures.
+
+    ??? abstract "Example diagram of traversing"
+        ```mermaid
+        graph TD
+            A[Main Folder]
+            A --> B[Subfolder Level 1]
+            B --> C[Subfolder Level 2]
+            C --> D[Subfolder Level 3]
+            B --> E[Another Subfolder Level 2]
+            E --> F[Subfolder Level 3]
+            A --> G[Another Subfolder Level 1]
+        ```
+
+<div class="compact" markdown>
+
 - **Type**: Type of Asset to import.
     - **Object**
     - **Collection**
@@ -226,20 +248,27 @@ The `Blend Files` option allows you to import objects, collections, and material
     - **NOT marked as asset**
     - **All**
 
+</div>
+
 ### Import Settings
 
-- **Include Subfolders**: If `enabled`, imports will also include files from subfolders within the selected folder. If `disabled`, only files directly in the selected folder will be processed. By default, BatchGenie searches subfolders one level deep, but this depth can be adjusted in the [Preferences](preferences.md#import).
+![Import Blend Files Settings](images/import_blend-files_settings.png){ .img-box align=left }
+
+- **Skip existing**: Do not import if an Asset with the same name already exists.
 - **Use Fake User**: Use Fake User on imported items. Note: This cannot be disabled to ensure data integrity.
 
-![Import Blend Files](images/import_blend-files_modify-asset-names.png){ .img-box align=right }
+<div style="clear:both"></div>
+
+![Import Blend Files Modify Asset Name Settings](images/import_blend-files_modify-asset-names.png){ .img-box align=right }
 
 - **Modify Imported Asset Names**: Add a prefix (a set of characters placed before the name) or a suffix (a set of characters placed after the name) to the names of imported Assets.
-
-
 - **Asset status**:
     - **Keep current**: Keeps current Asset status.
     - **Mark as Asset**: Marks the Imported items as Assets, making them easily accessible in Blender's Asset Browser for future use.
     - **Clear Asset**: Clears the Asset mark.
+
+![Import Blend Files](images/import_blend-files_add-metadata.png){ .img-box align=right }
+
 - **Add Metadata**: Description, License, Copyright & Author
 <div style="clear:both"></div>
 
@@ -284,7 +313,8 @@ The `Blend Files` option allows you to import objects, collections, and material
 
 `How should the folder structure look?`
 
-:   No specific structure is required. Blend files can be located directly in the selected folder or within subfolders at multiple levels. By default, BatchGenie searches subfolders one level deep, but you can adjust this depth in the Preferences.
+:   No specific structure is required. Blend files can be located directly in the selected folder or within subfolders at multiple levels.
+
 
 ## More adjustments in Preferences {#more-settings data-search-exclude}
 

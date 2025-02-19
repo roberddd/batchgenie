@@ -27,7 +27,7 @@ BatchGenie streamlines the export of your assets, making it easy to organize you
         - **Materials NOT marked as Assets**: Materials in the your file that are NOT marked as Assets.
         - **All materials**: All materials in the your file regardless if they are marked as Assets or not.
 
-<div style="clear:right"></div>
+<div style="clear:both"></div>
 
 ![Export Panel](images/export_folder_structure_example.png){ .img-box align=right }
 

@@ -123,12 +123,12 @@ Choose between ready-to-use Presets for quick setups or Manual mode for full con
 
     - **Studio**: Allows you to add a studio backdrop as a background if desired. The studio automatically scales to fit the object you are rendering, ensuring that the background matches your asset's size and position.
 
-        *Note: Studio Setups are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio can be finicky and may not always work as planned.*
+        > *Note: Studio Setups are not recommended to be used when rendering VDB volumes. The placement of VDB volumes within the studio can be finicky and may not always work as planned.*
 
         ??? abstract "Studio Setups"
             ![Studio Setups](images/render_studio-setups.png){ .img-box .on-glb }
 
-    <div style="clear:left"></div>
+    <div style="clear:both"></div>
 
     <h5>Studio Settings</h5>
 

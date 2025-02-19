@@ -155,7 +155,7 @@ This utility enables you to batch modify material settings across materials.
     - **Materials NOT marked as Assets**
     - **Materials on Selected Objects**
 
-<div style="clear:right"></div>
+<div style="clear:both"></div>
 
 ![Utilities Material Filter](images/utility_filter_materials.png){ .img-box align=left style='margin-right:calc(1em + 10px)' }
 

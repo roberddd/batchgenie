@@ -219,3 +219,16 @@ h3 small { /* Date */
   margin-bottom:-0.3em;
 }
 /* ######## </ CHANGELOG > ######## */
+
+
+
+li .abstract { /* Examples inside lists */
+  margin-top: 0;
+}
+
+.compact ul li { /* Compact list */
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+}
+
+body > div.md-container > main > div > div.md-content > article > div.compact > ul > li:nth-child(2) > strong:nth-child(1)

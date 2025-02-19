@@ -12,6 +12,32 @@ Here, you can find a list of all updates, enhancements, and bug fixes made to Ba
 
 <div class="changelog" markdown>
 
+### 1.2.8 <small>2025-02-19</small>
+
+- **New / Improved Functionality**:
+    - **`Import Textures`**:
+        - Major overhaul of the import function under the hood, resulting in a more responsive interface during large imports and slight speed improvements in some cases. Imports can now also be canceled mid-process by pressing Escape if needed
+        - **Import Preview Thumbnail** feature is now available. This allows you to use existing preview images if available, providing a faster alternative to generating new previews.
+        - **Pack Textures** option is now available.
+        - Strength settings for **Normal**, **Bump**, **Ambient Occlusion**, **Cavity**, and **Displacement** are now saved when customized to fit your preferences.
+        - New **Material Name Settings** added in preferences:
+            - **Use Title Case**: Formats material names using Title Case, where each word starts with an uppercase letter and the remaining characters are lowercase (e.g., "example name" becomes "Example Name").
+            - **Remove Fab.com ID**: Texture sets downloaded from Fab.com often include an ID in their names (e.g., "concrete plaster rfxxf0 2K", where "rfxxf0" is the ID). Enabling this option removes the ID, resulting in cleaner names like "concrete plaster 2K".
+            - **Resolution Suffix**: The `Resolution Suffix` setting now lets you remove resolution suffixes from material names.
+        - **Import Fab.com Tags** option available in preferences. Texture sets downloaded from Fab.com often include a JSON file with metadata such as tags and texture-set IDs. This option imports the metadata and adds IDs and tags as asset tags to the material. [More info](preferences.md#import)
+    - **`Import Blend Files`**: A new **Skip Existing** option is now available.
+- **UI**:
+    - Minor interface changes in the **Importing** panel. The **Subfolder Traversing Depth** setting has been moved from preferences directly into the **Importing** panel.
+    - The **Import** section in the preferences menu has been reorganized.
+- **Bugfixes**:
+    - **`Import Textures`**:
+        - Fixed an issue where selecting **Object** mapping for texture nodes did not work properly.
+        - Fixed a bug where using the **Split CamelCase Names** option in preferences caused other material name settings (like removing underscores) to be ignored.
+        - Restored functionality for **Asset Preview Generation During Import** after a code error in previous versions.
+    - **`Render Assets`**: Fixed an issue where nested collections were not rendered if they had multiple levels and the top collection was empty.
+
+---
+
 ### 1.2.7 <small>2025-01-13</small>
 - **Improved Functionality**:
     - **`Import Blend Files`**: Added support for importing additional Asset types, allowing more granular control during import. The "Use Fake User" setting is now mandatory to ensure data integrity.
