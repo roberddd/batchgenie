@@ -67,7 +67,7 @@ document.querySelectorAll('a').forEach(link => {
 
 ### Installation
 
-> BatchGenie has been verified to work with with Blender 4.2 on Windows & Linux (it should, in theory, work on MacOS as well).
+> BatchGenie has been verified to work with Blender on Windows & Linux (it should, in theory, work on macOS as well). It requires Blender 4.2 or newer and has been verified to work on versions 4.2 and 4.3.
 
 To start using BatchGenie, you need to install the add-on in Blender. Follow these steps:
 

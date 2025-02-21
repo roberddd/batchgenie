@@ -2,9 +2,11 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 
 <br>
 
-![Preferences - Import](images/preferences_import.png){ .img-box align=left }
+
 
 ## Import { style="margin-top:0" }
+
+![Preferences - Import](images/preferences_import.png){ .img-box align=left }
 
 <h4 style="margin-bottom:-0.5em;">Texture Import</h4>
 
@@ -102,12 +104,11 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 ---
 
 
-![Preferences - Render](images/preferences_render.png){ .img-box align=left }
-
 ## Render { style="margin-top:0" }
 
-- **Custom Render Presets**: Presets you've created will appear in this dropdown for removal. You can also open the folder containing the presets for backup.
+![Preferences - Render](images/preferences_render.png){ .img-box align=left }
 
+- **Custom Render Presets**: Presets you've created will appear in this dropdown for removal. You can also open the folder containing the presets for backup.
 - **Denoise**: When the Denoising option is enabled during rendering in the BatchGenie panel under  `Render Settings `, the following settings are applied. They reflect Blender's default options for denoising.
 
     !!! info2 "Which Denoiser should I choose?"
@@ -117,9 +118,9 @@ To access BatchGenie's Preferences, click on the :blender_icon_preferences:icon 
 ---
 
 
-![Preferences - Misc](images/preferences_misc.png){ .img-box align=left }
-
 ## Misc { style="margin-top:0" }
+
+![Preferences - Misc](images/preferences_misc.png){ .img-box align=left }
 
 - **Add-on Location**: Choose whether the add-on appears in its own "BatchGenie" tab in the N-Panel or within the existing Tool Panel. This option can help save tab space if the N-Panel is too crowded and also applies to the BatchGenie tab in the Shader Editor.
 
